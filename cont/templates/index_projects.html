@@ -10,8 +10,21 @@
     {% for project in projects %}
     <div class="card">
         <figure>
-            {% if project.imagen_projeto %}
-                <img src="{{project.imagen_projeto.url}}">
+            {% if 'agenda' in project.imagen_projeto.url %}
+                <img src="{% static 'img/agenda.png' %}">
+            
+            {% elif 'form' in project.imagen_projeto.url %}
+                <img src="{% static 'img/form.png' %}">
+                            
+            {% elif 'password' in project.imagen_projeto.url %}
+            <img src="{% static 'img/password.png' %}">
+                        
+            {% elif 'registro' in project.imagen_projeto.url %}
+                <img src="{% static 'img/registro.png' %}">
+                            
+            {% elif 'rei' in project.imagen_projeto.url %}
+            <img src="{% static 'img/rei.png' %}">
+                        
             {% else %}
                 <img src="{% static 'img/image-not.jpg' %}">
             {% endif %}

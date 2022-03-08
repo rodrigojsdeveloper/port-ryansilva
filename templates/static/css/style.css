@@ -329,7 +329,7 @@ h1 {
   color: #ffffff;
   font-size: 24px;
   text-decoration: none;
-  font-family: fantasy;
+  font-family: monospace;
   box-sizing: border-box;
   background: linear-gradient(90deg, #ef12d1, #000000c2, #0a7ee4, #ef12d1);
   background-size: 400%;
