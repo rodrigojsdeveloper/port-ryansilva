@@ -119,10 +119,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-if DEBUG:
-    STATICFILES_DIRS = [Path.joinpath(BASE_DIR, 'templates/static')]
-else:
-    STATIC_ROOT = Path.joinpath(BASE_DIR, 'templates/assets')
+STATIC_ROOT = Path.joinpath(BASE_DIR, 'templates/assets')
+
+STATICFILES_DIRS = [Path.joinpath(BASE_DIR, 'templates/static')]
+
+
 
 
 MEDIA_URL = 'media/'
