@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block titulo %}About-me{% endblock titulo %}
+
+
+{% block conteudo %}
+{% include 'parciais/_socialbar.html' %}
+
+<div id='principal_about'>
+
+    <a id='img' style='  border: none;' >
+        <img src="{% static 'img/perfil-port.jpeg' %}" alt="" id='img' >
+    </a>
+    <h3><strong class='menor'>Quem é Ryan? ♣️</strong></h3>
+    <p>
+        <h5>"Um Dev jr, autodidata que na programação coloca sua criatividade e sua vontade de criar e desenvolver
+            softwares e resolver problemas."</h5>
+
+        
+        Seja bem vindo ao meu portfólio. Me chamo Ryan barbosa silva, tenho 18 anos e comecei na programação com java em 2019.
+        2020 conheci python e estou até hoje a dominando e desenvolvendo projetos, tendo junto os conhecimentos gerais sobre
+        programção no Front-end e Back-end, tendo mais eficiencia em back-end. Projetos que acho relevante estão todos em "open source"
+        no GitHub, meus estudos faço na Udemy, curso em vídeo, e kenzie academy. 
+
+        <p>No dia a dia resolvo problemas na plataforma <strong>Code wars</strong>, resolvendo desafios sobre Python.</p>                 
+    </p>
+</div>
+
+{% endblock conteudo %}
+

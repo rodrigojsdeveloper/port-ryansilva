@@ -1,0 +1,17 @@
+{% url 'index' as home %}
+{% url 'projects' as projects %}
+{% url 'about' as about %}
+{% url 'skills' as skills %}
+
+<div>
+    <a class="menu-toggle rounded" href="#" onclick="meuMenuToggle()"><i class="fas fa-bars"></i></a>
+    <nav id="sidebar-wrapper" >
+        <ul class="nav nav-tabs">
+            <ul class="nav-item"><a href="{% url 'index' %}" class="{% if request.path == home %}active{% endif %}"  id="home">Home</a></ul>
+            <li class="nav-item"><a href="{% url 'projects' %}"  class="nav-link {% if request.path == projects %}active{% endif %}">Projects</a></li>
+            <li class="nav-item"><a href="{% url 'about' %}" class="nav-link {% if request.path == about %}active{% endif %}">About</a></li>
+            <li class="nav-item"><a href="{% url 'hardskills' %}"  class="nav-link {% if request.path == hardskills %}active{% endif %}">Hard Skills</a></li>
+        </ul>
+    </nav>
+</div>
+

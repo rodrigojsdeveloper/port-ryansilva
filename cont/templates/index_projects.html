@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block titulo %}Projects{% endblock titulo %}
+
+{% block conteudo %}
+
+<div class="container-card">
+
+    {% for project in projects %}
+    <div class="card">
+        <figure>
+            {% if project.imagen_projeto %}
+                <img src="{{project.imagen_projeto.url}}">
+            {% else %}
+                <img src="{% static 'img/image-not.jpg' %}">
+            {% endif %}
+
+        </figure>
+
+        <div class="contenido-card">
+            <h3>{{project.titulo_projeto}}</h3>
+            <p>{{project.descricao_projeto}}</p>
+            <a class="btn" href="{{project.github_projeto}}" target='_blank'>
+                <i class="fa-brands fa-github" id='iconproject'></i>
+            </a>
+            {% if project.link_projeto %}
+                <a class="btn" href="{{project.link_projeto}}" target='_blank'>
+                    <i class="fa-solid fa-link" id='iconproject'></i>
+                </a>
+            {% endif %}
+        </div>
+        </div>
+    {% endfor %}
+</div>
+
+{% include 'parciais/_pagination.html' %}
+
+{% endblock conteudo %}
