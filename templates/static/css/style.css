@@ -341,7 +341,6 @@ h1 {
  .btnlindo:hover {
   animation: animate 2s linear infinite alternate;
   transition: 0.3s;
-  color: #000000be;
  }
  @keyframes animate {
   0% {
@@ -359,7 +358,7 @@ h1 {
   right: -5px;
   left: -5px;
   z-index: -1;
-  background: linear-gradient(90deg, #00000000, #0a7ee4, #0a7ee4, #00000000);
+  background: linear-gradient(90deg, #000000, #0a7ee4, #0a7ee4, #00000000);
   background-size: 400%;
   border-radius: 40px;
   filter: blur(20px);
