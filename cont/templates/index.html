@@ -1,1 +1,130 @@
-<h1>OI</h1>
+{% load static %}
+
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ryan Barbosa Silva</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/style.css'%}">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a class="logo" href="/"><img id='logo-main'src="{% static 'img/logo.png' %}" alt="logo"></a>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="#">Contact</a>
+            <p class="menu cta">Menu</p>
+        </header>
+        <div class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <a class="option-menu-service" href="#">Services</a>
+                <a class="option-menu-project" href="#">Projects</a>
+                <a class="option-menu-about" href="#">About</a>
+                <a class="option-menu-contact" href="#">Contact</a>
+            </div>
+        </div>
+
+        <div class='container-main'>
+            <div class='container-left'>
+                <div class='sidebar-mobile'>
+                    <a href="https://github.com/ryanbsdeveloper" target='_blank'> <i class="fa-brands fa-github"></i> </a>
+                    <a href="https://www.linkedin.com/feed/" target='_blank'> <i class="fa-brands fa-linkedin-in"></i> </a>
+                    <a href="" target='_blank'> <i class="fa-brands fa-whatsapp"></i> </a>
+                </div>
+                <h1>Hello, i'm <strong>Ryan Barbosa Silva</strong>.</h1>
+                <p>A tech enthusiast and self learner, who believes in the power of community.</p>
+                <div>
+                    <h3 class='stack'>Developer <img class='photo-python' src="{% static 'img/python.png' %}" alt="Python"> Júnior</h3>
+                </div>
+            </div>
+            <div class='container-right'>
+                <img class='photo-main' src="{% static 'img/ryan.jpeg' %}" alt="my photo">
+                <div class='sidebar'>
+                    <a href="https://github.com/ryanbsdeveloper" target='_blank'> <i class="fa-brands fa-github"></i> </a>
+                    <a href="https://www.linkedin.com/feed/" target='_blank'> <i class="fa-brands fa-linkedin-in"></i> </a>
+                    <a href="" target='_blank'> <i class="fa-brands fa-whatsapp"></i> </a>
+                </div>
+            </div>
+            <div class="arrow-down">
+                <p><i class="fa-solid fa-computer-mouse"></i> Scroll down <i class="fa-solid fa-arrow-down"></i></p>
+            </div>
+        </div>
+        <div class="container-about">
+            <h1>About me</h1>
+            <p>Introduction</p>
+            <div class='Introduction'>
+                <img src="{% static 'img/ryan-q.jpeg' %}" alt="">
+                <div class="line-v"></div>
+                <div class='text-Introduction'>
+                    <div class="line-h"></div>
+                    <p>Hi, my name is Ryan barbosa silva, I'm 19 years old and I've been in this incredible programming world for 3 and a half years! I am a young man with a great thirst to learn more and more! I really enjoy reading technology docs to use correct syntax and for better code reading. I develop with python as main "LP".
+                    </p>
+                    <button>Resume <i class="fa-regular fa-file-lines"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="container-skills">
+            <h1>Skills</h1>
+            <div class='skills'>
+                <div class='hard-skills space'>
+                    <button>
+                        <i class="fa-solid fa-code"></i> 
+                        <div id='title-hard'>
+                            <h2>Hard Skills</h2>
+                            <p>Knowledge at technologies I have.</p>
+                        </div>
+                        <br>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class='soft-skills space'>
+                    <button>
+                        <i class="fa-solid fa-brain"></i>
+                        <div id='title-hard'>
+                            <h2>Soft Skills</h2>
+                            <p>behavioral skills I have.</p>
+                        </div>
+                        <br>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="{% static 'js/script.js'%}"></script>
+        <script src="https://kit.fontawesome.com/5fc40ce3b8.js" crossorigin="anonymous"></script>
+    </body>
+    <footer>
+        <div class='footer-datas'>
+            <div class='footer-details'>
+                <h1><strong>ryanbs</strong>developer</h1>
+                <br>
+                <p><strong>"The only way to do something great is to love what you do." </strong>.</p>
+                <br>
+                <p>Brasil, São paulo - Guarulhos</p>
+            </div>
+            <div class='footer-links'>
+                <a class="option-menu-service" href="#">Services</a>
+                <a class="option-menu-project" href="#">Projects</a>
+                <a class="option-menu-about" href="#">About</a>
+                <a class="option-menu-contact" href="#">Contact</a>
+            </div>  
+            <div class='footer-links'>
+                <a href="https://github.com/ryanbsdeveloper" target='_blank'> <i class="fa-brands fa-github"></i> </a>
+                <a href="https://www.linkedin.com/feed/" target='_blank'> <i class="fa-brands fa-linkedin-in"></i> </a>
+                <a href="" target='_blank'> <i class="fa-brands fa-whatsapp"></i> </a>
+            </div>
+        </div>
+            <p>© ryanbsdeveloper. All rights reserved</p>
+        {% comment %} <img id='logo-main'src="{% static 'img/logo.png' %}" alt=""> {% endcomment %}
+    </footer>
+</html>
