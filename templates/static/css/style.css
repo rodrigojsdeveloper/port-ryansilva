@@ -431,6 +431,7 @@ footer p{
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  cursor: pointer;
 }
 .skills h2{
   color: gray;
