@@ -424,6 +424,7 @@ footer p{
   margin: 3em;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .skills button{
   border: 0;
@@ -434,7 +435,7 @@ footer p{
   cursor: pointer;
 }
 .skills h2{
-  color: gray;
+  color: white;
   text-align: left;
 }
 .skills p{
@@ -447,4 +448,23 @@ footer p{
 }
 #title-hard{
   margin: 0 1em;
+}
+
+.contents{
+  padding: 1.5em 2.5em;
+}
+.elements {
+  padding: 0.2em;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.elements p {
+  color: gray;
+  font-size: 1em;
+  max-width: 30em;
+}
+.icon {
+  width: 4em;
 }
