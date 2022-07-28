@@ -11,18 +11,20 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <a class="logo" href="/"><img id='logo-main'src="{% static 'img/logo.png' %}" alt="logo"></a>
-            <nav>
-                <ul class="nav__links">
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-            <a class="cta" href="#">Contact</a>
-            <p class="menu cta">Menu</p>
-        </header>
+        <div class='navbar'>
+            <header>
+                <a class="logo" href="/"><img id='logo-main'src="{% static 'img/logo.png' %}" alt="logo"></a>
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+                <a class="cta" href="#">Contact</a>
+                <p class="menu cta">Menu</p>
+            </header>
+        </div>
         <div class="overlay">
             <a class="close">&times;</a>
             <div class="overlay__content">
@@ -74,25 +76,25 @@
         </div>
         <div class="container-skills">
             <h1>Skills</h1>
+            <p>All my skills</p>
             <div class='skills'>
                 <div class='hard-skills space'>
-                    <button>
+                    <button id='buttonHard' onclick='icon("icon-hard", "contentsHard")'>
                         <i class="fa-solid fa-code"></i> 
                         <div id='title-hard'>
                             <h2>Hard Skills</h2>
-                            <p>Knowledge at technologies I have.</p>
+                            <p>technologies I worked on.</p>
                         </div>
                         <br>
-                        <i class="fa-solid fa-chevron-down"></i>
+                        <i id='icon-hard' class="fa-solid fa-chevron-down"></i>
                     </button>
-                    <div class="contents">
+                    <div id='contentsHard' class="contents" style='display:none'>
                         <div class="elements">
                             <div class="icon">
                                 <i class="fa-brands fa-python"></i> 
                             </div>
-                            <p>Python e suas libs em geral e frameworks como: Flask, Django e DRF, FastAPI.
-                                TDD com: PyTest. Criação de API REST(RESTful) com swagger. E criação de bots e automações com: Selenium. E interfaces graficas com PyQT e PySide.</p>
-                        </div>
+                            <p>Python and its libs in general and frameworks like: Flask, Django and DRF, FastAPI.
+                                TDD com: PyTest. Creation of REST(RESTful) API with swagger. And creation of bots and automations with: Selenium. And graphical interfaces with PyQT and PySide.</p>                      </div>
                         <div class="elements">
                             <div class="icon">
                                 <i class="fa-brands fa-docker"></i> 
@@ -103,14 +105,14 @@
                             <div class="icon">
                                 <i class="fa-solid fa-cloud"></i> 
                             </div>
-                            <p>Nuvem como: AWS e Microsoft Azure.</p>
+                            <p>Clouds like: AWS and Microsoft Azure.</p>
                         </div>
                         <div class="elements">
                             <div class="icon">
                                 <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i>
                             </div>
 
-                             <p>Front-end com: HTML5 e CSS3</p>
+                             <p>Front-end with: HTML5 e CSS3</p>
                         </div>
                         <div class="elements">
                             <div class="icon">
@@ -122,26 +124,25 @@
                             <div class="icon">
                                 <i class="fa-solid fa-database"></i> 
                             </div>
-                            <p>Bancos de dados relacionais e não relacionais: SQLServer, SQLite3, PostgreSQL, MySQL, MongoDB</p>
+                            <p>Related and unrelated databases: SQLServer, SQLite3, PostgreSQL, MySQL, MongoDB.</p>
                         </div>
                         <div class="elements">
                             <div class="icon">
-                                <i class="fa-solid fa-message-dots"></i>
+                                <i class="fa-solid fa-comment-dots"></i>
                             </div>
-
-                            <p>Servidor de mensageria: RabbitMQ.</p>
+                            <p>Mail server: RabbitMQ.</p>
                         </div>
                         <div class="elements">
                             <div class="icon">
                                 <i class="fa-solid fa-arrows-split-up-and-left"></i> 
                             </div>
-                            <p>Metodologia agil SCRUM e Kanban.</p>
+                            <p>Agile methodology SCRUM and Kanban.</p>
                         </div>
                         <div class="elements">
                             <div class="icon">
                                 <i class="fa-brands fa-git-alt"></i> 
                             </div>
-                            <p>Versionamento com GIT.</p>
+                            <p>Versioning with GIT.</p>
                         </div>
                         <div class="elements">
                             <div class="icon">
@@ -158,7 +159,7 @@
                     </div>
                 </div>
                 <div class='soft-skills space'>
-                    <button>
+                    <button id='buttonSoft' onclick='icon("icon-soft", "contentsSoft")'>
                         <i class="fa-solid fa-brain"></i>
                         <div id='title-hard'>
                             <h2>Soft Skills</h2>
@@ -166,53 +167,131 @@
 
                         </div>
                         <br>
-                        <i class="fa-solid fa-chevron-down"></i>
+                        <i id='icon-soft' class="fa-solid fa-chevron-down"></i>
                     </button>
-                    <div class="contents">
+                    <div id='contentsSoft' class="contents" style='display:none'>
                         <div class="elements">
-                            <p>Alta concentração</p>
+                            <p>High concentration</p>
                         </div>
                         <div class="elements">
-                            <p>Resolução de Problemas</p>
+                            <p>Problems solution</p>
                         </div>
                         <div class="elements">
-                            <p>Gestão do tempo</p>
+                            <p>Time management</p>
                         </div>
                         <div class="elements">
-                            <p>Trabalho em equipe</p>
+                            <p>Team work</p>
                         </div>
                         <div class="elements">
-                            <p>Inteligência emocional</p>
+                            <p>Emotional intelligence</p>
                         </div>
                         <div class="elements">
-                            <p>Inteligência emocional</p>
+                            <p>Self confidence</p>
                         </div>
                         <div class="elements">
-                            <p>Autoconfiança</p>
+                            <p>deal with the pressure</p>
                         </div>
                         <div class="elements">
-                            <p>Lidar com pressão</p>
+                            <p>Communication</p>
                         </div>
                         <div class="elements">
-                            <p>Comunicação</p>
+                            <p>Empathy</p>
                         </div>
                         <div class="elements">
-                            <p>Empatia</p>
+                            <p>Proactivity</p>
                         </div>
                         <div class="elements">
-                            <p>Proatividade</p>
+                            <p>Enthusiasm</p>
                         </div>
                         <div class="elements">
-                            <p>Entusiasmo</p>
-                        </div>
-                        <div class="elements">
-                            <p>Flexibilidade e adaptabilidade</p>
+                            <p>Flexibility and adaptability</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container-qualifications">
+            
+            <h1>Qualifications</h1>
+            <p> My Educational & Work Experience</p>
+            <div class="qualification_tabs">
+                <div class="qualification_button active" id="educationheader">
+                    <i class="fa-solid fa-graduation-cap"></i>Education
+                </div>
 
+                <div class="qualification_button" id="workheader">
+                    <i class="fa-solid fa-briefcase"></i>Work
+                </div>
+            </div>
+            <div class="qualification_sections">
+                <div class="qualification_content" style='display: block' id="education">
+                    <div class="qualification_data">
+                        <div id='text-data'  >
+                            <span class="qualification_title">technology professional courses</span>
+                            <span class="qualification_subtitle">Online courses</span>
+                            <div class="qualification_calendar">
+                                <i class="fa-solid fa-calendar-days"></i> 2019 - present
+                            </div>
+                        </div>
+                        <div>
+                            <span class="qualification_circle"></span>
+                            <span class="qualification_line"></span>
+                        </div>
+                    </div>
+
+                    <div class="qualification_data">
+                        <div></div>
+                        <div>
+                            <span class="qualification_circle"></span>
+                            <span class="qualification_line"></span>
+                        </div>
+                        <div id='text-data' >
+                            <span class="qualification_title">High school</span>
+                            <span class="qualification_subtitle">Sao Paulo government school</span>
+                            <div class="qualification_calendar">
+                                <i class="fa-solid fa-calendar-days"></i> 2014 - 2021
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="qualification_content " style='display: none' id="work">
+                    <div class="qualification_data">
+                        <div></div>
+
+                        <div>
+                            <span class="qualification_circle"></span>
+                            <span class="qualification_line"></span>
+                        </div>
+
+                        <div>
+                            <h3 class="qualification_title">Loading</h3>
+                            <span class="qualification_subtitle">waiting for a big company</span>
+                            <div class="qualification_calendar">
+                                <i class="fa-solid fa-calendar-days"></i>  loading...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="qualification_data">
+                        <div>
+                            <h3 class="qualification_title">Freelancer</h3>
+                            <span class="qualification_subtitle">Python software developer</span>
+                            <div class="qualification_calendar">
+                                <i class="fa-solid fa-calendar-days"></i>  October 2021 - Present
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification_circle"></span>
+                            <span class="qualification_line"></span>
+                        </div>
+                    </div>
+         
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.2.0/scrollreveal.min.js"></script>
         <script type="text/javascript" src="{% static 'js/script.js'%}"></script>
         <script src="https://kit.fontawesome.com/5fc40ce3b8.js" crossorigin="anonymous"></script>
     </body>
@@ -223,7 +302,7 @@
                 <br>
                 <p><strong>"The only way to do something great is to love what you do." </strong>.</p>
                 <br>
-                <p>Brasil, São paulo - Guarulhos</p>
+                <p>Brazil, São paulo - Guarulhos</p>
             </div>
             <div class='footer-links'>
                 <a class="option-menu-service" href="#">Services</a>
