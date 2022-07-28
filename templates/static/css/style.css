@@ -100,6 +100,7 @@ footer p{
 .navbar {
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 .footer-details{
   width: 25%;
@@ -484,11 +485,12 @@ footer p{
   border: 0;
   background: transparent;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-end;
   cursor: pointer;
   width: 100%;
   min-width: 20em;
+  padding-bottom: 1em;
 }
 .skills h2{
   color: white;
@@ -511,6 +513,21 @@ footer p{
 .contents{
   padding: 1.5em 0;
 }
+.contentsHard{
+  overflow:hidden;
+  height: 31em;
+  transition: height 1s ease-in-out;
+}
+.contentsSoft{
+  overflow:hidden;
+  height: 19em;
+  transition: height 1s ease-in-out;
+}
+.hide-content {
+  height: 0em;
+  pointer-events: none;
+}
+
 .elements {
   padding: 0.2em;
   display: flex;
@@ -523,6 +540,14 @@ footer p{
   font-size: 1em;
   max-width: 30em;
   padding-left: 2em;
+}
+.icon_open{
+  transform:rotate(180deg);
+  transition:0.5s all;
+}
+.icon_close{
+  transform:rotate(1deg);
+  transition:0.5s all;
 }
 
 .container-qualifications {

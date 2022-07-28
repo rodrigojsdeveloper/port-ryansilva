@@ -38,50 +38,41 @@ contact.addEventListener("click", () => {
   overlay.classList.remove("overlay--active");
 });
 
+let btnH = document.getElementById("buttonHard");
+let divH = document.getElementById("hard");
+let iconH = document.getElementById("icon-hard");
+let btnS = document.getElementById("buttonSoft");
+let divS = document.getElementById("soft");
+let iconS = document.getElementById("icon-soft");
 
-var btnH = document.querySelector("#buttonHard");
-btnH.addEventListener("click", function() {
-  var div = document.querySelector("#contentsHard");
-  var icon = document.querySelector("#icon-hard");
+btnH.addEventListener("click", () => {
+  if (divH.clientHeight === 0) {
+    iconH.classList.add("icon_open");
+    iconH.classList.remove("icon_close");
 
-  if(div.style.display === "none") {
-    icon.style.transform = 'rotate(180deg)';
-    icon.style.transition = '0.5s all';
-    } else {
-    icon.style.transform = 'rotate(1deg)';
-    icon.style.transition = '0.5s all';
-  }
-    
-});
-var btnS = document.querySelector("#buttonSoft");
-btnS.addEventListener("click", function() {
-    var div = document.querySelector("#contentsSoft");
-    var icon = document.querySelector("#icon-soft");
-    
-  if(div.style.display === "none") {
-      icon.style.transform = 'rotate(180deg)';
-      icon.style.transition = '0.5s all';
-    } else {
-    icon.style.transform = 'rotate(1deg)';
-    icon.style.transition = '0.5s all';
-  }
-});
+    divH.classList.remove("hide-content");
 
-function icon(el, d) {
-  var div = document.getElementById(d);
-  var icon = document.getElementById(el);
-
-  if(div.style.display === "none") {
-    div.style.display = "block";
-    icon.style.transform = 'rotate(180deg)';
-    icon.style.transition = '0.5s all';
   } else {
-    div.style.display = "none";
-    icon.style.transform = 'rotate(1deg)';
-    icon.style.transition = '0.5s all';
-}
-};
+    iconH.classList.add("icon_close");
+    iconH.classList.remove("icon_open");
+    divH.classList.add("hide-content");
+  }
+});
 
+btnS.addEventListener("click", () => {
+  if (divS.clientHeight === 0) {
+    iconS.classList.add("icon_open");
+    iconS.classList.remove("icon_close");
+      divS.classList.remove("hide-content")
+
+  } else {
+    iconS.classList.add("icon_close");
+    iconS.classList.remove("icon_open");
+
+    divS.classList.add("hide-content")
+
+  }
+});
 let education = document.getElementById("education");
 let work = document.getElementById("work");
 let educationheader = document.getElementById("educationheader");
@@ -106,3 +97,5 @@ workheader.addEventListener("click", () => {
         workheader.classList.add("active")
     }
 });
+
+
