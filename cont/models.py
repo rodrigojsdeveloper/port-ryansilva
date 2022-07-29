@@ -1,12 +1,11 @@
 from django.db import models
 
 
-class Projects(models.Model):
-    titulo_projeto = models.CharField(max_length=100)
-    descricao_projeto = models.TextField()
-    imagen_projeto = models.ImageField(upload_to='media/%Y/%m',null=None, blank=True)
-    github_projeto = models.URLField()
-    link_projeto = models.URLField(null=None,blank=True)
+class Contacts(models.Model):
+    nome = models.CharField(max_length=255)
+    email = models.CharField(max_length=255)
+    subject = models.CharField(max_length=255)
+    mensagem = models.TextField()
 
     def __str__(self):
-        return self.titulo_projeto
+        return self.nome

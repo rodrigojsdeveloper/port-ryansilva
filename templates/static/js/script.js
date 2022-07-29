@@ -25,6 +25,7 @@ const service = doc.querySelector(".option-menu-service");
 const project = doc.querySelector(".option-menu-project");
 const about = doc.querySelector(".option-menu-about");
 const contact = doc.querySelector(".option-menu-contact");
+const qualifications = doc.querySelector(".option-menu-qualifications");
 
 service.addEventListener("click", () => {
   overlay.classList.remove("overlay--active");
@@ -36,6 +37,9 @@ about.addEventListener("click", () => {
   overlay.classList.remove("overlay--active");
 });
 contact.addEventListener("click", () => {
+  overlay.classList.remove("overlay--active");
+});
+qualifications.addEventListener("click", () => {
   overlay.classList.remove("overlay--active");
 });
 
@@ -114,3 +118,25 @@ let swiper = new Swiper(".mySwiper", {
     mousewheel: true,
     keyboard: true,
 });
+
+function typeWrite(el){
+  const textoArray = el.innerHTML.split('');
+  el.innerHTML = ' ';
+  textoArray.forEach(function(letra, i){   
+    
+  setTimeout(function(){
+    el.innerHTML += letra;
+  }, 75 * i)
+
+});
+}
+const titulo = document.querySelector('.subtext');
+typeWrite(titulo);
+
+
+function scrollUpfunc() {
+  const scrollUp = document.getElementById("scroll-up");
+  if (this.scrollY >= 560) scrollUp.classList.add("show-scroll");
+  else scrollUp.classList.remove("show-scroll");
+}
+window.addEventListener("scroll", scrollUpfunc);

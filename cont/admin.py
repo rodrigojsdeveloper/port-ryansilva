@@ -1,13 +1,13 @@
 from django.contrib import admin
-from .models import Projects
+from .models import Contacts
 
 # Register your models here.
 
-class ProjectsAdmin(admin.ModelAdmin):
-    list_display = ('titulo_projeto', 'descricao_projeto')
+class ContactsAdmin(admin.ModelAdmin):
+    list_display = ('nome', 'email', 'subject', 'mensagem')
     display_link = ('id', 'titulo_projeto')
     
 
 
 
-admin.site.register(Projects, ProjectsAdmin)
+admin.site.register(Contacts, ContactsAdmin)
