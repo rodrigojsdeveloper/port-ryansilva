@@ -558,7 +558,7 @@ animation: pisc .7s infinite;
 }
 
 .space {
-  padding: 1em 4vw 0;
+  padding: 3em 4vw 0;
 }
 
 .container-skills {
@@ -783,7 +783,7 @@ animation: pisc .7s infinite;
   }
 
   .space {
-    padding: 1em 0vw;
+    padding: 3em 0vw;
   }
 
   .cta {
@@ -849,7 +849,8 @@ animation: pisc .7s infinite;
 }
 
 .portfolio_title {
-  font-size: var(--h3-font-size);
+  font-size: 1.2em;
+  font-weight: bold;
   margin-bottom: var(--mb-0-5);
   color: var(--color-blue);
 }
@@ -971,8 +972,8 @@ animation: pisc .7s infinite;
 
 .portfolio_title>i {
   color: white;
+  font-size: 0.7em;
 }
-
 .button-projects {
   display: flex;
   flex-wrap: wrap;
@@ -980,12 +981,10 @@ animation: pisc .7s infinite;
 }
 
 i.fa-solid.fa-angle-left {
-  padding-right: 31px;
   font-size: 2em;
 }
 
 i.fa-solid.fa-angle-right {
-  padding-left: 31px;
   font-size: 2em;
 }
 
