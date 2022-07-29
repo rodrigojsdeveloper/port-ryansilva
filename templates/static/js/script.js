@@ -4,6 +4,7 @@ sr.reveal('.container-main');
 sr.reveal('.container-about');
 sr.reveal('.container-skills');
 sr.reveal('.container-qualifications');
+sr.reveal('.container-projects');
 sr.reveal('.text-Introduction');
 sr.reveal('.Introduction img');
 
@@ -46,7 +47,7 @@ let divS = document.getElementById("soft");
 let iconS = document.getElementById("icon-soft");
 
 btnH.addEventListener("click", () => {
-  if (divH.clientHeight === 0) {
+  if (divH.clientHeight <= 200) {
     iconH.classList.add("icon_open");
     iconH.classList.remove("icon_close");
 
@@ -60,7 +61,7 @@ btnH.addEventListener("click", () => {
 });
 
 btnS.addEventListener("click", () => {
-  if (divS.clientHeight === 0) {
+  if (divS.clientHeight <= 200) {
     iconS.classList.add("icon_open");
     iconS.classList.remove("icon_close");
       divS.classList.remove("hide-content")
@@ -98,4 +99,18 @@ workheader.addEventListener("click", () => {
     }
 });
 
+let swiper = new Swiper(".mySwiper", {
+    cssMode: true,
+    loop: true,
 
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    mousewheel: true,
+    keyboard: true,
+});

@@ -8,6 +8,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{% static 'css/style.css'%}">
+        <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css'%}">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -16,22 +17,24 @@
                 <a class="logo" href="/"><img id='logo-main'src="{% static 'img/logo.png' %}" alt="logo"></a>
                 <nav>
                     <ul class="nav__links">
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#qualification">Qualifications</a></li>
+                        <li><a href="#projects">Projects</a></li>
                     </ul>
                 </nav>
-                <a class="cta" href="#">Contact</a>
+                <a class="cta" href="#contact">Contact</a>
                 <p class="menu cta">Menu</p>
             </header>
         </div>
         <div class="overlay">
             <a class="close">&times;</a>
             <div class="overlay__content">
-                <a class="option-menu-service" href="#">Services</a>
-                <a class="option-menu-project" href="#">Projects</a>
-                <a class="option-menu-about" href="#">About</a>
-                <a class="option-menu-contact" href="#">Contact</a>
+                <a class="option-menu-about" href="#about">About</a>
+                <a class="option-menu-service" href="#skills">Skills</a>
+                <a class="option-menu-qualifications" href="#qualification">Qualifications</a>
+                <a class="option-menu-project" href="#projects">Projects</a>
+                <a class="option-menu-contact" href="#contact">Contact</a>
             </div>
         </div>
 
@@ -60,7 +63,7 @@
                 <p><i class="fa-solid fa-computer-mouse"></i> Scroll down <i class="fa-solid fa-arrow-down"></i></p>
             </div>
         </div>
-        <div class="container-about">
+        <div class="container-about" id='about'>
             <h1>About me</h1>
             <p>Introduction</p>
             <div class='Introduction'>
@@ -74,7 +77,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-skills">
+        <div class="container-skills" id='skills'>
             <h1>Skills</h1>
             <p>All my skills</p>
             <div class='skills'>
@@ -86,9 +89,9 @@
                             <p>technologies I worked on.</p>
                         </div>
                         <br>
-                        <i id='icon-hard' class="fa-solid fa-chevron-down icon_close"></i>
+                        <i id='icon-hard' class="fa-solid fa-chevron-down icon_open"></i>
                     </button>
-                    <div class='contentsHard hide-content' id='hard'>
+                    <div class='contentsHard' id='hard'>
                         <div class="elements">
                             <div class="icon">
                                 <i class="fa-brands fa-python"></i> 
@@ -166,9 +169,9 @@
                             <p>behavioral skills I have.</p>
                         </div>
                         <br>
-                        <i id='icon-soft' class="fa-solid fa-chevron-down icon_close"></i>
+                        <i id='icon-soft' class="fa-solid fa-chevron-down icon_open"></i>
                     </button>
-                    <div class='contentsSoft hide-content' id='soft'>
+                    <div class='contentsSoft' id='soft'>
                         <div class="elements">
                             <p>High concentration</p>
                         </div>
@@ -209,8 +212,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-qualifications">
-            
+        <div class="container-qualifications" id='qualification'>
             <h1>Qualifications</h1>
             <p> My Educational & Work Experience</p>
             <div class="qualification_tabs">
@@ -229,7 +231,7 @@
                             <span class="qualification_title">technology professional courses</span>
                             <span class="qualification_subtitle">Online courses</span>
                             <div class="qualification_calendar">
-                                <i class="fa-solid fa-calendar-days"></i> 2019 - present
+                                <i class="fa-solid fa-calendar-days"></i> 2019 - Present
                             </div>
                         </div>
                         <div>
@@ -289,8 +291,174 @@
                 </div>
             </div>
         </div>
+        <div class="container-projects" id='projects'>
+            <section class="portfolio section" id="projects">
+                <h1>Projects</h1>
+                <p>Here are some of my most recent and relevant projects!!</p>
+    
+                <div class="portfolio_container container swiper-container swiper mySwiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-css-mode">
+                    <div class="swiper-wrapper" id="swiper-wrapper-687c761a34f010b7" aria-live="polite"><div class="portfolio_content grid swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="4" role="group" aria-label="5 / 5" style="width: 768px;"></div>
+                        <div class="portfolio_content grid swiper-slide swiper-slide-active" data-swiper-slide-index="0" role="group" aria-label="1 / 5" style="width: 768px;">
+                            <img src="{% static 'img/chat.png' %}" class="portfolio_img">
+    
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">
+                                    Chat Developers
+                                </h3>
+                                <p class="portfolio_description">
+                                    Chat community with synchronous communication between developers.
+                                </p>
+                                <div class="button-projects">
+                                    <a href="https://github.com/ryanbsdeveloper/app-chat" class="button button-flex button-small portfolio_button" target="_blank">Check out <i class="fa-regular fa-file-code"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="portfolio_content grid swiper-slide swiper-slide-next" data-swiper-slide-index="1" role="group" aria-label="2 / 5" style="width: 768px;">
+                            <img src="{% static 'img/caltec.png' %}" alt="" class="portfolio_img">
+    
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">
+                                    Weighing software<i>(Freelancer)</i>
+                                </h3>
+                                <p class="portfolio_description">
+                                    Complete weighing software developed for the company 'Caltec Soluções em Balanças e Tecnologias'.
+                                </p>
+                                <i>
+                                    For product privacy, please contact us for information and previews.
+                                </i>
+                            </div>
+                        </div>
+                        <div class="portfolio_content grid swiper-slide" data-swiper-slide-index="2" role="group" aria-label="3 / 5" style="width: 768px;">
+                            <img src="{% static 'img/api.png' %}" alt="" class="portfolio_img">
+    
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">
+                                    dummy data REST API
+                                </h3>
+                                <p class="portfolio_description">
+                                    REST API with swagger. HASH MD5 authorization, for access to valid data of fictitious persons.
+                                </p>
+                                <div class="button-projects">
+                                    <a href="https://github.com/ryanbsdeveloper/personal-data-api" class="button button-flex button-small portfolio_button" target="_blank">Open source <i class="fa-regular fa-file-code"></i></i></a>
+                                    <a href="https://api-dados-pessoais.herokuapp.com/" class="button button-flex button-small portfolio_button" target="_blank">Check out <i class="fa-regular fa-circle-check"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio_content grid swiper-slide" data-swiper-slide-index="3" role="group" aria-label="4 / 5" style="width: 768px;">
+                            <img src="{% static 'img/webstock.png' %}" alt="" class="portfolio_img">
+    
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">
+                                    Stock Web Platform
+                                </h3>
+                                <p class="portfolio_description">
+                                    An inventory management platform via the web, having access to an API of your inventory when you register!
+                                </p>
+                                <div class="button-projects">
+                                    <a href="https://github.com/ryanbsdeveloper/web-stock" class="button button-flex button-small portfolio_button" target="_blank">Open source <i class="fa-regular fa-file-code"></i></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio_content grid swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="4" role="group" aria-label="5 / 5" style="width: 768px;">
+                            <img src="{% static 'img/botsocio.png' %}" alt="" class="portfolio_img">
+    
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">
+                                    Daily automation
+                                </h3>
+                                <p class="portfolio_description">
+                                    an executable script with the Selenium lib that makes accessing a website everyday automatically using the linux terminal
+                                </p>
+                                <div class="button-projects">
+                                    <a href="https://github.com/ryanbsdeveloper/automation-socio-rei" class="button button-flex button-small portfolio_button" target="_blank">Open source <i class="fa-regular fa-file-code"></i></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio_content grid swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="4" role="group" aria-label="5 / 5" style="width: 768px;">
+                            <img src="{% static 'img/newswpp.png' %}" alt="" class="portfolio_img">
+    
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">
+                                    News via WhatsApp
+                                </h3>
+                                <p class="portfolio_description">
+                                    Program that searches for news on the Web and sends the link via Whatsapp. The challenge was to do without shipping services.
+                                </p>
+                                <div class="button-projects">
+                                    <a href="https://github.com/ryanbsdeveloper/news-automation" class="button button-flex button-small portfolio_button" target="_blank">Open source <i class="fa-regular fa-file-code"></i></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="portfolio_content grid swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" role="group" aria-label="1 / 5" style="width: 768px;">    
+                            
+                        </div>
+                    </div>
+                    
+                    <br><br>
+                    <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-687c761a34f010b7">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-687c761a34f010b7">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span></div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+            </section>
+        </div>
+        <div class="container-contact" id='contact'>
+            <h1>Contact me</h1>
+            <p>Do you want to talk to me? My inbox is always open!</p>
+            <div class='contact-data'>
+                <div class="info-box">
+                    <div class="contact_info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <div>
+                            <h3 class="contact_title">Email</h3>
+                            <span class="contact_subtitle">ryanbsdeveloper@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact_info">
+                        <i class="fa-brands fa-github"></i>
+                        <div>
+                            <h3 class="contact_title">Github</h3>
+                            <span class="contact_subtitle">ryanbsdeveloper</span>
+                        </div>
+                    </div>
+                </div>
+                <form method="post">
+                    <div class="data-submit">
+                        <div class="data-input">
+                            <div class="contact_content">
+                                <p class="contact_label">Name</p>
+                                <input type="text" name="name" class="contact_input" id="name" required="">
+                            </div>
+                            <div class="contact_content">
+                                <p class="contact_label">Email</p>
+                                <input type="text" name="name" class="contact_input" id="name" required="">
+                            </div>
+                        </div>
+                        <div class="contact_content">
+                            <p class="contact_label">Subject</p>
+                            <input type="text" name="name" class="contact_input" id="name" required="">
+                        </div>
+                        <div class="contact_content">
+                            <p class="contact_label">Message</p>
+                            <textarea name="message" id="" cols="0" rows="7" class="contact_input message" required=""></textarea>
+                        </div>
+                        <div class="button-contact">
+                            <button>
+                                Send message <i class="fa-regular fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.2.0/scrollreveal.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/swiper-bundle.min.js'%}"></script>
         <script type="text/javascript" src="{% static 'js/script.js'%}"></script>
         <script src="https://kit.fontawesome.com/5fc40ce3b8.js" crossorigin="anonymous"></script>
     </body>
