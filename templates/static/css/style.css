@@ -1135,3 +1135,7 @@ span.contact_subtitle {
 .home_blob-img {
   width: 170px;
 }
+p.portfolio_description {
+  max-width: 20em;
+  font-size: 1em;
+}
