@@ -1086,3 +1086,6 @@ span.contact_subtitle {
 .button-contact button:hover {
   background: var(--color-hover);
 }
+.active-link{
+  color: var(--color-blue);
+}

@@ -1,8 +1,13 @@
 from pyexpat import model
 from django.shortcuts import render
-from django.views.generic.list import ListView
+from django.views.generic import View
 from .models import Projects
 
 
-def index(request):
-    return render(request, 'index.html')
+class Main(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'index.html')
+
+    def post(self, request, *args, **kwargs):
+        
+        return render(request, 'index.html')
