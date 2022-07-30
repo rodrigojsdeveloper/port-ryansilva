@@ -9,3 +9,9 @@ class Contacts(models.Model):
 
     def __str__(self):
         return self.nome
+
+class Likes(models.Model):
+    ip = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.ip

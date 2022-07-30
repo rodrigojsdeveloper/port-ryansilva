@@ -199,7 +199,6 @@ animation: pisc .7s infinite;
   font-weight: 500;
   color: #edf0f1;
   text-decoration: none;
-  font-size: larger;
 }
 
 .nav__links {
@@ -220,7 +219,7 @@ animation: pisc .7s infinite;
 }
 
 .cta {
-  padding: 9px 25px;
+  padding: 9px calc(0.5em + 0.8vw);
   background-color: var(--color-blue);
   border: none;
   border-radius: 50px;
@@ -1139,4 +1138,21 @@ span.contact_subtitle {
 p.portfolio_description {
   max-width: 20em;
   font-size: 1em;
+}
+
+.like-button-style{
+  font-size: 2em;
+  color: var(--color-blue);
+  background: transparent;
+  border: 0;
+}
+#button-like{
+  color: white;
+  border: 0;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+  margin-right: 12px;
 }
