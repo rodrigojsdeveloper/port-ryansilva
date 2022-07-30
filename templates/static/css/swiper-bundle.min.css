@@ -231,7 +231,7 @@
 .swiper-button-prev:after {
     font-family: swiper-icons;
     font-size: var(--swiper-navigation-size);
-    text-transform: none!important;
+    text-transform: none !important;
     letter-spacing: 0;
     text-transform: none;
     font-variant: initial;
@@ -333,7 +333,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-pagination-bullet:only-child {
-    display: none!important
+    display: none !important
 }
 
 .swiper-pagination-bullet-active {

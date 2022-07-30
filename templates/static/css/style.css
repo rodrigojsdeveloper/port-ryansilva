@@ -595,10 +595,11 @@ animation: pisc .7s infinite;
 .skills h2 {
   color: white;
   text-align: left;
+  font-size: 1.6em;
 }
 
 .skills p {
-  font-size: 1.2em;
+  font-size: calc(1em + 0.4vw);
   color: var(--color-blue);
 }
 
@@ -621,14 +622,14 @@ animation: pisc .7s infinite;
 
 .contentsHard {
   overflow: hidden;
-  height: 32em;
+  height: 100%;
   transition: height 1s ease-in-out;
   padding-top: 1em;
 }
 
 .contentsSoft {
   overflow: hidden;
-  height: 20em;
+  height: 100%;
   transition: height 1s ease-in-out;
   padding-top: 1em;
 }
