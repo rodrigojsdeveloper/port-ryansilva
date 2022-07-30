@@ -1,4 +1,4 @@
-# Meu portfólio
+# Meu portfólio V2
 
 ## Descrição 💬	
 Portfólio desenvolvido usando HTML, CSS, JS com o framework Django em python. Usando a hospedagem da AWS!
