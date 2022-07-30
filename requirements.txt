@@ -16,5 +16,4 @@ soupsieve
 sqlparse
 toml
 tzdata
-whitenoise
 zipp
