@@ -27,8 +27,7 @@ SECRET_KEY = 'django-insecure-wx-0^(45ke4%zk$&x^2y+i%&46_gt*6lre4v)y$m9g^o--9-24
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['portryan-env-1.eba-r3mjces3.us-east-1.elasticbeanstalk.com']
-
+ALLOWED_HOSTS = ['portryan-env-1.eba-r3mjces3.us-east-1.elasticbeanstalk.com', '127.0.0.1']
 
 # Application definition
 
@@ -120,12 +119,11 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
-
-STATIC_ROOT = Path.joinpath(BASE_DIR, 'templates/assets')
 STATIC_URL = 'static/'
+STATIC_ROOT = Path.joinpath(BASE_DIR, 'templates/assets')
 
+STATIC_URL = 'static/'
 STATICFILES_DIRS = [Path.joinpath(BASE_DIR, 'templates/static')]
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
@@ -137,5 +135,5 @@ SECURE_HSTS_SECONDS = True
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
 SECURE_BROWSER_XSS_FILTER = True
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+# SESSION_COOKIE_SECURE = True
+# CSRF_COOKIE_SECURE = True
