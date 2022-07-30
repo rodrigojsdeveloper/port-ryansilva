@@ -9,9 +9,6 @@ class Main(View):
     def get(self, request, *args, **kwargs):
         cont = len(Likes.objects.all())
         liberado = True
-        for ip_pub in Likes.objects.all():
-            if str(ip_pub) == ip():
-                liberado = False
 
         return render(request, 'index.html', context={'likes': cont, 'acesso': liberado})
 
@@ -25,13 +22,10 @@ class Main(View):
             data = Contacts(nome=nome, email=email, subject=subject, mensagem=mensagem)
             data.save()
         except:
-            liberado = True
-            for ip_pub in Likes.objects.all():
-                if str(ip_pub) == ip():
-                    liberado = False
-            if liberado:   
-                add_like = Likes(ip=ip())
-                add_like.save()
+            liberado = False   
+            add_like = Likes(ip=ip())
+            add_like.save()
+
         cont = len(Likes.objects.all())
 
-        return render(request, 'index.html',context={'likes': cont})
+        return render(request, 'index.html',context={'likes': cont, 'acesso': liberado})
