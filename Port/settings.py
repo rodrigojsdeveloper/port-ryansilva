@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-wx-0^(45ke4%zk$&x^2y+i%&46_gt*6lre4v)y$m9g^o--9-24
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['portryan-env-1.eba-r3mjces3.us-east-1.elasticbeanstalk.com/']
+ALLOWED_HOSTS = ['portryan-env-1.eba-r3mjces3.us-east-1.elasticbeanstalk.com']
 
 
 # Application definition
@@ -139,7 +139,7 @@ SECURE_CONTENT_TYPE_NOSNIFF = True
 SECURE_BROWSER_XSS_FILTER = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
-CSRF_COOKIE_HTTPONLY = True
+# CSRF_COOKIE_HTTPONLY = True
 
 # SECURE_HSTS_PRELOAD = True
 # SECURE_SSL_REDIRECT = True

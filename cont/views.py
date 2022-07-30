@@ -32,6 +32,6 @@ class Main(View):
             if liberado:   
                 add_like = Likes(ip=ip())
                 add_like.save()
-            cont = len(Likes.objects.all())
+        cont = len(Likes.objects.all())
 
         return render(request, 'index.html',context={'likes': cont})
