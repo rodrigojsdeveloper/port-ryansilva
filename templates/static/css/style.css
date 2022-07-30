@@ -1155,4 +1155,5 @@ p.portfolio_description {
   align-items: center;
   gap: 0.5em;
   margin-right: 12px;
+  cursor: pointer;
 }
