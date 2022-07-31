@@ -961,7 +961,7 @@ animation: pisc .7s infinite;
   border-radius: 10px;
 }
 
-.portfolio_button :hover {
+.portfolio_button:hover {
   background-color: var(--color-hover);
 }
 
