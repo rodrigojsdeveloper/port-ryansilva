@@ -16,10 +16,11 @@
         <div class='navbar'>
             <header>
                 {% if not acesso %}
-                    <button type="button" id="button-like"><i class="fa-solid fa-thumbs-up like-button-style" ></i> {{likes}}</button>    
+                    <button type="button" id="button-like"><i class="fa-solid fa-heart heart-po"></i>{{likes}}</button>    
                 {% else %}
-                    <form method="post"> {% csrf_token %}
-                        <button type="submit" id="button-like"><i class="fa-regular fa-thumbs-up like-button-style"></i> {{likes}}</button>
+                    <form method="post" id='sdas'> {% csrf_token %}
+                        <button type="submit" id="button-like"> <i class="fa-regular fa-heart heart-po"></i> {{likes}}</button>
+                        <input type="hidden" name="form_type" value="like">
                     </form>
                 {% endif %}
                 <a class="logo" href="/"><img id='logo-main'src="{% static 'img/logo.png' %}" alt="logo"></a>
@@ -31,7 +32,7 @@
                         <li><a href="#projects">Projects</a></li>
                     </ul>
                 </nav>
-                <a class="cta" href="#contact">Contact</a>
+                <a class="cta" href="#contact"> <i class="fa-solid fa-headset"></i> Contact</a>
                 <p class="menu cta">Menu</p>
             </header>
         </div>
@@ -42,7 +43,7 @@
                 <a class="option-menu-service" href="#skills">Skills</a>
                 <a class="option-menu-qualifications" href="#qualification">Qualifications</a>
                 <a class="option-menu-project" href="#projects">Projects</a>
-                <a class="option-menu-contact" href="#contact">Contact</a>
+                <a class="option-menu-contact" href="#contact"> <i class="fa-solid fa-headset"></i> Contact</a>
             </div>
         </div>
 
@@ -54,9 +55,9 @@
                     <a href="https://api.whatsapp.com/send?phone=5511990132993&text=Ol%C3%A1%20Ryan%2C%20vim%20pelo%20portf%C3%B3lio." target='_blank'> <i class="fa-brands fa-whatsapp"></i> </a>
                 </div>
                 <h1>Hello, i'm <strong>Ryan Barbosa Silva</strong>.</h1>
-                <p class='subtext'>A tech enthusiast and self learner, who believes in the power of community.</p>
+                <p class='subtext'>{{mensagem}}</p>
                 <div>
-                    <h3 class='stack'>Developer <img class='photo-python' src="{% static 'img/python.png' %}" alt="Python"> Júnior</h3>
+                    <h3 class='stack'>Developer <img class='photo-python' src="{% static 'img/python.png' %}" alt="Python"> </h3>
                 </div>
             </div>
             <div class='container-right'>
@@ -96,6 +97,39 @@
                     </p>
                     <a href="{% static 'img/Ryan-CV.pdf' %}" Download><button>Resume <i class="fa-regular fa-file-lines"></i></button></a>
                 </div>
+            </div>
+            <div id="services" class="sc-csuSiG ktbZfG">
+                <div>
+                    <p>Find out about my services</p>
+                    <hr>
+                    <p>Methodologies I use in my work.</p>
+                </div>
+                <menu>
+                    <div class="sc-ipEyDJ dFyEuu">
+                        <h3>Web Development</h3>
+                        <p>
+                            A development focused on creating websites, single pages,
+                            E-commerce or other applications. Promoting a good experience and a good website optimization.
+                        </p>
+                    </div>
+                    <div class="sc-ipEyDJ dFyEuu">
+                        <h3>Responsive Development</h3>
+                        <p>Responsive web application, available for all mobile devices, making the site more practical and accessible. Or 100% mobile applications, like apps.</p>
+                    </div>
+                    <div class="sc-ipEyDJ dFyEuu">
+                        <h3>User Experience</h3>
+                        <p>Applications focused on a set of elements and factors of a service,product or system that aims to promote a good experiencefor the user.</p>
+                    </div>
+                    <div class="sc-ipEyDJ dFyEuu">
+                        <h3>Backend Development</h3>
+                        <p>A development focused on actions that users do on the frontend, stores the data being consumed, manipulated by applications or software and creation of APIs.</p></div><div class="sc-ipEyDJ dFyEuu"><h3>Mobile Development</h3><p>A development focused on tablets, smartphones and other mobile devices. Aiming
+                        promote a good user experience on smaller screens.</p>
+                    </div>
+                    <div class="sc-ipEyDJ dFyEuu">
+                        <h3>DevOps</h3>
+                        <p>Introduce processes, tools and methodologies for the needs throughout the lifecycle of my software, in all processes.</p>
+                    </div>
+                </menu>
             </div>
         </div>
         <div class="container-skills" id='skills'>
@@ -243,16 +277,16 @@
             <h1>Qualifications</h1>
             <p> My Educational & Work Experience</p>
             <div class="qualification_tabs">
-                <div class="qualification_button active" id="educationheader">
+                <div class="qualification_button" id="educationheader">
                     <i class="fa-solid fa-graduation-cap"></i>Education
                 </div>
 
-                <div class="qualification_button" id="workheader">
+                <div class="qualification_button active" id="workheader">
                     <i class="fa-solid fa-briefcase"></i>Work
                 </div>
             </div>
             <div class="qualification_sections">
-                <div class="qualification_content" style='display: block' id="education">
+                <div class="qualification_content" style='display: none' id="education">
                     <div class="qualification_data">
                         <div id='text-data'  >
                             <span class="qualification_title">technology professional courses</span>
@@ -282,7 +316,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="qualification_content " style='display: none' id="work">
+                <div class="qualification_content " style='display: block' id="work">
                     <div class="qualification_data">
                         <div></div>
 
@@ -496,6 +530,7 @@
                                 Send message <i class="fa-regular fa-paper-plane"></i>
                             </button>
                         </div>
+                        <input type="hidden" name="form_type" value="contact">
                     </div>
                     
                 </form>
@@ -533,6 +568,7 @@
         <script type="text/javascript" src="{% static 'js/script.js'%}"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://kit.fontawesome.com/5fc40ce3b8.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lexend" rel="stylesheet">
     </body>
 
 </html>
