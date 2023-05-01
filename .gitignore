@@ -128,7 +128,6 @@ celerybeat.pid
 .venv
 env/
 venv/
-<<<<<<< HEAD
 ENV/
 env.bak/
 venv.bak/
@@ -186,6 +185,4 @@ docs/_book
 test/
 
 # End of https://www.toptal.com/developers/gitignore/api/vue,python
-=======
 templates/assets/*
->>>>>>> c3f5b90 (Config's to elasticstalk aws hosting)
