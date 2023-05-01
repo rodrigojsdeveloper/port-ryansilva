@@ -4,14 +4,14 @@ from django.shortcuts import render, redirect
 from django.views.generic import View
 from django.contrib.messages import success
 from django.http import HttpResponse
-from .models import Contacts, Likes
+# from .models import Contacts, Likes
 from .utils import ip
 
 class Main(View):
 
     def get(self, request, *args, **kwargs):
-        cont = len(Likes.objects.all())
-        ja_like = request.COOKIES.get('LIKE', None)
+        # cont = len(Likes.objects.all())
+        # ja_like = request.COOKIES.get('LIKE', None)
         mensagens_intro = [
             "I am a tireless explorer in search of new ideas and perspectives.",
             "I am an advocate for innovation and a lover of creativity in all its forms.",
@@ -22,8 +22,8 @@ class Main(View):
         return render(
             request, 'index.html',
             context={
-                'likes': cont,
-                'acesso': False if ja_like else True,
+                'likes': 60,
+                'acesso': False,
                 'mensagem': random.choice(mensagens_intro)
             }
         )
@@ -35,16 +35,16 @@ class Main(View):
             subject = request.POST['subject']
             mensagem = request.POST['mensagem']
             success(request, 'Message to Ryan Barbosa Silva, sent successfully!') # noqa
-            data = Contacts(
-                nome=nome, email=email, subject=subject, mensagem=mensagem
-            )
-            data.save()
+            # data = Contacts(
+            #     nome=nome, email=email, subject=subject, mensagem=mensagem
+            # )
+            # data.save()
             response = redirect('/#contact')
             return response
 
         elif request.POST.get("form_type") == 'like':
-            add_like = Likes(ip=ip())
-            add_like.save()
+            # add_like = Likes(ip=ip())
+            # add_like.save()
             expires = datetime.datetime.now() + datetime.timedelta(days=365*10)
             response = redirect('/')
             response.set_cookie(
