@@ -20,11 +20,12 @@ class Main(View):
             "I am a technology enthusiast and a champion of smart and effective solutions.",
             "I am a persistent dreamer and a tireless achiever, always in search of new goals and challenges."
         ]
+        print(cont, ja_like)
         return render(
             request, 'index.html',
             context={
                 'likes': cont,
-                'acesso': ja_like,
+                'acesso': False if ja_like else True,
                 'mensagem': random.choice(mensagens_intro)
             }
         )
@@ -52,3 +53,4 @@ class Main(View):
                 "LIKE", "TRUE", expires=expires
             )
             return response
+
