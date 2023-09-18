@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* istanbul ignore file */
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -14,10 +13,3 @@ app.component(
 
 app.use(router)
 app.mount('#app')
-=======
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
-
-createApp(App).mount('#app')
->>>>>>> fb18888 (Chore: Configurando ambiente)
