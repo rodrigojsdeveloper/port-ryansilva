@@ -1,10 +1,8 @@
 <script setup>
-import navbar from "../components/navbar.vue";
-import logoTipo from "../components/logoTipo.vue";
+import contentHome from "../components/content/home/index.vue";
 </script>
 <template>
   <div>
-    <logoTipo />
-    <navbar />
+    <contentHome />
   </div>
 </template>
