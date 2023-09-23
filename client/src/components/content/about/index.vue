@@ -37,15 +37,12 @@ import euImage from "../../../assets/eu.png";
     </div>
     <div class="mb-12">
       <p class="text-sm">
-        Ryan é um especialista em planejamento, documentação e implementação
-        de processos, com expertise sólida em Python. Suas habilidades
-        avançadas englobam análise, desenvolvimento, integração, consultoria e
-        suporte de sistemas. Ele também é proficiente em desenvolvimento
-        front-end, com ênfase em React, Vue e Next.js, e possui ampla
-        experiência na plataforma AWS. Sua competência em práticas de DevOps
-        inclui a criação de pipelines de CI/CD e automação de infraestrutura,
-        refletindo seu compromisso constante com a melhoria técnica para
-        entregar resultados excepcionais.
+        Sou um especialista em planejamento, documentação e implementação de processos, com sólida expertise em Python.
+        Minhas habilidades avançadas abrangem análise, desenvolvimento, integração, consultoria e suporte de sistemas.
+        Além disso, sou proficiente em desenvolvimento front-end, com foco em React, Vue e Next.js, e acumulei ampla
+        experiência na plataforma AWS. Minha competência em práticas de DevOps inclui a criação de pipelines de CI/CD e
+        automação de infraestrutura, refletindo meu compromisso constante com a melhoria técnica para entregar resultados
+        excepcionais.
       </p>
     </div>
   </div>
@@ -121,5 +118,4 @@ import euImage from "../../../assets/eu.png";
   font-size: 14px;
   font-weight: 500;
   color: gray;
-}
-</style>
+}</style>
