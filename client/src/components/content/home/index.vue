@@ -1,6 +1,11 @@
 <script setup>
+import { ref } from "vue";
+
+const githubLink = ref('https://google.com')
+const linkedinLink = ref('https://google.com')
+
 import logoTipo from "../../photo/index.vue";
-import workHistory from "../workHistory/index.vue";
+import card from "../card/index.vue";
 import euImage from "../../../assets/eu.png";
 </script>
 <template>
@@ -55,11 +60,51 @@ import euImage from "../../../assets/eu.png";
         </div>
       </div>
       <div class="mb-12">
-          <p>
-            Sou Ryan, um profissional altamente especializado em planejamento, documentação e implementação de processos, com expertise sólida em Python. Minhas habilidades avançadas abrangem análise, desenvolvimento, integração, consultoria e suporte de sistemas. Além disso, sou proficientemente versado em desenvolvimento front-end, com destaque para React, Vue e Next.js, e possuo experiência sólida na plataforma AWS. Minha competência em práticas de DevOps inclui a implementação de pipelines de CI/CD e automação de infraestrutura. Minha dedicação constante ao aprimoramento técnico reflete meu compromisso em entregar resultados excepcionais.
-          </p>
+        <p>
+          Ryan é um especialista em planejamento, documentação e implementação
+          de processos, com expertise sólida em Python. Suas habilidades
+          avançadas englobam análise, desenvolvimento, integração, consultoria e
+          suporte de sistemas. Ele também é proficiente em desenvolvimento
+          front-end, com ênfase em React, Vue e Next.js, e possui ampla
+          experiência na plataforma AWS. Sua competência em práticas de DevOps
+          inclui a criação de pipelines de CI/CD e automação de infraestrutura,
+          refletindo seu compromisso constante com a melhoria técnica para
+          entregar resultados excepcionais.
+        </p>
       </div>
       <!-- <workHistory /> -->
+      <!-- <div class="flex flex-wrap gap-4">
+        <card
+          header="Python"
+          content="+3 anos de experiencia profissonal com a tecnologia"
+        >
+        </card>
+        <card
+          header="Javascript"
+          content="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        >
+        </card>
+        <card
+          header="PHP"
+          content="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        >
+        </card>
+        <card
+          header="React"
+          content="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        >
+        </card>
+        <card
+          header="Vue"
+          content="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        >
+        </card>
+        <card
+          header="Docker"
+          content="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        >
+        </card>
+      </div> -->
     </div>
   </div>
 </template>
