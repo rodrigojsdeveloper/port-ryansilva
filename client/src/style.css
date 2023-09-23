@@ -20,19 +20,11 @@
   background: #2b2b2b;
 }
 
-:root {
-  font-family: 'Lexend', Courier, monospace;
+body {
   background-color: #111111;
   color: #ffffff;
 }
-
-/* .shadow{
-  font-family:Mr Dafoe, sans-serif;
-  font-size:16em;
-  text-align:center;
-  text-shadow: 0 -3px 0 #333,
-    0 6px 8px rgba(0,0,0,.4),
-    0 9px 10px rgba(0,0,0,.15),
-    0 30px 10px rgba(0,0,0,.18),
-    0 15px 10px rgba(0,0,0,.21);
-} */
+:root {
+  font-family: 'Lexend', Courier, monospace;
+  --color-primary: #ff4444;
+}

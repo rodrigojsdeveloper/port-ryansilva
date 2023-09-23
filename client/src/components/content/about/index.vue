@@ -14,7 +14,7 @@ import euImage from "../../../assets/eu.png";
       <div class="flex flex-col gap-2">
         <div>
           <h1
-            class="text-3xl md:text-4xl tracking-tighter font-bold -ml-0.5 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#cb6ce6] bg-clip-text bg-gradient-to-r dark:from-yellow-400 dark:to-yellow-500">
+            class="text-3xl md:text-4xl tracking-tighter font-bold -ml-0.5 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#ff4444] bg-clip-text bg-gradient-to-r dark:from-yellow-400 dark:to-yellow-500">
             Ryan Barbosa Silva
           </h1>
           <h4>Desenvolvedor FullStack</h4>
@@ -113,7 +113,7 @@ import euImage from "../../../assets/eu.png";
 .dFyEuu>h3 {
   font-size: 20px;
   font-weight: 600;
-  color: #cb6ce6;
+  color: #ff4444;
   padding-bottom: 20px;
 }
 

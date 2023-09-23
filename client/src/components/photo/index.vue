@@ -10,8 +10,8 @@
 	font-size: 4em
 	text-align: center
 	transform: translateZ(0px)
-	filter: drop-shadow(rgba(189, 37, 233, 0.95) 0px 0px 1.89367px) drop-shadow(rgba(200, 87, 233, 0.75) 0px 0px 9.46834px) drop-shadow(rgba(200, 87, 233, 0.44) 0px 0px 28.405px)
-	color: rgb(203, 108, 230)
+	filter: drop-shadow(var(--color-primary) 0px 0px 1.89367px) drop-shadow(var(--color-primary) 0px 0px 9.46834px) drop-shadow(var(--color-primary) 0px 0px 28.405px)
+	color: var(--color-primary)
 
 .style-letter-secundary
 	font-family: Mr Dafoe, sans-serif

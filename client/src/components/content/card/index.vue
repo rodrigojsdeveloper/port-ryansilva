@@ -38,11 +38,17 @@ const mousePX = computed(() => {
 const mousePY = computed(() => {
   return mouseY.value / height.value;
 });
+
+const isMobile = computed(() => {
+  return window.innerWidth <= 768;
+});
+
 const cardStyle = computed(() => {
   const rX = mousePX.value * 30;
   const rY = mousePY.value * -30;
+
   return {
-    transform: `rotateY(${rX}deg) rotateX(${rY}deg)`,
+    transform: `rotateY(${rX}deg) rotateX(${rY}deg)`
   };
 });
 
@@ -84,6 +90,8 @@ function handleMouseLeave() {
     mouseY.value = 0;
   }, 500);
 }
+
+
 </script>
 <style lang="scss">
 $hoverEasing: cubic-bezier(0.23, 1, 0.32, 1);
@@ -129,6 +137,12 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
         rgba(black, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px,
         inset white 0 0 0 6px;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 100%; // Tamanho do card para dispositivos móveis
   }
 }
 
@@ -204,7 +218,7 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   font-family: "Lexend";
   font-size: 20px;
   font-weight: 700;
-  color: #cb6ce6;
+  color: var(--color-primary);
   text-shadow: rgba(black, 0.5) 0 10px 10px;
 }
 </style>
