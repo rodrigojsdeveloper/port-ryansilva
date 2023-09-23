@@ -39,9 +39,7 @@ const mousePY = computed(() => {
   return mouseY.value / height.value;
 });
 
-const isMobile = computed(() => {
-  return window.innerWidth <= 768;
-});
+
 
 const cardStyle = computed(() => {
   const rX = mousePX.value * 30;
