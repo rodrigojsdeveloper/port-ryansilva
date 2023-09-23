@@ -30,6 +30,7 @@ const props = defineProps({
   dataImage: String,
   header: String,
   content: String,
+  open: Boolean,
 });
 
 const mousePX = computed(() => {

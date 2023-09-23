@@ -1,11 +1,19 @@
 <script setup>
-import { computed } from "vue";
-import card from "../../card/index.vue";
+import { ref, computed, onMounted } from "vue";
+import card from "../../card/index.vue"
 
+const statusMet = ref(false);
 const isMobile = computed(() => {
   return window.innerWidth <= 1000;
 });
 
+function openMet() {
+  statusMet.value = !statusMet.value;
+}
+
+onMounted(() => {
+  statusMet.value = !isMobile.value;
+});
 </script>
 <template>
   <div>
@@ -18,7 +26,18 @@ const isMobile = computed(() => {
         Metodologias que utilizo no meu trabalho.
       </p>
     </div>
-    <div class="flex flex-wrap">
+    <div class="flex flex-row-reverse items-center">
+      <div class="cursor-pointer flex items-center mb-2 gap-2 bg-black w-max px-4 rounded" @click="openMet">
+        <span class="font-bold text-sm text-white"
+          v-text="statusMet ? 'Retrair metodologias' : 'Expandir metodologias'"></span>
+        <svg class="transition duration-300 transform" :class="{ 'rotate-180': !statusMet }"
+          xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="#ff4444"
+            d="M11.29 8.71L6.7 13.3a.996.996 0 1 0 1.41 1.41L12 10.83l3.88 3.88a.996.996 0 1 0 1.41-1.41L12.7 8.71a.996.996 0 0 0-1.41 0z" />
+        </svg>
+      </div>
+    </div>
+    <div class="flex flex-wrap" v-if="statusMet">
       <card header="Desenvolvimento Web" content="Um desenvolvimento focado na criação de sites, páginas únicas,
             E-commerce ou outras aplicações. Promovendo uma boa experiência e otimização de websites.">
       </card>
@@ -39,5 +58,4 @@ const isMobile = computed(() => {
             todos os processos.">
       </card>
     </div>
-  </div>
-</template>
+  </div></template>
