@@ -1,5 +1,5 @@
 <template>
-  <div class="card-wrap" @mousemove="handleMouseMove" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave"
+  <div class="card-wrap justify-center" @mousemove="handleMouseMove" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave"
     ref="card">
     <div class="card" :style="cardStyle">
       <div class="card-bg" :style="[cardBgTransform, cardBgImage]"></div>
@@ -140,9 +140,13 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1536px) {
   .card {
-    width: 100%; // Tamanho do card para dispositivos móveis
+    height: 250px !important;
+    width: 100% !important;
+  }
+  .card-wrap {
+    width: 100%;
   }
 }
 
