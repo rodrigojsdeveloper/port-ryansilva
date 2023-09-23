@@ -4,10 +4,8 @@
     <div class="card" :style="cardStyle">
       <div class="card-bg" :style="[cardBgTransform, cardBgImage]"></div>
       <div class="card-info">
-        <div class="flex gap-2">
-          <h1>{{ props.header }}</h1>
-          <icon/>
-        </div>
+        <span class="text-xs text-white-500 ease-in" :style="spanStyle">Profissional</span>
+        <h1>{{ props.header }}</h1>
         <p>{{ props.content }}</p>
       </div>
     </div>
@@ -15,7 +13,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, computed, defineAsyncComponent } from "vue";
+import { ref, onMounted, computed } from "vue";
 const width = ref(0);
 const height = ref(0);
 const mouseX = ref(0);
@@ -34,11 +32,6 @@ const props = defineProps({
   content: String,
 });
 
-const icon = defineAsyncComponent(() =>
-  import(`../../../assets/svg/${props.header.toLowerCase()}.svg`)
-);
-
-
 const mousePX = computed(() => {
   return mouseX.value / width.value;
 });
@@ -52,6 +45,15 @@ const cardStyle = computed(() => {
     transform: `rotateY(${rX}deg) rotateX(${rY}deg)`,
   };
 });
+
+const spanStyle = computed(() => {
+  const hover = mousePX.value || mousePY.value;
+  return {
+    opacity: hover === 0 && 1 || 0,
+    transition: hover && '0.2s all',
+  };
+});
+
 
 const cardBgTransform = computed(() => {
   const tX = mousePX.value * -40;
@@ -88,7 +90,7 @@ $hoverEasing: cubic-bezier(0.23, 1, 0.32, 1);
 $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
 .card-wrap {
-  margin: 10px;
+  margin: 5px;
   transform: perspective(800px);
   transform-style: preserve-3d;
   cursor: pointer;
@@ -102,7 +104,9 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
     .card-info p {
       opacity: 1;
     }
-
+    .card-info span {
+      transition: 1s all;
+    }
     .card-info,
     .card-info p {
       transition: 0.3s $hoverEasing;
@@ -131,14 +135,15 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 .card {
   position: relative;
   flex: 0 0 240px;
-  width: 310px;
-  height: 130px;
+  width: 328px;
+  height: 180px;
   background-color: #33333313;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: rgba(black, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px,
-    inset #cb6ce6 0 0 0 6px;
+  // box-shadow: rgba(black, 0.66) 0 10px 30px 0, inset #333 0 0 0 2px,
+  //   inset #1d1d1d 0 0 0 3px;
   transition: 1s $returnEasing;
+  padding: 5px;
 }
 
 .card-bg {
@@ -165,6 +170,8 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 
   p {
+    padding-top: 5px;
+    letter-spacing: -0.5px;
     opacity: 0;
     text-shadow: rgba(black, 1) 0 2px 3px;
     transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -195,8 +202,9 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
 .card-info h1 {
   font-family: "Lexend";
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
+  color: #cb6ce6;
   text-shadow: rgba(black, 0.5) 0 10px 10px;
 }
 </style>
