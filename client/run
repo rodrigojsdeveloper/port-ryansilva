@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if [ "$1" == "client" ] || [ "$1" == "client/" ];then
+    rm -rf node_modules/.vite
+    npm run dev
+fi
