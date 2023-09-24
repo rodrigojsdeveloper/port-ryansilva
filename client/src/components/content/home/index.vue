@@ -2,6 +2,7 @@
 import logoTipo from "../../photo/index.vue";
 import about from "../about/index.vue";
 import myServices from "../about/myServices/index.vue";
+import workHistory from "../workHistory/index.vue";
 </script>
 <template>
   <div>
@@ -9,6 +10,7 @@ import myServices from "../about/myServices/index.vue";
       <logoTipo />
       <about/>
       <myServices/>
+      <workHistory />
     </div>
   </div>
 </template>

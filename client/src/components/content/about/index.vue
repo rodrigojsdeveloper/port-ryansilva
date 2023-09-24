@@ -1,14 +1,14 @@
 <script setup>
 import { ref } from "vue";
 
-const githubLink = ref('https://google.com')
-const linkedinLink = ref('https://google.com')
+const githubLink = ref('https://github.com/ryanbsdeveloper')
+const linkedinLink = ref('https://www.linkedin.com/in/ryanbarbosasilva/')
 
 import euImage from "../../../assets/eu.png";
 
 </script>
 <template>
-  <div class="mb-8">
+  <div>
     <div class="flex flex-row items-center gap-4 md:gap-6 my-12 md:mt-20">
       <img class="rounded-full h-24 w-24 md:h-28 md:w-28" :src="euImage" alt="Carlos Kelly Profile Image" />
       <div class="flex flex-col gap-2">
@@ -35,7 +35,7 @@ import euImage from "../../../assets/eu.png";
         </section>
       </div>
     </div>
-    <div class="mb-12">
+    <div>
       <p class="text-sm">
         Sou um especialista em planejamento, documentação e implementação de processos, com sólida expertise em Python.
         Minhas habilidades avançadas abrangem análise, desenvolvimento, integração, consultoria e suporte de sistemas.

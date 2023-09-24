@@ -6,7 +6,7 @@
         <br>
         <p><strong>"The only way to do something great is to love what you do." </strong>.</p>
         <br>
-        <p>Brazil, São Paulo - Guarulhos</p>
+        <p>Brasil, São Paulo - Guarulhos</p>
       </div>
       <div class="flex flex-wrap justify-center">
       </div>
