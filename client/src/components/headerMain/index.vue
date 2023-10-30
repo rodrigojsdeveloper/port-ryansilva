@@ -8,7 +8,7 @@ import euImage from "../../assets/eu.png";
 
 </script>
 <template>
-  <div class="sticky top-0 z-10 h-20 w-[70%] max-w-230 pt-8 max-lg:mr-0 max-lg:hidden">
+  <div class="sticky top-0 z-10 h-20 w-[70%] min-w-[180px] max-w-230 pt-8 max-lg:mr-0 max-lg:hidden">
     <img class="rounded-full h-24 w-24 md:h-30 md:w-30" :src="euImage" alt="Ryan Foto" />
     <div class="mb-6">
       <div>
