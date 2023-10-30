@@ -1,5 +1,5 @@
 <template>
-  <div class="sticky top-0">
+  <div class="sticky top-0 z-[1000]">
     <p class="style-letter-primary">RyanBS</p>
     <p class="style-letter-secundary">developer</p>
   </div>
