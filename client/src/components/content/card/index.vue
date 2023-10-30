@@ -111,6 +111,9 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
     .card-info p {
       opacity: 1;
     }
+    .card-info h1 {
+      color: var(--color-primary);
+    }
     .card-info span {
       transition: 1s all;
     }
@@ -219,9 +222,10 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
 .card-info h1 {
   font-family: "Lexend";
+  color: gray;
+  transition: .5s;
   font-size: 20px;
   font-weight: 700;
-  color: var(--color-primary);
   text-shadow: rgba(black, 0.5) 0 10px 10px;
 }
 </style>
