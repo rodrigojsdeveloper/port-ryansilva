@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-black mt-16 h-[20rem] flex flex-col justify-around items-center px-12">
+  <footer class="bg-black-1 mt-16 h-[20rem] flex flex-col justify-around items-center px-12">
     <div class="flex flex-wrap justify-around">
       <div class=" w-[25%] min-w-[16em] mb-4">
         <h1><strong class="text-primary-1">ryanbs</strong>developer</h1>

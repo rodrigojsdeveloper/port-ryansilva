@@ -5,13 +5,13 @@
         Qualificações
       </p>
       <hr class="w-[2px] bg-gray-400 h-[50px] border-none mx-4">
-      <p class="text-gray-400 text-lg max-w-[19em]">
+      <p class="text-gray-1 text-lg max-w-[19em]">
         Minha experiência educacional e profissional
       </p>
     </div>
     <div class="container-qualifications pb-20 px-5 max-w-2xl mx-auto">
       <div class="qualification_tabs flex justify-evenly mb-4 mt-4">
-        <div class="text-gray-300 flex items-center gap-2 text-lg cursor-pointer transition-colors duration-500 hover:text-primary-1 bg-black px-4 py-1 rounded"
+        <div class="text-gray-300 flex items-center gap-2 text-lg cursor-pointer transition-colors duration-500 hover:text-primary-1 bg-black-invisible px-4 py-1 rounded"
           :class="{ 'active': activeTab === 'education' }" @click="setActiveTab('education')">
           <span v-if="activeTab === 'education'" class="w-2 h-2 rounded-full bg-primary-1"></span>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -20,7 +20,7 @@
           </svg>Educação
         </div>
   
-        <div class="text-gray-300 flex items-center  gap-2 text-lg cursor-pointer transition-colors duration-500 hover:text-primary-1 bg-black px-4 py-1 rounded"
+        <div class="text-gray-300 flex items-center  gap-2 text-lg cursor-pointer transition-colors duration-500 hover:text-primary-1 bg-black-invisible px-4 py-1 rounded"
           :class="{ 'active': activeTab === 'work' }" @click="setActiveTab('work')">
           <span v-if="activeTab === 'work'" class="w-2 h-2 rounded-full bg-primary-1"></span>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">

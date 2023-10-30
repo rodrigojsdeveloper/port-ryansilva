@@ -22,12 +22,12 @@ onMounted(() => {
         Meus serviços
       </p>
       <hr class="w-[2px] bg-gray-400 h-[50px] border-none mx-4">
-      <p class="text-gray-400 text-lg max-w-[19em]">
+      <p class="text-gray-1 text-lg max-w-[19em]">
         Metodologias que utilizo no meu trabalho.
       </p>
     </div>
     <div class="flex flex-row-reverse items-center">
-      <div class="cursor-pointer flex items-center mb-2 gap-2 bg-black w-max px-4 rounded" @click="openMet">
+      <div class="cursor-pointer flex items-center mb-2 gap-2 bg-black-invisible w-max px-4 rounded" @click="openMet">
         <span class="font-bold text-sm text-gray-300"
           v-text="statusMet ? 'Retrair metodologias' : 'Expandir metodologias'"></span>
         <svg class="transition duration-300 transform" :class="{ 'rotate-180': !statusMet }"
