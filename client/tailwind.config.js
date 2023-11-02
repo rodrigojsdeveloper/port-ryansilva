@@ -13,6 +13,7 @@ module.exports = {
         'gray-1': '#4d4d4d',
         'black-1': '#0a0a0a',
         'black-invisible': '#00000029',
+        'black-invisible-2': '#000000de',
       }
     },
   },
