@@ -14,7 +14,16 @@ module.exports = {
         'black-1': '#0a0a0a',
         'black-invisible': '#00000029',
         'black-invisible-2': '#000000de',
-      }
+      },
+      keyframes: {
+        right: {
+          from: { opacity: '0', transform: 'translateX(-20px)' },
+          to: { opacity: '1', transform: 'translateX(0)' },
+        },
+      },
+      animation: {
+        right: 'right 0.3s'
+      },
     },
   },
   plugins: [
