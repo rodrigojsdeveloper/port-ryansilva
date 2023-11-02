@@ -9,7 +9,7 @@ import headerMobile from "../components/headerMobile/index.vue";
   <div>
     <logoTipo />
     <headerMobile />
-    <div class="m-auto flex w-full flex-row justify-between gap-24 pt-28 px-[4em] max-w-[95em]">
+    <div class="m-auto flex w-full flex-row justify-between gap-24 pt-28 md:px-[4em] max-w-[95em]">
       <headerMain />
       <div>
         <contentHome />
