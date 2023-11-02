@@ -7,7 +7,7 @@ import logoTipo from "../components/photo/index.vue";
 <template>
   <div>
     <logoTipo />
-    <div class="m-auto flex w-full flex-row justify-between gap-24 pt-28 px-[16em]">
+    <div class="m-auto flex w-full flex-row justify-between gap-24 pt-28 px-[4em] max-w-[95em]">
       <headerMain />
       <div>
         <contentHome />
