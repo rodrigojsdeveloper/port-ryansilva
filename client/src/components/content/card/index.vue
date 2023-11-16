@@ -1,5 +1,5 @@
 <template>
-  <div class="card-wrap justify-center" @mousemove="handleMouseMove" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave"
+  <div class="card-wrap justify-center" 
     ref="card">
     <div class="card" :style="cardStyle">
       <div class="card-bg" :style="[cardBgTransform, cardBgImage]"></div>

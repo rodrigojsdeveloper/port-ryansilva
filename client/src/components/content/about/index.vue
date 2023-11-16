@@ -1,7 +1,20 @@
+<script setup>
+import avaliation from '../avaliation/index.vue';
+import carousel from '../carousel/index.vue';
+</script>
 <template>
   <div>
     <div>
-      <p class="text-sm">
+      <div class="flex items-center mb-4">
+        <p class="font-bold text-white text-xl max-w-[11em]">
+          Sobre mim
+        </p>
+        <hr class="w-[2px] bg-gray-400 h-[50px] border-none mx-4">
+        <p class="text-gray-1 text-lg max-w-[19em]">
+          Quem é Ryan Barbosa Silva?
+        </p>
+      </div>
+      <p class="">
         Sou um especialista em planejamento, documentação e implementação de processos, com sólida expertise em Python.
         Minhas habilidades avançadas abrangem análise, desenvolvimento, integração, consultoria e suporte de sistemas.
         Além disso, sou proficiente em desenvolvimento front-end, com foco em React, Vue e Next.js, e acumulei ampla
@@ -83,4 +96,5 @@
   font-size: 14px;
   font-weight: 500;
   color: gray;
-}</style>
+}
+</style>
