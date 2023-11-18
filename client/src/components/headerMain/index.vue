@@ -48,9 +48,9 @@ import euImage from "../../assets/eu.png";
           <path fill="currentColor"
             d="M15.75 2.824c0-.184.193-.301.336-.186c.121.098.23.212.323.342l3.013 4.197c.068.096-.006.22-.124.22H16a.25.25 0 0 1-.25-.25V2.824Z" />
         </svg>
-        <div @click="router.push('contact')" class="cursor-pointer">
+        <div class="cursor-pointer">
           <p class="text-xs text-gray-300">
-            Meu curriculo
+            Meu currículo
           </p>
           <p>
             Baixe-o agora!
