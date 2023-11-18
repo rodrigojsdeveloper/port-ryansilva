@@ -7,7 +7,7 @@ const router = useRouter();
   <div>
     <div class="pb-16">
       <div class="w-full relative ">
-        <div class="h-[90%] w-full top-[-90px] absolute z-0 bg-center	bg-[url('/src/assets/laptop-human.jpg')]">
+        <div class="h-[90%] w-full opacity-50 top-[-90px] absolute z-0 bg-center	bg-[url('/src/assets/laptop-human.jpg')]">
         </div>
         <div class="relative text-center text-white pt-6">
           <h1 class="text-4xl font-semibold">Contate-me</h1>
