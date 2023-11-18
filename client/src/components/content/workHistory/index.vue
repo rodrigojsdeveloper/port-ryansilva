@@ -1,11 +1,10 @@
 <template>
   <div class="mt-28">
-    <div class="flex items-center mb-4">
-      <p class="font-bold text-white text-xl max-w-[11em]">
+    <div class="mb-4">
+      <p class="font-bold mb-2 text-white text-2xl max-w-[11em]">
         Qualificações
       </p>
-      <hr class="w-[2px] bg-gray-400 h-[50px] border-none mx-4">
-      <p class="text-gray-1 text-lg max-w-[19em]">
+      <p class="text-gray-1 text-base">
         Minha experiência educacional e profissional
       </p>
     </div>

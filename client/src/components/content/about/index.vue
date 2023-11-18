@@ -3,16 +3,15 @@
 <template>
   <div>
     <div>
-      <div class="flex items-center mb-4">
-        <p class="font-bold text-white text-xl max-w-[11em]">
+      <div class="mb-4">
+        <p class="font-bold mb-2 text-white text-2xl max-w-[11em]">
           Sobre mim
         </p>
-        <hr class="w-[2px] bg-gray-400 h-[50px] border-none mx-4">
-        <p class="text-gray-1 text-lg max-w-[19em]">
+        <p class="text-gray-1 text-base">
           Quem é Ryan Barbosa Silva?
         </p>
       </div>
-      <p>Venha conhecer um pouco mais sobre mim, sou o Ryan. Atuo como colaborador na Visie, onde aplico minha sólida
+      <p>Venha conhecer um pouco mais sobre mim, sou o Ryan. Atuo Desenvolvedor onde aplico minha sólida
         experiência em planejamento, documentação e implementação de processos, com ênfase em Python. Minhas habilidades
         avançadas englobam análise, desenvolvimento, integração, consultoria e suporte de sistemas.
 
@@ -21,7 +20,7 @@
 
         Como entusiasta de práticas DevOps, destaco-me na criação de pipelines de CI/CD e automação de infraestrutura,
         sempre buscando aprimorar minhas habilidades. Estou comprometido em contribuir de forma significativa para o
-        sucesso da <a href="#" class="text-primary-1 underline dark:text-blue-500 hover:no-underline"
+        sucesso da <a href="#" class="text-primary-1 font-semibold underline hover:no-underline"
           data-popover-target="popover-image">Visie</a>
         , aplicando meu conhecimento e expertise em cada projeto.
 
@@ -35,7 +34,7 @@
               <p class="text-gray-100 ">Tecnologia segura, rápida e fácil de usar, que faz com que você tenha tempo para se
                 dedicar à inovação.</p>
               <a href="https://visie.com.br/" target="_blank"
-                class="flex items-center font-medium text-primary-1 hover:underline">Saiba mais <svg
+                class="flex items-center font-semibold text-primary-1 hover:underline">Visite-a<svg
                   class="w-2 h-2 ms-1.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                   viewBox="0 0 6 10">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

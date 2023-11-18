@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: 'Lexend', Courier, monospace;
+  font-family: "Work Sans";
   --color-primary: #3019b2;
   --color-primary-2: #c03d3d;
 }
