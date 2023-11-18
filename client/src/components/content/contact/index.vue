@@ -78,7 +78,7 @@ const router = useRouter();
         </div>
       </div>
     </div>
-    <div class="grid md:grid-flow-col md:auto-cols-max justify-evenly md:gap-28 md:pt-0 pt-10 pb-2 gap-10">
+    <!-- <div class="grid md:grid-flow-col md:auto-cols-max justify-evenly md:gap-28 md:pt-0 pt-10 pb-2 gap-10">
       <div class="w-64 flex flex-col items-center">
         <div class="p-3 w-max rounded-md bg-black-invisible-2">
           <svg class="text-gray-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20">
@@ -112,5 +112,5 @@ const router = useRouter();
         <p class="mb-1 text-base w-auto text-center">Venha ao meu servidor</p>
         <button type="button" class="text-primary-1 border border-primary-1 font-medium rounded-lg text-sm px-5 py-1 text-center ">Acessar</button>
       </div>
-    </div>
+    </div> -->
   </div></template>
