@@ -17,7 +17,7 @@ onMounted(() => {
 <template>
   <section class="mt-28 scrolllock">
     <div class="locked mt-1 gap-10">
-      <div class="mb-24 relative top-10">
+      <div class="mb-24 md:relative top-10">
         <!-- <img class="left-72 w-28 relative" :src="groupImage" alt="Ryan Foto" /> -->
         <p class="font-bold mb-2 text-white text-2xl max-w-[11em]">
           Meus serviços

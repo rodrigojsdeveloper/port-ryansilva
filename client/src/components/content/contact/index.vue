@@ -78,7 +78,7 @@ const router = useRouter();
         </div>
       </div>
     </div>
-    <div class="grid md:grid-flow-col md:auto-cols-max justify-evenly md:gap-28 md:pt-0 pt-10 pb-2 gap-4">
+    <div class="grid md:grid-flow-col md:auto-cols-max justify-evenly md:gap-28 md:pt-0 pt-10 pb-2 gap-10">
       <div class="w-64 flex flex-col items-center">
         <div class="p-3 w-max rounded-md bg-black-invisible-2">
           <svg class="text-gray-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20">
