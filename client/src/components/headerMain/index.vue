@@ -18,19 +18,13 @@ import euImage from "../../assets/eu.png";
           class="text-2xl md:text-3xl tracking-tighter font-bold -ml-0.5 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#3019b2] bg-clip-text bg-gradient-to-r">
           Ryan Barbosa Silva
         </h1>
-        <p class="cursor-pointer text-sm text-primary-1 my-2" title="GitHub" :href="githubLink" target="_blank">@ryanbsdeveloper</p>
+        <p class="cursor-pointer text-sm text-primary-1 my-2" title="GitHub" :href="githubLink" target="_blank">
+          @ryanbsdeveloper</p>
         <p>Desenvolvedor FullStack</p>
       </div>
     </div>
     <div class="my-3 block h-px w-full bg-gray-1"></div>
     <div class="my-6">
-      <!-- <div class="flex items-center gap-3 mb-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path fill="currentColor"
-            d="m21.743 12.331l-9-10c-.379-.422-1.107-.422-1.486 0l-9 10a.998.998 0 0 0-.17 1.076c.16.361.518.593.913.593h2v7a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4h4v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-7h2a.998.998 0 0 0 .743-1.669z" />
-        </svg>
-        Inicio
-      </div> -->
       <div class="flex items-center gap-3">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path fill="currentColor"
@@ -45,6 +39,24 @@ import euImage from "../../assets/eu.png";
           </p>
         </div>
       </div>
+
+      <div class="flex items-center gap-3 mt-6">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="currentColor" fill-rule="evenodd"
+            d="M14.25 2.5a.25.25 0 0 0-.25-.25H7A2.75 2.75 0 0 0 4.25 5v14A2.75 2.75 0 0 0 7 21.75h10A2.75 2.75 0 0 0 19.75 19V9.147a.25.25 0 0 0-.25-.25H15a.75.75 0 0 1-.75-.75V2.5Zm-.219 10.664a.75.75 0 0 1 .938 1.172l-2.494 1.995a.747.747 0 0 1-.473.169h-.008a.747.747 0 0 1-.465-.166l-2.497-1.998a.75.75 0 0 1 .937-1.172l1.281 1.026v-3.44a.75.75 0 1 1 1.5 0v3.44l1.281-1.026Z"
+            clip-rule="evenodd" />
+          <path fill="currentColor"
+            d="M15.75 2.824c0-.184.193-.301.336-.186c.121.098.23.212.323.342l3.013 4.197c.068.096-.006.22-.124.22H16a.25.25 0 0 1-.25-.25V2.824Z" />
+        </svg>
+        <div @click="router.push('contact')" class="cursor-pointer">
+          <p class="text-xs text-gray-300">
+            Meu curriculo
+          </p>
+          <p>
+            Baixe-o agora!
+          </p>
+        </div>
+      </div>
     </div>
     <div class="my-3 block h-px w-full bg-gray-1"></div>
     <div class="text-xs flex">
@@ -55,9 +67,8 @@ import euImage from "../../assets/eu.png";
         </svg>
         <p>
           2023 - Ryan Barbosa Silva
-        </p>
-      </span>
-    </div>
-</div>
-</template>
+      </p>
+    </span>
+  </div>
+</div></template>
   
