@@ -9,7 +9,7 @@
         Minha experiência educacional e profissional
       </p>
     </div>
-    <div class="container-qualifications pb-20 px-5 max-w-2xl mx-auto">
+    <div class="container-qualifications pb-20 max-w-2xl mx-auto">
       <div class="qualification_tabs flex justify-evenly mb-4 mt-4">
         <div class="text-gray-300 flex items-center gap-2 text-lg cursor-pointer transition-colors duration-500 hover:text-primary-1 bg-black-invisible px-4 py-1 rounded"
           :class="{ 'active': activeTab === 'education' }" @click="setActiveTab('education')">
@@ -19,7 +19,7 @@
               d="M8.82 17L13 19.28V22H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h1v7l2.5-1.5L12 9V2h6a2 2 0 0 1 2 2v8.54l-1.5-.82L8.82 17M24 17l-5.5-3l-5.5 3l5.5 3l5.5-3m-9 2.09v2L18.5 23l3.5-1.91v-2L18.5 21L15 19.09Z" />
           </svg>Educação
         </div>
-  
+
         <div class="text-gray-300 flex items-center  gap-2 text-lg cursor-pointer transition-colors duration-500 hover:text-primary-1 bg-black-invisible px-4 py-1 rounded"
           :class="{ 'active': activeTab === 'work' }" @click="setActiveTab('work')">
           <span v-if="activeTab === 'work'" class="w-2 h-2 rounded-full bg-primary-1"></span>
@@ -141,7 +141,6 @@ function setActiveTab(tab) {
 
 <style scoped>
 .container-qualifications {
-  padding: 0 5em 2em 1em;
   max-width: 700px;
   margin: auto;
 }
@@ -193,6 +192,8 @@ function setActiveTab(tab) {
 }
 
 .qualification_line {
+  position: relative;
+  z-index: -1;
   display: block;
   width: 1px;
   height: 100%;

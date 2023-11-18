@@ -1,7 +1,7 @@
 <template>
   <div @click="props.setModal()" class="w-full h-full fixed">
-    <nav class="fixed top-0 pt-32 z-10 w-[16em] h-full animate-right rounded-def bg-black-invisible-2">
-      <div class="m-[1.5em] h-full">
+    <nav class="fixed top-0 pt-32 w-[16em] h-full animate-right rounded-def bg-black-invisible-2">
+      <div class="z-[2000] m-[1.5em] h-full">
         <img class="rounded-full w-20 h-20" :src="euImage" alt="Ryan Foto" />
         <div class="mb-6">
           <div>
