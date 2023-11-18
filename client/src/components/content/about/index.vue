@@ -139,7 +139,7 @@
 .dFyEuu>h3 {
   font-size: 20px;
   font-weight: 600;
-  color: #ff4444;
+  color: #3019b2;
   padding-bottom: 20px;
 }
 

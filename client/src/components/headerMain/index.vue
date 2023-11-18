@@ -13,7 +13,7 @@ import euImage from "../../assets/eu.png";
     <div class="mb-6">
       <div>
         <h1
-          class="text-2xl md:text-3xl tracking-tighter font-bold -ml-0.5 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#ff4444] bg-clip-text bg-gradient-to-r">
+          class="text-2xl md:text-3xl tracking-tighter font-bold -ml-0.5 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#3019b2] bg-clip-text bg-gradient-to-r">
           Ryan Barbosa Silva
         </h1>
         <p class="cursor-pointer text-sm text-primary-1 my-2" title="GitHub" :href="githubLink" target="_blank">@ryanbsdeveloper</p>

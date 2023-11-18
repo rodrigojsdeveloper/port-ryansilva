@@ -1,10 +1,10 @@
 <template>
   <div class="card-wrap justify-center" 
     ref="card">
-    <div class="card" :style="cardStyle">
-      <div class="card-bg" :style="[cardBgTransform, cardBgImage]"></div>
+    <div class="card" >
+      <div class="card-bg" ></div>
       <div class="card-info">
-        <span class="text-xs text-white-500 ease-in" :style="spanStyle">Profissional</span>
+        <span class="text-xs text-white-500 ease-in" >Profissional</span>
         <h1>{{ props.header }}</h1>
         <p>{{ props.content }}</p>
       </div>
@@ -13,18 +13,6 @@
 </template>
 
 <script setup>
-import { ref, onMounted, computed } from "vue";
-const width = ref(0);
-const height = ref(0);
-const mouseX = ref(0);
-const mouseY = ref(0);
-const mouseLeaveDelay = ref(0);
-const card = ref(null);
-
-onMounted(() => {
-  width.value = card.value.offsetWidth;
-  height.value = card.value.offsetHeight;
-});
 
 const props = defineProps({
   dataImage: String,
@@ -32,64 +20,6 @@ const props = defineProps({
   content: String,
   open: Boolean,
 });
-
-const mousePX = computed(() => {
-  return mouseX.value / width.value;
-});
-const mousePY = computed(() => {
-  return mouseY.value / height.value;
-});
-
-
-
-const cardStyle = computed(() => {
-  const rX = mousePX.value * 30;
-  const rY = mousePY.value * -30;
-
-  return {
-    transform: `rotateY(${rX}deg) rotateX(${rY}deg)`
-  };
-});
-
-const spanStyle = computed(() => {
-  const hover = mousePX.value || mousePY.value;
-  return {
-    opacity: hover === 0 && 1 || 0,
-    transition: hover && '0.2s all',
-  };
-});
-
-
-const cardBgTransform = computed(() => {
-  const tX = mousePX.value * -40;
-  const tY = mousePY.value * -40;
-  return {
-    transform: `translateX(${tX}px) translateY(${tY}px)`,
-  };
-});
-
-const cardBgImage = computed(() => {
-  return {
-    backgroundImage: `url(${props.dataImage})`,
-  };
-});
-
-function handleMouseMove(e) {
-
-  mouseX.value = e.pageX - card.value.offsetLeft - width.value / 2;
-  mouseY.value = e.pageY - card.value.offsetTop - height.value / 2;
-}
-function handleMouseEnter() {
-  clearTimeout(mouseLeaveDelay.value);
-}
-
-function handleMouseLeave() {
-  mouseLeaveDelay.value = setTimeout(() => {
-    mouseX.value = 0;
-    mouseY.value = 0;
-  }, 500);
-}
-
 
 </script>
 <style lang="scss">
