@@ -11,7 +11,7 @@
           Quem é Ryan Barbosa Silva?
         </p>
       </div>
-      <p>Venha conhecer um pouco mais sobre mim, sou o Ryan. Atuo Desenvolvedor onde aplico minha sólida
+      <p>Atuo como esenvolvedor onde aplico minha sólida
         experiência em planejamento, documentação e implementação de processos, com ênfase em Python. Minhas habilidades
         avançadas englobam análise, desenvolvimento, integração, consultoria e suporte de sistemas.
 
