@@ -70,5 +70,6 @@ import euImage from "../../assets/eu.png";
       </p>
     </span>
   </div>
-</div></template>
+</div>
+</template>
   
