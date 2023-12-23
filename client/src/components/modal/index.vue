@@ -86,7 +86,7 @@
 </template>
   
 <script setup>
-import euImage from "../../assets/eu.png";
+import euImage from "../../assets/eu.jpeg";
 import { useRouter } from 'vue-router';
 
 const router = useRouter();

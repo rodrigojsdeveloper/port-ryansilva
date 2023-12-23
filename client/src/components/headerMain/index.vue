@@ -6,7 +6,7 @@ const router = useRouter();
 const githubLink = ref('https://github.com/ryanbsdeveloper')
 // const linkedinLink = ref('https://www.linkedin.com/in/ryanbarbosasilva/')
 
-import euImage from "../../assets/eu.png";
+import euImage from "../../assets/eu.jpeg";
 
 </script>
 <template>
