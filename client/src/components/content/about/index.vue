@@ -1,4 +1,6 @@
 <script setup>
+import PixelArt from '../../PixelArt/index.vue'
+
 </script>
 <template>
   <div>
@@ -11,20 +13,22 @@
           Quem é Ryan Barbosa Silva?
         </p>
       </div>
-      <p>Atuo como esenvolvedor onde aplico minha sólida
-        experiência em planejamento, documentação e implementação de processos, com ênfase em Python. Minhas habilidades
-        avançadas englobam análise, desenvolvimento, integração, consultoria e suporte de sistemas.
-
-        No desenvolvimento full-stack, possuo conhecimento profundo em tecnologias como React, Vue e Next.js, cobrindo
-        tanto o front-end quanto o back-end. Minha experiência na AWS amplia meu domínio em soluções baseadas em nuvem.
-
-        Como entusiasta de práticas DevOps, destaco-me na criação de pipelines de CI/CD e automação de infraestrutura,
-        sempre buscando aprimorar minhas habilidades. Estou comprometido em contribuir de forma significativa para o
-        sucesso da <a href="#" class="text-primary-1 font-semibold underline hover:no-underline"
-          data-popover-target="popover-image">Visie</a>
-        , aplicando meu conhecimento e expertise em cada projeto.
-
-        Sinta-se à vontade para explorar mais sobre minha jornada.</p>
+      <div class="flex max-md:flex-wrap gap-10">
+        <PixelArt class="m-auto"/>
+        <p>Atuo como esenvolvedor onde aplico minha sólida
+          experiência em planejamento, documentação e implementação de processos, com ênfase em Python. Minhas habilidades
+          avançadas englobam análise, desenvolvimento, integração, consultoria e suporte de sistemas.
+  
+          No desenvolvimento full-stack, possuo conhecimento profundo em tecnologias como React, Vue e Next.js, cobrindo
+          tanto o front-end quanto o back-end. Minha experiência na AWS amplia meu domínio em soluções baseadas em nuvem.
+  
+          Como entusiasta de práticas DevOps, destaco-me na criação de pipelines de CI/CD e automação de infraestrutura,
+          sempre buscando aprimorar minhas habilidades. Estou comprometido em contribuir de forma significativa para o
+          sucesso da <a href="#" class="text-primary-1 font-semibold underline hover:no-underline"
+            data-popover-target="popover-image">Visie</a>
+          , aplicando meu conhecimento e expertise em cada projeto.
+          Sinta-se à vontade para explorar mais sobre minha jornada.</p>
+      </div>
       <div data-popover id="popover-image" role="tooltip"
         class="absolute z-[1000] invisible inline-block md:text-sm text-xs text-gray-500 transition-opacity duration-300 bg-black-invisible-2 border-2 border-black rounded-lg shadow-sm opacity-0 md:w-96 w-80 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600">
         <div class="grid grid-cols-5">

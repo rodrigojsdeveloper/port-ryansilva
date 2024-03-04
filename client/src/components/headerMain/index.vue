@@ -6,7 +6,7 @@ const router = useRouter();
 const githubLink = ref('https://github.com/ryanbsdeveloper')
 // const linkedinLink = ref('https://www.linkedin.com/in/ryanbarbosasilva/')
 
-import euImage from "../../assets/eu.jpeg";
+import euImage from "../../assets/eu.png";
 
 </script>
 <template>
@@ -18,7 +18,7 @@ import euImage from "../../assets/eu.jpeg";
           class="text-2xl md:text-3xl tracking-tighter font-bold -ml-0.5 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#3019b2] bg-clip-text bg-gradient-to-r">
           Ryan Barbosa Silva
         </h1>
-        <p class="cursor-pointer text-sm text-primary-1 my-2" title="GitHub" :href="githubLink" target="_blank">
+        <p class="cursor-pointer text-sm text-primary-1 font-semibold my-2" title="GitHub" :href="githubLink" target="_blank">
           @ryanbsdeveloper</p>
         <p>Desenvolvedor FullStack</p>
       </div>

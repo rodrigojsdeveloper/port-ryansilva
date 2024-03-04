@@ -6,7 +6,7 @@
     </p>
     <div class="flex">
       <div class="flex items-center justify-center w-[100px] h-[100px] border-2 border-primary-1 rounded-full">
-        <img class="w-20 h-20 rounded-full" src="http://localhost:5173/src/assets/eu.jpeg" alt="">
+        <img class="w-20 h-20 rounded-full" src="http://localhost:5173/src/assets/eu.png" alt="">
       </div>
       <div class="ml-8 m-auto">
         <h4>Ryan Barbosa</h4>
