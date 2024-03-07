@@ -2,6 +2,7 @@
 
 import Button from "@/components/Button";
 import BookIcon from "@/components/svgs/BookIcon";
+import TitleSubject from "@/components/TitleSubject";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         icon={<BookIcon/>}
         onClick={() => {}}
       />
+      <TitleSubject label="Projetos"/>
     </main>
   );
 }
