@@ -72,3 +72,64 @@ body {
 .slideThree input[type='checkbox']:checked + label {
   left: 187px;
 }
+
+.container-qualifications {
+  max-width: 700px;
+  margin: auto;
+}
+
+.container-qualifications h1 {
+  color: white;
+  text-align: center;
+}
+
+.container-qualifications p {
+  color: gray;
+  text-align: center;
+}
+
+.qualification_tabs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+
+.qualification_data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+  justify-items: center;
+}
+
+.qualification_title {
+  color: white;
+  font-size: calc(0.7em + .5vw);
+}
+
+.qualification_subtitle {
+  display: inline-block;
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 5px;
+}
+
+
+.qualification_circle {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+}
+
+.qualification_line {
+  position: relative;
+  z-index: -1;
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  transform: translate(6px, -7px);
+}

@@ -2,12 +2,13 @@
 
 import Button from "@/components/Button";
 import Stacks from "@/components/Stacks";
+import Qualifications from "@/components/Qualifications";
 import RadioInput from "@/components/RadioInput";
 import SubTitleSubject from "@/components/SubTitleSubject";
 import DescriptionSecundary from "@/components/DescriptionSecundary";
-import BookIcon from "@/components/svgs/BookIcon";
-import HomeIcon from "@/components/svgs/HomeIcon";
-import MessageIcon from "@/components/svgs/MessageIcon";
+import BookIcon from "@/components/Svgs/BookIcon";
+import HomeIcon from "@/components/Svgs/HomeIcon";
+import MessageIcon from "@/components/Svgs/MessageIcon";
 import TitleSubject from "@/components/TitleSubject";
 
 export default function Home() {
@@ -36,6 +37,7 @@ export default function Home() {
       <Stacks pauseOnHover />
       <DescriptionSecundary title="Desenvolvimento Web" description="Um desenvolvimento focado na criação de sites, páginas únicas, E-commerce ou outras aplicações. Promovendo uma boa experiência e otimização de websites."/>
       <RadioInput/>
+      <Qualifications/>
     </main>
   );
 }
