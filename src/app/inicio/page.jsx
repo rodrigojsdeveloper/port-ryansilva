@@ -1,6 +1,7 @@
 'use client'
 
 import Button from "@/components/Button";
+import Stacks from "@/components/Stacks";
 import BookIcon from "@/components/svgs/BookIcon";
 import TitleSubject from "@/components/TitleSubject";
 
@@ -14,6 +15,7 @@ export default function Home() {
         onClick={() => {}}
       />
       <TitleSubject label="Projetos"/>
+      <Stacks pauseOnHover />
     </main>
   );
 }
