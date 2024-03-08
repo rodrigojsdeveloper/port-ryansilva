@@ -3,7 +3,7 @@
 import Button from "@/components/Button";
 import Stacks from "@/components/Stacks";
 import SubTitleSubject from "@/components/SubTitleSubject";
-import WaterMark from "@/components/WaterMark";
+import DescriptionSecundary from "@/components/DescriptionSecundary";
 import BookIcon from "@/components/svgs/BookIcon";
 import HomeIcon from "@/components/svgs/HomeIcon";
 import MessageIcon from "@/components/svgs/MessageIcon";
@@ -33,7 +33,7 @@ export default function Home() {
       <SubTitleSubject label="Meu serviços" description="Metodologias que utilizo no meu dia a dia de trabalho."/>
       <TitleSubject label="Projetos"/>
       <Stacks pauseOnHover />
-      <WaterMark/>
+      <DescriptionSecundary title="Desenvolvimento Web" description="Um desenvolvimento focado na criação de sites, páginas únicas, E-commerce ou outras aplicações. Promovendo uma boa experiência e otimização de websites."/>
     </main>
   );
 }
