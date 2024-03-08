@@ -2,6 +2,7 @@
 
 import Button from "@/components/Button";
 import Stacks from "@/components/Stacks";
+import RadioInput from "@/components/RadioInput";
 import SubTitleSubject from "@/components/SubTitleSubject";
 import DescriptionSecundary from "@/components/DescriptionSecundary";
 import BookIcon from "@/components/svgs/BookIcon";
@@ -34,6 +35,7 @@ export default function Home() {
       <TitleSubject label="Projetos"/>
       <Stacks pauseOnHover />
       <DescriptionSecundary title="Desenvolvimento Web" description="Um desenvolvimento focado na criação de sites, páginas únicas, E-commerce ou outras aplicações. Promovendo uma boa experiência e otimização de websites."/>
+      <RadioInput/>
     </main>
   );
 }
