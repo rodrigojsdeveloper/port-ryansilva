@@ -10,10 +10,10 @@ const Button = ({ label, icon, onClick = () => { }, className  = "", disabled = 
 			>
 				<span className="flex gap-2 items-center justify-center">
 					{icon && icon}
-					<div className="group relative overflow-hidden">
-						<span class="invisible">{label}</span>
-						<span class="absolute left-0 top-0 cursor-pointer text-sm text-foreground-muted transition-transform duration-500 ease-in-out hover:duration-300 group-hover:-translate-y-full sm:text-base">{label}</span>
-						<span class="absolute left-0 top-0 translate-y-full text-sm text-foreground-muted transition-transform duration-500 ease-in-out hover:duration-300 group-hover:translate-y-0 sm:text-base">{label}</span>
+					<div className="group relative text-sm overflow-hidden">
+						<span class="invisible ">{label}</span>
+						<span class="absolute left-0 top-0 cursor-pointer text-sm text-foreground-muted transition-transform duration-500 ease-in-out hover:duration-300 group-hover:-translate-y-full ">{label}</span>
+						<span class="absolute left-0 top-0 translate-y-full text-sm text-foreground-muted transition-transform duration-500 ease-in-out hover:duration-300 group-hover:translate-y-0">{label}</span>
 					</div>
 				</span>
 			</button >

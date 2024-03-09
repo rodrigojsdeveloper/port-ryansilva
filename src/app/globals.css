@@ -20,7 +20,7 @@ body {
 }
 
 .slideThree {
-  width: 380px;
+  width: 330px;
   height: 30px;
   background: #000000;
   position: relative;
@@ -32,7 +32,7 @@ body {
   position: absolute;
   color: #ffffff;
   top: 5px;
-  right: -5px;
+  right: -20px;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
@@ -43,6 +43,7 @@ body {
   position: absolute;
   color: #ffffff;
   top: 5px;
+  left: -15px;
   font-weight: 600;
 }
 
@@ -51,7 +52,7 @@ body {
   justify-content: center;
   align-items: center;
   display: block;
-  width: 190px;
+  width: 160px;
   height: 24px;
   cursor: pointer;
   position: absolute;
@@ -70,7 +71,7 @@ body {
 }
 
 .slideThree input[type='checkbox']:checked + label {
-  left: 187px;
+  left: 167px;
 }
 
 .container-qualifications {
@@ -103,23 +104,10 @@ body {
   justify-items: center;
 }
 
-.qualification_title {
-  color: white;
-  font-size: calc(0.7em + .5vw);
-}
-
-.qualification_subtitle {
-  display: inline-block;
-  font-size: 12px;
-  color: gray;
-  margin-bottom: 5px;
-}
-
-
 .qualification_circle {
   display: inline-block;
-  width: 13px;
-  height: 13px;
+  width: 21px;
+  height: 21px;
   background-color: rgb(0, 0, 0);
   border-radius: 50%;
 }
@@ -128,6 +116,7 @@ body {
   position: relative;
   z-index: -1;
   display: block;
+  left: 4px;
   width: 1px;
   height: 100%;
   background-color: rgb(0, 0, 0);

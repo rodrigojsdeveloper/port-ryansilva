@@ -15,7 +15,8 @@ module.exports = {
           'linear-gradient(90deg, #fff, transparent 20%, transparent 80%, #fff',
       },
       colors: {
-        "gray-primary": "#AAAAAA"
+        "gray-primary": "#858585",
+        "gray-secundary": "#AAAAAA",
       },
       borderRadius: {
         radius: '0.5rem',

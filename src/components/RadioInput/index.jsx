@@ -1,6 +1,6 @@
 import React from 'react';
 
-const RadioInput = ({ checked, onChange, option1, option2 }) => {
+const RadioInput = ({ checked, onChange }) => {
   return (
     <div className="slideThree">
       <input
