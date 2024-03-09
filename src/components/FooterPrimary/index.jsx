@@ -1,7 +1,14 @@
 import React from "react";
-import { Merriweather_Sans } from "next/font/google";
+import { Merriweather_Sans, Abel } from "next/font/google";
 
 const merriweather = Merriweather_Sans({ subsets: ["latin"] });
+const abel = Abel({
+  weight: "400",
+  style: "normal",
+  display: "swap",
+  subsets: ["latin"],
+  variable: "--open-sans-font",
+});
 
 const FooterPrimary = () => {
   return (
@@ -13,7 +20,7 @@ const FooterPrimary = () => {
             <span className="text-black font-bold">ryanbs</span>
             developer
           </h1>
-          <p className="text-sm text-black w-[90%]">"{'The only way to do something great is to love what you do.'}"</p>
+          <p className={`${abel.className} mt-1 text-black w-[90%]`}>"{'The only way to do something great is to love what you do.'}"</p>
           <h2 className="text-gray-secundary text-xs mt-6">Brasil, São Paulo - Guarulhos</h2>
         </div>
       </div>
