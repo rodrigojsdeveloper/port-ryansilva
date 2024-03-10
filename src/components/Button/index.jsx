@@ -4,7 +4,7 @@ const Button = ({ label, icon, onClick = () => { }, className  = "", disabled = 
 	return (
 		<>
 			<button
-				className={`border border-black mx-1 my-3 py-2 px-5 rounded-md font-normal ${className}`}
+				className={`border border-black mx-1 my-3 py-2 px-5 rounded-md font-normal max-h-[38px] ${className}`}
 				onClick={onClick}
 				disabled={disabled}
 			>

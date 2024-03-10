@@ -12,10 +12,10 @@ const FooterPrimary = () => {
       <div className="w-full h-[1px] bg-black"></div>
       <div className="my-2 flex justify-between items-center mx-6">
         <div className="w-[10em]">
-          <h1 className={`${merriweather.className} text-gray-secundary font-bold`}>
+          {/* <h1 className={`${merriweather.className} text-gray-secundary font-bold`}>
             <span className="text-black font-bold">ryanbs</span>
             developer
-          </h1>
+          </h1> */}
         </div>
         <div className="flex items-center gap-2 md:gap-10 justify-evenly">
           <Button
