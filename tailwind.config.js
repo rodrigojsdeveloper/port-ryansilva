@@ -4,9 +4,19 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
+      boxShadow: {
+        titleCommentary: '4px 2px 0px 0px #bfbfbf',
+        commentary: '4px 2px 0px 0px #bfbfbf',
+        borderTRCommentary: '8px 6px 0px -2px #bfbfbf',
+        borderDRCommentary: '8px 6px 0px -2px #bfbfbf',
+        borderDLCommentary: '6px 8px 0px -2px #bfbfbf',
+        iconCommentary: '2px -1px 0px 6px #bfbfbf',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -17,6 +27,7 @@ module.exports = {
       colors: {
         "gray-primary": "#858585",
         "gray-secundary": "#AAAAAA",
+        "gray-third": "#cfcfcf"
       },
       borderRadius: {
         radius: '0.5rem',

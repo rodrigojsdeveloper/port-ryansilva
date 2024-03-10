@@ -1,10 +1,11 @@
 import React from "react";
 
-const Button = ({ label, icon, onClick = () => { }, className  = "", disabled = false }) => {
+const Button = ({ label, icon, onClick = () => { }, active, className = "", disabled = false }) => {
+
 	return (
 		<>
 			<button
-				className={`border border-black mx-1 my-3 py-2 px-5 rounded-md font-normal max-h-[38px] ${className}`}
+				className={`border border-black mx-1 my-3 py-2 px-5 rounded-md font-normal max-h-[38px] ${active && 'bg-black text-white'} ${className}`}
 				onClick={onClick}
 				disabled={disabled}
 			>

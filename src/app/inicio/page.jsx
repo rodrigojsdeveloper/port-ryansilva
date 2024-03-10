@@ -8,6 +8,7 @@ import FooterPrimary from "@/components/FooterPrimary";
 import FooterSecundary from "@/components/FooterSecundary";
 import RadioInput from "@/components/RadioInput";
 import SubTitleSubject from "@/components/SubTitleSubject";
+import CommentsProfessionals from "@/components/CommentsProfessionals";
 import DescriptionSecundary from "@/components/DescriptionSecundary";
 import InfoMe from "@/components/InfoMe";
 import BookIcon from "@/components/Svgs/BookIcon";
@@ -21,6 +22,7 @@ export default function Home() {
   <>
     <main className="flex min-h-screen flex-col items-center justify-between p-4">
       <h1>Pagina home</h1>
+      <CommentsProfessionals />
       <InfoMe/>
       <div>
         <Button
@@ -32,6 +34,7 @@ export default function Home() {
           label="início"
           icon={<HomeIcon />}
           onClick={() => { }}
+          active
         />
         <Button
           label="Fale Comigo!"
