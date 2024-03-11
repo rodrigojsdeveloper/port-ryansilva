@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Carousel, IconButton } from "@material-tailwind/react";
 import CommentaryItem from "./CommentaryItem";
+import CommaIcon from "../Svgs/CommaIcon";
 
 import { Abel } from "next/font/google";
 const abel = Abel({
@@ -15,7 +16,7 @@ const CommentsProfessionals = () => {
   const [autoplay, setAutoplay] = useState(true);
 
   return (
-    <div onMouseOver={() => setAutoplay(false)} onMouseLeave={() => setAutoplay(true)} className="relative my-6 w-full h-[19em] border-2 border-black shadow-commentary">
+    <div onMouseOver={() => setAutoplay(false)} onMouseLeave={() => setAutoplay(true)} className="relative my-6 w-full min-h-[19em] border-2 border-black shadow-commentary">
       <div className="absolute z-10 bg-gray-third w-[18em] h-[35px] border-2 border-black top-[-19px] left-1/2 transform -translate-x-1/2 shadow-titleCommentary">
         <h1 className={`${abel.className} text-xl text-center m-[1px]`}>
           Comentários de profissionais
@@ -27,12 +28,15 @@ const CommentsProfessionals = () => {
           <path fill-rule="evenodd" clip-rule="evenodd" d="M16 35.6017L21.8669 34.6072L23.2478 35.4533C24.8449 36.433 26.7539 37 28.8188 37C34.4407 37 39 32.7458 39 27.5C39 22.2542 34.4407 18 28.8188 18C23.1968 18 18.6376 22.2542 18.6376 27.5C18.6376 28.0641 18.6885 28.6163 18.7903 29.1506L19.0416 30.4925L16 35.6017Z" fill="white" stroke="black" stroke-width="2" />
         </svg>
       </div>
+      <div className="absolute z-10 bottom-10 right-20">
+        <CommaIcon />
+      </div>
       <div className="absolute z-10 bg-white w-[17px] h-[17px] border-2 border-black top-[-9px] left-[-9px]"></div>
       <div className="absolute z-10 bg-white w-[17px] h-[17px] border-2 border-black top-[-9px] right-[-9px] shadow-borderTRCommentary"></div>
       <div className="absolute z-10 bg-white w-[17px] h-[17px] border-2 border-black bottom-[-9px] left-[-9px] shadow-borderDLCommentary"></div>
       <div className="absolute z-10 bg-white w-[17px] h-[17px] border-2 border-black bottom-[-9px] right-[-9px] shadow-borderDRCommentary"></div>
       <Carousel
-        // autoplay={autoplay}
+        autoplay={autoplay}
         autoplayDelay={4000}
         loop
         className="rounded-xl"
@@ -41,8 +45,7 @@ const CommentsProfessionals = () => {
             {new Array(length).fill("").map((_, i) => (
               <span
                 key={i}
-                className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${activeIndex === i ? "w-8 bg-black" : "w-4 bg-white/50"
-                  }`}
+                className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${activeIndex === i ? "w-8 bg-black" : "w-4 bg-gray-secundary"}`}
                 onClick={() => setActiveIndex(i)}
               />
             ))}
@@ -97,8 +100,38 @@ const CommentsProfessionals = () => {
           </IconButton>
         )}
       >
-        <CommentaryItem name="Cosme Ribeiro da Silva" detailProfissional="Desenvolvedor na picpay. (10+ de experiência)" linkedinUrl={'asd'}>
-          Um desenvolvedor que ainda não tive a chance de trabalhar, mais conheço suas metodologias e um pouco do seu trabalho, e digo! Ter esse talento na equipe com certeza é um diferencial.
+        <CommentaryItem
+          name="Cosme Ribeiro da Silva"
+          detailProfissional="Desenvolvedor na picpay. (10+ de experiência)"
+          linkedinUrl="url"
+          date="Concedido no dia 03 de fevereiro de 2024"
+          photo="cosme-ribeiro.jpeg"
+        >
+          Um desenvolvedor que ainda não tive a chance de trabalhar,
+          mais conheço suas metodologias e um pouco do seu trabalho, e digo!
+          Ter esse talento na equipe com certeza é um diferencial.
+        </CommentaryItem>
+        <CommentaryItem
+          name="Cosme Ribeiro da Silva"
+          detailProfissional="Desenvolvedor na picpay. (10+ de experiência)"
+          linkedinUrl="url"
+          date="Concedido no dia 03 de fevereiro de 2024"
+          photo="cosme-ribeiro.jpeg"
+        >
+          Um desenvolvedor que ainda não tive a chance de trabalhar,
+          mais conheço suas metodologias e um pouco do seu trabalho, e digo!
+          Ter esse talento na equipe com certeza é um diferencial.
+        </CommentaryItem>
+        <CommentaryItem
+          name="Cosme Ribeiro da Silva"
+          detailProfissional="Desenvolvedor na picpay. (10+ de experiência)"
+          linkedinUrl="url"
+          date="Concedido no dia 03 de fevereiro de 2024"
+          photo="cosme-ribeiro.jpeg"
+        >
+          Um desenvolvedor que ainda não tive a chance de trabalhar,
+          mais conheço suas metodologias e um pouco do seu trabalho, e digo!
+          Ter esse talento na equipe com certeza é um diferencial.
         </CommentaryItem>
       </Carousel>
     </div>
