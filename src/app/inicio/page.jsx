@@ -9,6 +9,7 @@ import FooterSecundary from "@/components/FooterSecundary";
 import RadioInput from "@/components/RadioInput";
 import SubTitleSubject from "@/components/SubTitleSubject";
 import CommentsProfessionals from "@/components/CommentsProfessionals";
+import CardProject from "@/components/CardProject";
 import DescriptionSecundary from "@/components/DescriptionSecundary";
 import InfoMe from "@/components/InfoMe";
 import BookIcon from "@/components/Svgs/BookIcon";
@@ -22,6 +23,7 @@ export default function Home() {
   <>
     <main className="flex min-h-screen flex-col items-center justify-between p-4">
       <h1>Pagina home</h1>
+      <CardProject />
       <CommentsProfessionals />
       <InfoMe/>
       <div>

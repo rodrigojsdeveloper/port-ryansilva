@@ -27,7 +27,8 @@ module.exports = {
       colors: {
         "gray-primary": "#858585",
         "gray-secundary": "#AAAAAA",
-        "gray-third": "#cfcfcf"
+        "gray-third": "#cfcfcf",
+        "white-primary": "#fafaff",
       },
       borderRadius: {
         radius: '0.5rem',
