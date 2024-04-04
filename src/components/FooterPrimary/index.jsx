@@ -13,7 +13,7 @@ const abel = Abel({
 const FooterPrimary = () => {
   return (
     <>
-      <div className="w-full h-[1px] bg-black"></div>
+      <div className="w-full h-[1px] bg-black mt-10"></div>
       <div className="flex justify-center">
         <div className="my-10">
           <h1 className={`${merriweather.className} text-gray-secundary font-bold`}>

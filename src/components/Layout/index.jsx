@@ -5,7 +5,7 @@ export default function RootLayout({ children }) {
   return (
     <>
       <MenuTop />
-      <section>
+      <section className="px-10">
         {children}
       </section>
       <FooterPrimary />

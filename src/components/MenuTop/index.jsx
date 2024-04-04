@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const MenuTop = () => {
   return (
-    <div className="flex justify-between px-10 items-center border-b border-black">
+    <div className="flex justify-between px-10 mb-10 items-center border-b border-black">
       <div className="w-1/3 flex justify-between">
         <Button
           label="início"
