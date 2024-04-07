@@ -9,6 +9,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      dropShadow: {
+        'green': '0 1px 1px #3fb950',
+        'puple': '0 1px 1px #7c72ff',
+        'blue': '0 1px 1px #33b3ae',
+        'pink': '0 1px 1px #f778ba',
+      },
       boxShadow: {
         titleCommentary: '4px 2px 0px 0px #bfbfbf',
         commentary: '4px 2px 0px 0px #bfbfbf',
@@ -25,10 +31,12 @@ module.exports = {
           'linear-gradient(90deg, #fff, transparent 20%, transparent 80%, #fff',
       },
       colors: {
-        "gray-primary": "#858585",
-        "gray-secundary": "#AAAAAA",
-        "gray-third": "#cfcfcf",
-        "white-primary": "#fafaff",
+        "gray-primary": "#848d97",
+        "green-primary": "#3fb950",
+        "white-primary": "#f6f8fa",
+        "puple-primary": "#7c72ff",
+        "blue-primary": "#33b3ae",
+        "pink-primary": "#f778ba",
       },
       borderRadius: {
         radius: '0.5rem',

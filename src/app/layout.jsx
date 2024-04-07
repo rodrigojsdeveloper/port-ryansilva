@@ -11,7 +11,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <body className="relative pt-36 container-xl js-build-in-trigger build-in-animate">
+        <main className={inter.className}>
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
