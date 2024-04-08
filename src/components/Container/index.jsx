@@ -4,14 +4,14 @@ import BusinessIcon from "@/components/Svgs/BusinessIcon";
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 import Button from '../Button';
-import ArrowRight from '../Svgs/ArrowRight';
+import BranchIcon from '../Svgs/BranchIcon';
 
 
 const Container = () => {
 
   const { ref, inView } = useInView({
     triggerOnce: true, // A animação ocorrerá apenas uma vez
-    threshold: 0.5, // Trigger quando 50% do item estiver visível
+    threshold: 0.4, // Trigger quando 50% do item estiver visível
   });
 
   return (
@@ -54,16 +54,21 @@ const Container = () => {
       <div ref={ref} className={`opacity-0 ${inView ? `animate-slideInRight` : ''} transform`}>
         <img className='relative bottom-[70px] rounded-xl border border-gray-700' src='/ide.png' alt='image'/>
       </div>
-      <div className='flex m-5 relative h-[40em] bottom-[90px]'>
+      <div className='flex m-5 relative h-[50em] bottom-[90px]'>
         <div className='flex flex-col items-center max-w-[5em] pr-4'>
           <div className="w-[3px] h-full bg-gradient-to-t from-green-primary from-60% to-transparent rounded-md"/>
           <div className="w-[3px] h-full bg-gradient-to-b from-green-primary from-60% to-transparent rounded-md"/>
         </div>
-        <div className='mt-[82px] ml-20'>
-          <div className='mt-14'>
-            <p className='text-2xl font-medium text-gray-primary'><span className='text-white-primary'>GitHub Copilot</span> empowers developers to complete tasks 55% faster with contextualized AI coding assistance across workflows.</p>
+        <div className='mt-[100px] ml-20'>
+          <div>
+            <div className='w-[35em] mb-2'>
+              <p className='text-2xl font-medium text-gray-primary'><span className='text-white-primary'>GitHub Copilot</span> empowers developers to complete tasks 55% faster with contextualized AI coding assistance across workflows.</p>
+            </div>
+            <Button label='Explore GitHub Copilot '/>
           </div>
-          <Button label='Explore GitHub Copilot '/>
+          <div className='relative left-[-99px]'>
+            <BranchIcon/>
+          </div>
         </div>
       </div>
     </div>
