@@ -2,7 +2,7 @@ import React from 'react';
 
 function Page404Light() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-white">
+    <div className="flex items-center justify-center min-h-scree">
       <div className="wrap">
         <div className="404">
           <pre>
