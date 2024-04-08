@@ -17,16 +17,34 @@ body, html {
   background-position-x: 1200px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
 .container-xl {
   max-width: 1280px;
   margin-right: auto;
   margin-left: auto;
 }
+
+@media (max-width: 524px) {
+  body, html {
+    background: #0d1117;
+    background-image: url('/bg-mobile.webp');
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position-y: -180px; 
+  }
+  .container-xl {
+    padding-top: 15em;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
 @media (min-width: 1012px){
 .pt-lg-12 {
     padding-top: var(1rem, 128px) !important;

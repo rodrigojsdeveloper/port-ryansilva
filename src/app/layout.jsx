@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <body>
-        <main className={`${inter.className} relative pt-36 container-xl js-build-in-trigger`}>
+        <main className={`${inter.className} relative pt-36 container-xl`}>
           {children}
         </main>
       </body>
