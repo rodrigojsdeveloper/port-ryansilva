@@ -42,13 +42,28 @@ module.exports = {
         radius: '0.5rem',
       },
       keyframes: {
-        slide: {
-          from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(calc(-100% - 1rem))' },
+        slideInFromLeft: {
+          '0%': { transform: 'translateX(-30%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1'  },
+        },
+        slideInFromRight: {
+          '0%': { transform: 'translateX(30%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        slideInFromTop: {
+          '0%': { transform: 'translateY(-30%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        slideInFromBottom: {
+          '0%': { transform: 'translateY(30%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
         },
       },
       animation: {
-        slide: 'slide 40s linear infinite',
+        slideInLeft: 'slideInFromLeft 0.3s ease-out forwards',
+        slideInRight: 'slideInFromRight 0.3s ease-out forwards',
+        slideInTop: 'slideInFromTop 0.3s ease-out forwards',
+        slideInBottom: 'slideInFromBottom 0.3s ease-out forwards',
       },
     },
   },

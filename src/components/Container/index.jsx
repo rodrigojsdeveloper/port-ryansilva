@@ -1,20 +1,18 @@
 import React from 'react';
 import CodeIcon from "@/components/Svgs/CodeIcon";
 import BusinessIcon from "@/components/Svgs/BusinessIcon";
+import { useInView } from 'react-intersection-observer';
+import Image from 'next/image';
+import Button from '../Button';
+import ArrowRight from '../Svgs/ArrowRight';
 
-const Container = ({icon, color, children }) => {
 
-  // function Line({ color, shadowLine = 'top' }) {
-  //   const linearStyle = shadowLine === 'bottom' ? `linear-gradient(${color}, ${color}, transparent)` : `linear-gradient(transparent, ${color}, ${color})`
-  //   const lineStyles = {
-  //     background: color,
-  //     width: '3px',
-  //     height: '100%',
-  //     background: linearStyle,
-  //   };
-  
-  //   return <div style={lineStyles}></div>;
-  // }
+const Container = () => {
+
+  const { ref, inView } = useInView({
+    triggerOnce: true, // A animação ocorrerá apenas uma vez
+    threshold: 0.5, // Trigger quando 50% do item estiver visível
+  });
 
   return (
     <div>
@@ -34,7 +32,7 @@ const Container = ({icon, color, children }) => {
           <p className="text-gray-primary text-xl mt-5">Desenvolvedor fullstack</p>
         </div>
       </div>
-      <div className='flex m-5 relative h-[25em] bottom-12'>
+      <div className='flex m-5 relative h-[30em] bottom-12'>
         <div className='flex flex-col items-center max-w-[5em] pr-4'>
           <div className="w-[3px] h-20 bg-gradient-to-t from-green-primary from-60% to-transparent rounded-md"/>
           <div className='my-8'>
@@ -51,6 +49,21 @@ const Container = ({icon, color, children }) => {
             <h1 className="text-3xl md:text-5xl font-medium text-green-primary">Desenvolvimento ágil</h1>
             <h1 className="text-3xl md:text-5xl font-medium text-white-primary">Soluções funcionais e produtivas</h1>
           </div>
+        </div>
+      </div>
+      <div ref={ref} className={`opacity-0 ${inView ? `animate-slideInRight` : ''} transform`}>
+        <img className='relative bottom-[70px] rounded-xl border border-gray-700' src='/ide.png' alt='image'/>
+      </div>
+      <div className='flex m-5 relative h-[40em] bottom-[90px]'>
+        <div className='flex flex-col items-center max-w-[5em] pr-4'>
+          <div className="w-[3px] h-full bg-gradient-to-t from-green-primary from-60% to-transparent rounded-md"/>
+          <div className="w-[3px] h-full bg-gradient-to-b from-green-primary from-60% to-transparent rounded-md"/>
+        </div>
+        <div className='mt-[82px] ml-20'>
+          <div className='mt-14'>
+            <p className='text-2xl font-medium text-gray-primary'><span className='text-white-primary'>GitHub Copilot</span> empowers developers to complete tasks 55% faster with contextualized AI coding assistance across workflows.</p>
+          </div>
+          <Button label='Explore GitHub Copilot '/>
         </div>
       </div>
     </div>
