@@ -12,6 +12,7 @@ import DescriptionLeft from "@/components/DescriptionContainer/animationLeft";
 import DescriptionRight from "@/components/DescriptionContainer/animationRight";
 import Card from "@/components/Card";
 import MenuTop from "@/components/MenuTop";
+import VisieTextoIcon from "@/components/Svgs/VisieTextoIcon";
 
 export default function Home() {
   return (
@@ -19,8 +20,8 @@ export default function Home() {
       <MenuTop/>
       <LineContainer LineInitial className="h-[15em]" color="puple-primary" icon={CodeIcon} fromBottomLine="from-40%">
         <div>
-          <h1 className="text-5xl md:text-7xl font-semibold text-white-primary">Ryan Barbosa Silva</h1>
-          <p className="text-gray-primary text-2xl mt-5">Desenvolvedor Full-Stack <span className="text-sm">na</span> <span>Visie Padroes Web</span></p>
+          <h1 className="text-5xl md:text-7xl font-bold text-white-primary">Ryan Barbosa Silva</h1>
+          <p className="text-gray-primary text-2xl mt-5">Desenvolvedor Full-Stack <span className="text-sm">na</span> <a target="_blank" href="https://www.visie.com.br" className="ml-2 absolute cursor-pointer"><VisieTextoIcon/></a></p>
         </div>
       </LineContainer>
       <LineContainer className="relative h-[30em] bottom-12" heightTopLine="h-20" color="green-primary" icon={BusinessIcon}>
