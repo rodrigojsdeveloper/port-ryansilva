@@ -12,9 +12,9 @@ body, html {
   font-feature-settings: unset;
   background: #0d1117;
   background-image: url('/bg.webp');
-  background-size: contain;
+  background-size: 700px;
   background-repeat: no-repeat;
-  background-position-x: 1200px;
+  background-position-x: 1300px;
 
   overflow-x: hidden;
 }

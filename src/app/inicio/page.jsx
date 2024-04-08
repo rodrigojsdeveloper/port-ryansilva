@@ -17,22 +17,20 @@ export default function Home() {
     <>
       <LineContainer LineInitial className="h-[15em]" color="puple-primary" icon={CodeIcon} fromBottomLine="from-40%">
         <div>
-          <h1 className="text-5xl md:text-8xl font-semibold text-white-primary">Ryan Barbosa Silva</h1>
+          <h1 className="text-5xl md:text-7xl font-semibold text-white-primary">Ryan Barbosa Silva</h1>
           <p className="text-gray-primary text-xl mt-5">Desenvolvedor fullstack</p>
         </div>
       </LineContainer>
       <LineContainer className="relative h-[30em] bottom-12" heightTopLine="h-20" color="green-primary" icon={BusinessIcon}>
-        <div className='mt-[82px]'>
+        <div className='mt-[78px]'>
           <h1 className="text-2xl font-medium text-white-primary">Especialização</h1>
           <div className='mt-10'>
-            <h1 className="text-3xl md:text-5xl font-medium text-green-primary">Desenvolvimento ágil</h1>
-            <h1 className="text-3xl md:text-5xl font-medium text-white-primary">Soluções funcionais e produtivas</h1>
+            <h1 className="text-3xl md:text-4xl font-medium text-green-primary">Inovação e Eficiência</h1>
+            <h1 className="text-3xl md:text-3xl font-medium text-white-primary">Focado em soluções estratégicas full-stack e otimização de CI/CD para maximizar eficiência.</h1>
           </div>
         </div>
-        <div className='relative top-[25em] left-[45em]'>
-          <Shape1Icon />
-        </div>
       </LineContainer>
+      <Shape1Icon className='absolute top-[59em] left-[60em] animate-rotate-180s-linear-infinite' />
       <ImageContainer src={'/ide.png'} />
       <LineContainer animationLine className="relative h-[50em] bottom-[90px]" color="green-primary">
         <div className='mt-[100px] ml-20'>

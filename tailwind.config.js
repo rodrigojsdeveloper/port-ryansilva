@@ -43,6 +43,10 @@ module.exports = {
         radius: '0.5rem',
       },
       keyframes: {
+        'rotate-keyframes': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
         slideInFromLeft: {
           '0%': { transform: 'translateX(-5%)', opacity: '0' },
           '100%': { transform: 'translateX(0)', opacity: '1'  },
@@ -85,6 +89,7 @@ module.exports = {
         slideInBottom: 'slideInFromBottom 0.3s ease-out forwards',
         grow: 'grow 0.3s ease-out forwards',
         shrink: 'shrink 0.3s ease-out forwards',
+        'rotate-180s-linear-infinite': 'rotate-keyframes 180s linear infinite',
       },
     },
   },
