@@ -1,10 +1,26 @@
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
-const DescriptionContainerAnimationRight = ({ children }) => {
+const DescriptionContainerAnimationRight = ({ children, scrollY}) => {
+  const [triggerOnce, setTriggerOnce] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= scrollY) {
+        setTriggerOnce(true);
+      }
+      else {
+        setTriggerOnce(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const { ref, inView } = useInView({
-    threshold: 0.6,
-    triggerOnce: false,
+    threshold: 0.8,
+    triggerOnce: triggerOnce,
   });
   
   const animationClass = useMemo(() => {

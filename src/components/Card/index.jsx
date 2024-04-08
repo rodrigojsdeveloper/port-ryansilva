@@ -1,41 +1,67 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
-const Card = () => {
+const InteractiveCard = () => {
   const [style, setStyle] = useState({});
+  const [blurStyle, setBlurStyle] = useState({opacity: 0});
 
   const handleMouseMove = (e) => {
     const { clientX, clientY, target } = e;
     const { left, top, width, height } = target.getBoundingClientRect();
-    const x = ((clientX - left) / width) * 100 - 50;
-    const y = ((clientY - top) / height) * 100 - 50;
 
-    // Inclinação leve com base na posição do mouse
-    const rotateX = y / 10;
-    const rotateY = -(x / 10);
+    // Calcula a posição do mouse em relação ao card
+    const mouseX = (clientX - left);
+    const mouseY = (clientY - top);
 
-    // Cor de sombra que muda com base na posição do mouse
-    const shadowColor = `rgba(${(x + 50) * 2.55}, ${(y + 50) * 2.55}, 150, 0.7)`;
+    // Ajusta a sensibilidade da inclinação aqui, valores menores = efeito mais sutil
+    const sensitivity = 50;
+    const rotateX = ((mouseY / height) * 100 - 50) / sensitivity;
+    const rotateY = -(((mouseX / width) * 100 - 50) / sensitivity);
 
+    // Atualiza o estilo para a inclinação
     setStyle({
-      transform: `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
-      boxShadow: `${rotateY}px ${rotateX}px 15px ${shadowColor}`,
+      transform: `perspective(700px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
+    });
+
+    // Atualiza o estilo para a posição da 'bolha' de desfoque
+    setBlurStyle({
+      top: `${mouseY}px`,
+      left: `${mouseX}px`,
+      opacity: 1,
     });
   };
 
   const handleMouseLeave = () => {
-    setStyle({});
+    // Remove a inclinação suavemente ao sair
+    setStyle({
+      transform: 'perspective(700px) rotateX(0deg) rotateY(0deg)',
+      transition: 'transform 0.5s ease-out',
+    });
+
+    // Apenas ajusta a opacidade para que a 'bolha' desapareça a partir de onde o mouse estava
+    setBlurStyle(prev => ({
+      ...prev, // Mantém a posição anterior
+      opacity: 0, // Esconde a 'bolha'
+      transition: 'opacity 0.5s ease-out', // Transição suave da opacidade
+    }));
   };
 
   return (
     <div
-      className="bg-white p-4 rounded-xl transition-transform duration-200 ease-out"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={style}
+      className="relative bottom-[7em] p-10 bg-gray-secondary rounded-xl border border-gray-700 transition-transform duration-200 ease-out overflow-hidden"
     >
-      {/* Conteúdo do card */}
+      {/* Bolha de desfoque */}
+      <div
+        style={blurStyle}
+        className="absolute w-52 h-52 rounded-full bg-green-primary blur-[10em] transition-opacity duration-500 ease-out"
+      />
+      <div className="relative p-10 h-[20em]">
+        {/* Conteúdo do card aqui */}
+      </div>
     </div>
   );
 };
 
-export default Card;
+export default InteractiveCard;

@@ -10,11 +10,12 @@ import Button from "@/components/Button";
 import BranchIcon from "@/components/Svgs/BranchIcon";
 import DescriptionLeft from "@/components/DescriptionContainer/animationLeft";
 import DescriptionRight from "@/components/DescriptionContainer/animationRight";
+import Card from "@/components/Card";
 
 export default function Home() {
   return (
     <>
-      <LineContainer className="h-[15em]" color="puple-primary" icon={CodeIcon} fromBottomLine="from-40%">
+      <LineContainer LineInitial className="h-[15em]" color="puple-primary" icon={CodeIcon} fromBottomLine="from-40%">
         <div>
           <h1 className="text-5xl md:text-8xl font-semibold text-white-primary">Ryan Barbosa Silva</h1>
           <p className="text-gray-primary text-xl mt-5">Desenvolvedor fullstack</p>
@@ -35,7 +36,7 @@ export default function Home() {
       <ImageContainer src={'/ide.png'} />
       <LineContainer animationLine className="relative h-[50em] bottom-[90px]" color="green-primary">
         <div className='mt-[100px] ml-20'>
-          <DescriptionRight>
+          <DescriptionRight scrollY={700}>
             <div className='w-[35em] mb-2'>
               <p className='text-2xl font-medium text-gray-primary'><span className='text-white-primary'>GitHub Copilot</span> empowers developers to complete tasks 55% faster with contextualized AI coding assistance across workflows.</p>
             </div>
@@ -43,7 +44,7 @@ export default function Home() {
           </DescriptionRight>
           <div className='flex items-center relative left-[-99px]'>
             <BranchIcon />
-            <DescriptionLeft>
+            <DescriptionLeft scrollY={1200}>
               <div>
                 <span className='text-xs font-semibold text-green-primary border border-green-primary rounded-full py-[1px] px-2'>Did you know?</span>
                 <div className='my-5 w-[35em]'>
@@ -56,6 +57,7 @@ export default function Home() {
           </div>
         </div>
       </LineContainer>
+      <Card/>
     </>
   );
 }
