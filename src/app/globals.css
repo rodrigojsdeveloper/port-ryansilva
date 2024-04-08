@@ -11,7 +11,7 @@
 body, html {
   font-feature-settings: unset;
   background: #0d1117;
-  background-image: url('/bg.webp');
+  /* background-image: url('/bg.webp'); */
   background-size: 700px;
   background-repeat: no-repeat;
   background-position-x: 1300px;
