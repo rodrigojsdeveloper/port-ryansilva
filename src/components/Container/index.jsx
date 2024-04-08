@@ -45,7 +45,7 @@ const Container = ({icon, color, children }) => {
           </div>
           <div className="w-[3px] h-full bg-gradient-to-b from-green-primary from-60% to-transparent rounded-md"/>
         </div>
-        <div className='mt-[75px]'>
+        <div className='mt-[80px]'>
           <h1 className="text-2xl font-medium text-white-primary">Especialização</h1>
           <div className='mt-10'>
             <h1 className="text-5xl font-medium text-green-primary">Desenvolvimento ágil</h1>
