@@ -43,7 +43,7 @@ module.exports = {
       },
       keyframes: {
         slideInFromLeft: {
-          '0%': { transform: 'translateX(-30%)', opacity: '0' },
+          '0%': { transform: 'translateX(-5%)', opacity: '0' },
           '100%': { transform: 'translateX(0)', opacity: '1'  },
         },
         slideInFromRight: {
@@ -58,12 +58,32 @@ module.exports = {
           '0%': { transform: 'translateY(30%)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
+        slideOutToLeft: {
+          '0%': { transform: 'translateX(0)', opacity: '1' },
+          '100%': { transform: 'translateX(-5%)', opacity: '0' },
+        },
+        slideOutToRight: {
+          '0%': { transform: 'translateX(0)', opacity: '1' },
+          '100%': { transform: 'translateX(30%)', opacity: '0' },
+        },
+        grow: {
+          '0%': { height: '0%' },
+          '100%': { height: '100%' },
+        },
+        shrink: {
+          '0%': { height: '100%' },
+          '100%': { height: '0%' },
+        },
       },
       animation: {
         slideInLeft: 'slideInFromLeft 0.3s ease-out forwards',
+        slideOutLeft: 'slideOutToLeft 0.3s ease-out forwards',
         slideInRight: 'slideInFromRight 0.3s ease-out forwards',
+        slideOutRight: 'slideOutToRight 0.3s ease-out forwards',
         slideInTop: 'slideInFromTop 0.3s ease-out forwards',
         slideInBottom: 'slideInFromBottom 0.3s ease-out forwards',
+        grow: 'grow 0.3s ease-out forwards',
+        shrink: 'shrink 0.3s ease-out forwards',
       },
     },
   },
