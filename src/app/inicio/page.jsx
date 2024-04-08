@@ -11,14 +11,16 @@ import BranchIcon from "@/components/Svgs/BranchIcon";
 import DescriptionLeft from "@/components/DescriptionContainer/animationLeft";
 import DescriptionRight from "@/components/DescriptionContainer/animationRight";
 import Card from "@/components/Card";
+import MenuTop from "@/components/MenuTop";
 
 export default function Home() {
   return (
     <>
+      <MenuTop/>
       <LineContainer LineInitial className="h-[15em]" color="puple-primary" icon={CodeIcon} fromBottomLine="from-40%">
         <div>
           <h1 className="text-5xl md:text-7xl font-semibold text-white-primary">Ryan Barbosa Silva</h1>
-          <p className="text-gray-primary text-xl mt-5">Desenvolvedor fullstack</p>
+          <p className="text-gray-primary text-2xl mt-5">Desenvolvedor Full-Stack <span className="text-sm">na</span> <span>Visie Padroes Web</span></p>
         </div>
       </LineContainer>
       <LineContainer className="relative h-[30em] bottom-12" heightTopLine="h-20" color="green-primary" icon={BusinessIcon}>
