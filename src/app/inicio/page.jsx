@@ -12,6 +12,7 @@ import DescriptionLeft from "@/components/DescriptionContainer/animationLeft";
 import DescriptionRight from "@/components/DescriptionContainer/animationRight";
 import Card from "@/components/Card";
 import VisieTextoIcon from "@/components/Svgs/VisieTextoIcon";
+import Fork from "@/components/Fork";
 
 export default function Home() {
   return (
@@ -56,7 +57,9 @@ export default function Home() {
           </div>
         </div>
       </LineContainer>
-      <Card/>
+      <Card>
+        <Fork/>
+      </Card>
     </>
   );
 }

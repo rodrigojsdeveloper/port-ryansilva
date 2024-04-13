@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-const InteractiveCard = () => {
+const InteractiveCard = ({children}) => {
   const [style, setStyle] = useState({});
   const [blurStyle, setBlurStyle] = useState({opacity: 0});
 
@@ -58,7 +58,7 @@ const InteractiveCard = () => {
         className="absolute w-52 h-52 rounded-full bg-green-primary blur-[10em] transition-opacity duration-500 ease-out"
       />
       <div className="relative p-10 h-[20em]">
-        {/* Conteúdo do card aqui */}
+        {children}
       </div>
     </div>
   );
