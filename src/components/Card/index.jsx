@@ -52,7 +52,6 @@ const InteractiveCard = ({children, title, subtitle}) => {
       style={style}
       className="relative bottom-[7em] p-10 bg-gray-secondary rounded-xl border border-gray-700 transition-transform duration-200 ease-out overflow-hidden"
     >
-      {/* Bolha de desfoque */}
       <div
         style={blurStyle}
         className="absolute w-52 h-52 rounded-full bg-green-primary blur-[10em] transition-opacity duration-500 ease-out"

@@ -6,26 +6,49 @@ import CalendarIcon from '../Svgs/CalendarIcon';
 import Image from 'next/image';
 import HandShakeIcon from '../Svgs/HandShakeIcon';
 import PersonaBusinessIcon from '../Svgs/PersonaBusinessIcon';
+import SchoolIcon from '../Svgs/SchoolIcon';
 
 const Fork = () => {
   return (
     <div className="flex justify-center mt-10 w-full pointer-events-none">
-      {/* Componente esquerdo com ícone e texto */}
-      <div className="flex h-min items-center gap-4 p-6 text-green-500 bg-gray-800 rounded-lg shadow-lg">
-        <BusinessIcon />
-        <div className='flex w-[10em] justify-between items-center'>
-          <p className="text-white-primary font-medium">Trabalhos</p>
-        </div>
-      </div>
 
-      {/* Conector horizontal com bolinhas */}
-      <div className="relative max-w-20 flex-auto flex items-center top-[-5.30rem]">
-        {/* Bolinha no início da linha */}
-        <div className="absolute right-[-6px] w-3 h-3 border-[2.5px] border-gray-800 bg-gray-500 rounded-full" />
-        {/* Linha */}
-        <div className="flex-auto bg-white-primary h-[2px]" />
-        {/* Bolinha no final da linha */}
-        <div className="absolute left-[-6px] w-3 h-3 border-[2.5px] border-gray-800 bg-gray-500 rounded-full" />
+      <div className='flex flex-col gap-7'>
+        <div className='flex'>
+          <div className="flex h-min items-center gap-4 p-6 text-green-500 bg-gray-800 rounded-lg shadow-lg">
+            <BusinessIcon />
+            <div className='flex w-[10em] justify-between items-center'>
+              <p className="text-white-primary font-medium">Trabalhos</p>
+            </div>
+          </div>
+
+          {/* Conector horizontal com bolinhas */}
+          <div className="relative w-20 flex-auto flex items-center ">
+            {/* Bolinha no início da linha */}
+            <div className="absolute right-[-6px] w-3 h-3 border-[2.5px] border-gray-800 bg-green-primary rounded-full" />
+            {/* Linha */}
+            <div className="flex-auto bg-green-primary h-[2px]" />
+            {/* Bolinha no final da linha */}
+            <div className="absolute left-[-6px] w-3 h-3 border-[2.5px] border-gray-800 bg-green-primary rounded-full" />
+          </div>
+        </div>
+        <div className='flex'>
+          <div className="flex h-min items-center gap-4 p-6 text-green-500 bg-gray-800 rounded-lg shadow-lg">
+            <SchoolIcon />
+            <div className='flex w-[10em] justify-between items-center'>
+              <p className="text-white-primary font-medium">Educacional</p>
+            </div>
+          </div>
+
+          {/* Conector horizontal com bolinhas */}
+          <div className="relative w-20 flex-auto flex items-center ">
+            {/* Bolinha no início da linha */}
+            <div className="absolute right-[-6px] w-3 h-3 border-[2.5px] border-gray-800 bg-gray-500 rounded-full" />
+            {/* Linha */}
+            <div className="flex-auto bg-white-primary h-[2px]" />
+            {/* Bolinha no final da linha */}
+            <div className="absolute left-[-6px] w-3 h-3 border-[2.5px] border-gray-800 bg-gray-500 rounded-full" />
+          </div>
+        </div>
       </div>
 
       {/* Componente direito */}
