@@ -33,7 +33,7 @@ const LineContainer = ({
           {Icon && 
             <div className='my-5'>
               <div className={`p-4 blur-xl bg-${color}`}></div>
-              <span className='text-white relative top-[-25px] left-[5px]'>
+              <span className={`text-${color} relative top-[-25px] left-[5px]`}>
                 <Icon/>
               </span>
             </div>

@@ -9,30 +9,29 @@ import PersonaBusinessIcon from '../Svgs/PersonaBusinessIcon';
 
 const Fork = () => {
   return (
-    <div className="flex w-full pointer-events-none">
+    <div className="flex justify-center mt-10 w-full pointer-events-none">
       {/* Componente esquerdo com ícone e texto */}
       <div className="flex h-min items-center gap-4 p-6 text-green-500 bg-gray-800 rounded-lg shadow-lg">
         <BusinessIcon />
-        <div className='flex w-[20em] justify-between items-center'>
+        <div className='flex w-[10em] justify-between items-center'>
           <p className="text-white-primary font-medium">Trabalhos</p>
-          <p className="text-gray-400 text-sm">Profissionais</p>
         </div>
       </div>
 
       {/* Conector horizontal com bolinhas */}
-      <div className="relative flex-auto flex items-center top-[-5.30rem]">
+      <div className="relative max-w-20 flex-auto flex items-center top-[-5.30rem]">
         {/* Bolinha no início da linha */}
-        <div className="w-3 h-3 bg-gray-500 rounded-full" />
+        <div className="absolute right-[-6px] w-3 h-3 border-[2.5px] border-gray-800 bg-gray-500 rounded-full" />
         {/* Linha */}
-        <div className="flex-auto bg-gray-500 h-1" />
+        <div className="flex-auto bg-white-primary h-[2px]" />
         {/* Bolinha no final da linha */}
-        <div className="w-3 h-3 bg-gray-500 rounded-full" />
+        <div className="absolute left-[-6px] w-3 h-3 border-[2.5px] border-gray-800 bg-gray-500 rounded-full" />
       </div>
 
       {/* Componente direito */}
       <div className="w-1/2 flex flex-col p-3 bg-gray-800 rounded-lg shadow-lg">
-        <div className='absolute py-3 px-5 top-1 right-[33.4em] bg-gray-800 rounded-t-lg text-sm font-medium text-white-primary'>
-          Qualificações
+        <div className='absolute py-3 px-5 top-10 right-[42em] bg-gray-800 rounded-t-lg text-sm font-medium text-white-primary'>
+          Profissionais
         </div>
         <div className="p-3 flex items-center text-green-primary gap-5">
           <span className='text-gray-800 w-8 h-7 rounded-full bg-green-primary flex items-center justify-center'>

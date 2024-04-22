@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-const InteractiveCard = ({children}) => {
+const InteractiveCard = ({children, title, subtitle}) => {
   const [style, setStyle] = useState({});
   const [blurStyle, setBlurStyle] = useState({opacity: 0});
 
@@ -57,7 +57,11 @@ const InteractiveCard = ({children}) => {
         style={blurStyle}
         className="absolute w-52 h-52 rounded-full bg-green-primary blur-[10em] transition-opacity duration-500 ease-out"
       />
-      <div className="relative p-10 h-[20em]">
+      <div className="relative p-10 h-[25em]">
+        <div className='top-1 absolute pointer-events-none'>
+          <h1 className='text-sm font-semibold text-gray-primary'>{title}</h1>
+          <p className='text-xs text-gray-primary'>{subtitle}</p>
+        </div>
         {children}
       </div>
     </div>

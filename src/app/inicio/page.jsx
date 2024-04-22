@@ -57,7 +57,7 @@ export default function Home() {
           </div>
         </div>
       </LineContainer>
-      <Card>
+      <Card title={'Qualificações'} subtitle={'Minha experiência educacional e profissional'}>
         <Fork/>
       </Card>
     </>
