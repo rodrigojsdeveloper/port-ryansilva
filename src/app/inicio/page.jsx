@@ -40,9 +40,9 @@ export default function Home() {
         <div className='mt-[100px] ml-20'>
           <DescriptionRight scrollY={700}>
             <div className='w-[35em] mb-2'>
-              <p className='text-2xl font-medium text-gray-primary'><span className='text-white-primary'>GitHub Copilot</span> empowers developers to complete tasks 55% faster with contextualized AI coding assistance across workflows.</p>
+              <p className='text-2xl font-medium text-gray-primary'><span className='text-white-primary'>Veja o desenvolvimento</span> do meus projetos que estão em open-source e hospedado, todos no github</p>
             </div>
-            <Button label='Explore GitHub Copilot' />
+            <Button label='Ver no github ' />
           </DescriptionRight>
           <div className='flex items-center relative left-[-99px]'>
             <BranchIcon />
@@ -50,11 +50,11 @@ export default function Home() {
               <div>
                 <span className='text-xs font-semibold text-green-primary border border-green-primary rounded-full py-[1px] px-2'>Quer se conectar comigo?</span>
                 <div className='my-5 w-[35em]'>
-                  <h1 className="text-3xl md:text-6xl font-medium text-green-primary">22% increase</h1>
-                  <h1 className="text-xl md:text-2xl font-medium text-white-primary">in developer productivity after three years with GitHub</h1>
+                  <h1 className="text-3xl md:text-6xl font-medium text-green-primary">Meu dia-dia</h1>
+                  <h1 className="text-xl md:text-2xl font-medium text-white-primary">Como desenvolvedor estou muito ativo no linkedin, vai lá!</h1>
                 </div>
               </div>
-              <Button label='Read the report ' />
+              <Button label='Ver linkedin ' />
             </DescriptionLeft>
           </div>
         </div>
