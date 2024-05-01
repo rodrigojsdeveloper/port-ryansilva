@@ -21,8 +21,8 @@ export default function Home() {
     <>
       <LineContainer LineInitial className="h-[15em]" color="puple-primary" icon={CodeIcon} fromBottomLine="from-40%">
         <div className="mt-[13px]">
-          <h1 className="text-5xl md:text-7xl font-bold text-white-primary">Ryan Barbosa Silva</h1>
-          <p className="text-gray-primary text-2xl mt-5">Desenvolvedor Full-Stack <span className="text-sm">na</span> <a target="_blank" href="https://www.visie.com.br" className="ml-2 absolute cursor-pointer"><VisieTextoIcon/></a></p>
+          <h1 className="text-5xl md:text-7xl font-bold leading-[56px] text-white-primary">Ryan Barbosa Silva</h1>
+          <p className="text-gray-primary text-2xl mt-5 flex-wrap flex items-center gap-2.5">Desenvolvedor Full-Stack <span className="text-sm">na</span> <a target="_blank" href="https://www.visie.com.br" className="ml-2 cursor-pointer"><VisieTextoIcon/></a></p>
         </div>
       </LineContainer>
       <LineContainer className="relative h-[30em] bottom-12" heightTopLine="h-20" color="green-primary" icon={BusinessIcon}>
@@ -40,7 +40,7 @@ export default function Home() {
         <div className='mt-[100px] ml-20'>
           <DescriptionRight scrollY={700}>
             <div className='w-[35em] mb-2'>
-              <p className='text-2xl font-medium text-gray-primary'><span className='text-white-primary'>Veja o desenvolvimento</span> do meus projetos que estão em open-source e hospedado, todos no github</p>
+              <p className='text-xl md:text-2xl font-medium text-gray-primary max-sm:text-balance min-w-[20em]'><span className='text-white-primary'>Veja o desenvolvimento</span> do meus projetos que estão em open-source e hospedado, todos no github</p>
             </div>
             <Button label='Ver no github ' />
           </DescriptionRight>
@@ -49,9 +49,9 @@ export default function Home() {
             <DescriptionLeft scrollY={1200}>
               <div>
                 <span className='text-xs font-semibold text-green-primary border border-green-primary rounded-full py-[1px] px-2'>Quer se conectar comigo?</span>
-                <div className='my-5 w-[35em]'>
+                <div className='my-5 w-full max-w-[35em]'>
                   <h1 className="text-3xl md:text-6xl font-medium text-green-primary">Meu dia-dia</h1>
-                  <h1 className="text-xl md:text-2xl font-medium text-white-primary">Como desenvolvedor estou muito ativo no linkedin, vai lá!</h1>
+                  <h1 className="text-xl md:text-2xl font-medium text-white-primary max-sm:text-balance">Como desenvolvedor estou muito ativo no linkedin, vai lá!</h1>
                 </div>
               </div>
               <Button label='Ver linkedin ' />

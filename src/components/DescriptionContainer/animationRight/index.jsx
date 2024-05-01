@@ -19,7 +19,7 @@ const DescriptionContainerAnimationRight = ({ children, scrollY}) => {
   }, []);
 
   const { ref, inView } = useInView({
-    threshold: 0.8,
+    threshold: 0.4,
     triggerOnce: triggerOnce,
   });
   

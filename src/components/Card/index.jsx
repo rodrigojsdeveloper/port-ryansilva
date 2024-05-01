@@ -50,15 +50,15 @@ const InteractiveCard = ({children, title, subtitle}) => {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={style}
-      className="relative bottom-[7em] p-10 bg-gray-secondary rounded-xl border border-gray-700 transition-transform duration-200 ease-out overflow-hidden"
+      className="relative bottom-[7em] hidden-scroll overflow-hidden mx-4 max-lg:overflow-x-scroll p-10 bg-gray-secondary rounded-xl border border-gray-700 transition-transform duration-200 ease-out"
     >
       <div
         style={blurStyle}
         className="absolute w-52 h-52 rounded-full bg-green-primary blur-[10em] transition-opacity duration-500 ease-out"
       />
-      <div className="relative p-10 h-[25em]">
+      <div className="relative p-10 h-[25em] max-lg:min-w-[1024px]">
         <div className='top-1 absolute pointer-events-none'>
-          <h1 className='text-sm font-semibold text-gray-primary'>{title}</h1>
+          <h1 className='font-semibold text-gray-primary'>{title}</h1>
           <p className='text-xs text-gray-primary'>{subtitle}</p>
         </div>
         {children}

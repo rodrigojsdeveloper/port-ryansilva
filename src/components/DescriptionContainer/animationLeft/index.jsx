@@ -30,7 +30,7 @@ const DescriptionContainerAnimationLeft = ({ children, scrollY }) => {
   }, [inView]);
 
   return (
-    <div ref={ref} className={`opacity-0 ${animationClass} transform`}>
+    <div ref={ref} className={`opacity-0 ${animationClass} flex w-full flex-col transform`}>
       {children}
     </div>
   );

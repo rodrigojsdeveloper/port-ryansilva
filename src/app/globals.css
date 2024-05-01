@@ -95,3 +95,7 @@ body, html {
 .button:hover > span {
   transform: translateX(5px);
 }
+
+.hidden-scroll::-webkit-scrollbar {
+  display: none;
+}
