@@ -13,6 +13,8 @@ import DescriptionRight from "@/components/DescriptionContainer/animationRight";
 import Card from "@/components/Card";
 import VisieTextoIcon from "@/components/Svgs/VisieTextoIcon";
 import Fork from "@/components/Fork";
+import SubCard from "@/components/SubCard";
+import CheckIcon from "@/components/Svgs/CheckIcon";
 
 export default function Home() {
   return (
