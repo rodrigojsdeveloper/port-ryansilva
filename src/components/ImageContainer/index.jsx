@@ -32,8 +32,8 @@ const ImageContainer = ({ src }) => {
 
   return (
     <div ref={ref} className={`opacity-0 ${animationClass} transform`}>
-      <img className='relative bottom-[70px] rounded-xl border border-gray-700' src={src} alt='image' />
-      <SubCard title={'Qualificações'} className={'absolute top-[27em] left-[44em] w-[33em]'}>
+      <img className='z-10 relative bottom-[70px] rounded-xl border border-gray-700' src={src} alt='image' />
+      <SubCard title={'Qualificações'} className={'absolute top-[27em] left-[44em] w-[33em] z-20'}>
         <div className="flex items-start gap-3 text-green-primary border-b border-gray-600 py-4">
           <CheckIcon width={'45'} height={'20'}/>
           <div>
