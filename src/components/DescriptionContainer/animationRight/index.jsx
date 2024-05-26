@@ -24,8 +24,8 @@ const DescriptionContainerAnimationRight = ({ children, scrollY}) => {
   });
   
   const animationClass = useMemo(() => {
-    if (inView) return 'animate-slideInRight'; // Entrada
-    else return 'animate-slideOutRight'; // Saída
+    if (inView) return 'animate-slideInFastRight'; // Entrada
+    else return 'animate-slideOutFastRight'; // Saída
   }, [inView]);
 
   return (

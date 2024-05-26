@@ -26,6 +26,58 @@ export default function Home() {
           <p className="text-gray-primary text-2xl mt-5 flex-wrap flex items-center gap-2.5">Desenvolvedor Full-Stack <span className="text-sm">na</span> <a target="_blank" href="https://www.visie.com.br" className="ml-2 cursor-pointer"><VisieTextoIcon/></a></p>
         </div>
       </LineContainer>
+      <LineContainer className="relative h-[30em] bottom-12" heightTopLine="h-20" color="blue-primary" icon={BusinessIcon}>
+        <div className='mt-[78px]'>
+          <h1 className="text-2xl font-medium text-white-primary">Especialização</h1>
+          <div className='mt-10'>
+            <h1 className="text-3xl md:text-4xl font-medium text-blue-primary">Inovação e Eficiência</h1>
+            <h1 className="text-3xl md:text-3xl font-medium text-white-primary">Focado em soluções estratégicas full-stack e otimização de CI/CD para maximizar eficiência.</h1>
+          </div>
+        </div>
+      </LineContainer>
+      <Shape1Icon className='absolute top-[35em] left-[60em] animate-rotate-180s-linear-infinite' />
+      <ImageContainer src={'/ide.png'} />
+      <LineContainer animationLine className="relative h-[50em] bottom-[90px]" color="blue-primary">
+        <div className='mt-[100px] ml-20'>
+          <DescriptionRight scrollY={700}>
+            <div className='w-[35em] mb-2'>
+              <p className='text-xl md:text-2xl font-medium text-gray-primary max-sm:text-balance min-w-[20em]'><span className='text-white-primary'>Veja o desenvolvimento</span> do meus projetos que estão em open-source e hospedado, todos no github</p>
+            </div>
+            <Button label='Ver no github ' />
+          </DescriptionRight>
+          <div className='flex items-center relative left-[-99px]'>
+            <BranchIcon />
+            <DescriptionLeft scrollY={1200}>
+              <div>
+                <span className='text-xs font-semibold text-blue-primary border border-blue-primary rounded-full py-[1px] px-2'>Quer se conectar comigo?</span>
+                <div className='my-5 w-full max-w-[35em]'>
+                  <h1 className="text-3xl md:text-6xl font-medium text-blue-primary">Meu dia-dia</h1>
+                  <h1 className="text-xl md:text-2xl font-medium text-white-primary max-sm:text-balance">Como desenvolvedor estou muito ativo no linkedin, vai lá!</h1>
+                </div>
+              </div>
+              <Button label='Ver linkedin ' />
+            </DescriptionLeft>
+          </div>
+        </div>
+      </LineContainer>
+      <div className="flex">
+        <Card
+          title={'Profissional'}
+          subtitle={'Minhas experiências profissionais na área'}
+          animationSide="Left"
+        >
+          {/* <Fork/> */}
+        </Card>
+        <Card
+          title={'Educacional'}
+          subtitle={'Minhas principais fonte de conhecimento'}
+          animationSide="Right"
+          >
+          {/* <Fork/> */}
+        </Card>
+      </div>
+    </div>
+    {/* <div>
       <LineContainer className="relative h-[30em] bottom-12" heightTopLine="h-20" color="green-primary" icon={BusinessIcon}>
         <div className='mt-[78px]'>
           <h1 className="text-2xl font-medium text-white-primary">Especialização</h1>
@@ -63,46 +115,7 @@ export default function Home() {
       <Card title={'Qualificações'} subtitle={'Minha experiência educacional e profissional'}>
         <Fork/>
       </Card>
-    </div>
-    <div>
-      <LineContainer className="relative h-[30em] bottom-12" heightTopLine="h-20" color="green-primary" icon={BusinessIcon}>
-        <div className='mt-[78px]'>
-          <h1 className="text-2xl font-medium text-white-primary">Especialização</h1>
-          <div className='mt-10'>
-            <h1 className="text-3xl md:text-4xl font-medium text-green-primary">Inovação e Eficiência</h1>
-            <h1 className="text-3xl md:text-3xl font-medium text-white-primary">Focado em soluções estratégicas full-stack e otimização de CI/CD para maximizar eficiência.</h1>
-          </div>
-        </div>
-      </LineContainer>
-      <Shape1Icon className='absolute top-[35em] left-[60em] animate-rotate-180s-linear-infinite' />
-      <ImageContainer src={'/ide.png'} />
-      <LineContainer animationLine className="relative h-[50em] bottom-[90px]" color="green-primary">
-        <div className='mt-[100px] ml-20'>
-          <DescriptionRight scrollY={700}>
-            <div className='w-[35em] mb-2'>
-              <p className='text-xl md:text-2xl font-medium text-gray-primary max-sm:text-balance min-w-[20em]'><span className='text-white-primary'>Veja o desenvolvimento</span> do meus projetos que estão em open-source e hospedado, todos no github</p>
-            </div>
-            <Button label='Ver no github ' />
-          </DescriptionRight>
-          <div className='flex items-center relative left-[-99px]'>
-            <BranchIcon />
-            <DescriptionLeft scrollY={1200}>
-              <div>
-                <span className='text-xs font-semibold text-green-primary border border-green-primary rounded-full py-[1px] px-2'>Quer se conectar comigo?</span>
-                <div className='my-5 w-full max-w-[35em]'>
-                  <h1 className="text-3xl md:text-6xl font-medium text-green-primary">Meu dia-dia</h1>
-                  <h1 className="text-xl md:text-2xl font-medium text-white-primary max-sm:text-balance">Como desenvolvedor estou muito ativo no linkedin, vai lá!</h1>
-                </div>
-              </div>
-              <Button label='Ver linkedin ' />
-            </DescriptionLeft>
-          </div>
-        </div>
-      </LineContainer>
-      <Card title={'Qualificações'} subtitle={'Minha experiência educacional e profissional'}>
-        <Fork/>
-      </Card>
-    </div>
+    </div> */}
     </>
   );
 }

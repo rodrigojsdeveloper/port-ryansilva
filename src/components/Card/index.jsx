@@ -1,28 +1,26 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect, useMemo } from 'react';
+import { useInView } from 'react-intersection-observer';
 
-const InteractiveCard = ({children, title, subtitle}) => {
+const InteractiveCard = ({children, title, subtitle, animationSide='Left'}) => {
   const [style, setStyle] = useState({});
   const [blurStyle, setBlurStyle] = useState({opacity: 0});
+  const [triggerOnce, setTriggerOnce] = useState(false);
 
   const handleMouseMove = (e) => {
     const { clientX, clientY, target } = e;
     const { left, top, width, height } = target.getBoundingClientRect();
 
-    // Calcula a posição do mouse em relação ao card
     const mouseX = (clientX - left);
     const mouseY = (clientY - top);
 
-    // Ajusta a sensibilidade da inclinação aqui, valores menores = efeito mais sutil
     const sensitivity = 50;
     const rotateX = ((mouseY / height) * 100 - 50) / sensitivity;
     const rotateY = -(((mouseX / width) * 100 - 50) / sensitivity);
 
-    // Atualiza o estilo para a inclinação
     setStyle({
       transform: `perspective(700px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
     });
 
-    // Atualiza o estilo para a posição da 'bolha' de desfoque
     setBlurStyle({
       top: `${mouseY}px`,
       left: `${mouseX}px`,
@@ -31,30 +29,39 @@ const InteractiveCard = ({children, title, subtitle}) => {
   };
 
   const handleMouseLeave = () => {
-    // Remove a inclinação suavemente ao sair
     setStyle({
       transform: 'perspective(700px) rotateX(0deg) rotateY(0deg)',
       transition: 'transform 0.5s ease-out',
     });
 
-    // Apenas ajusta a opacidade para que a 'bolha' desapareça a partir de onde o mouse estava
     setBlurStyle(prev => ({
-      ...prev, // Mantém a posição anterior
-      opacity: 0, // Esconde a 'bolha'
-      transition: 'opacity 0.5s ease-out', // Transição suave da opacidade
+      ...prev,
+      opacity: 0,
+      transition: 'opacity 0.5s ease-out',
     }));
   };
 
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+    triggerOnce: false,
+  });
+
+  const animationClass = useMemo(() => {
+    if (inView) return `animate-slideInSlow${animationSide}`; // Entrada
+    else return `animate-slideOutSlow${animationSide}`; // Saída
+  }, [animationSide, inView]);
+
   return (
     <div
+      ref={ref}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={style}
-      className="relative bottom-[7em] hidden-scroll overflow-hidden mx-4 max-lg:overflow-x-scroll p-10 bg-gray-secondary rounded-xl border border-gray-700 transition-transform duration-200 ease-out"
+      className={`${animationClass} w-full relative bottom-[7em] hidden-scroll overflow-hidden mx-4 max-lg:overflow-x-scroll p-10 bg-gray-secondary rounded-xl border border-gray-700 transition-transform`}
     >
       <div
         style={blurStyle}
-        className="absolute w-52 h-52 rounded-full bg-green-primary blur-[10em] transition-opacity duration-500 ease-out"
+        className="absolute w-52 h-52 rounded-full bg-blue-primary blur-[10em] transition-opacity duration-500 ease-out"
       />
       <div className="relative p-10 h-[25em] max-lg:min-w-[1024px]">
         <div className='top-1 absolute pointer-events-none'>

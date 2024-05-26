@@ -1,7 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
-
 const DescriptionContainerAnimationLeft = ({ children, scrollY }) => {
   const [triggerOnce, setTriggerOnce] = useState(false);
 
@@ -25,8 +24,8 @@ const DescriptionContainerAnimationLeft = ({ children, scrollY }) => {
   });
   
   const animationClass = useMemo(() => {
-    if (inView) return 'animate-slideInLeft'; // Entrada
-    else return 'animate-slideOutLeft'; // Saída
+    if (inView) return 'animate-slideInFastLeft'; // Entrada
+    else return 'animate-slideOutFastLeft'; // Saída
   }, [inView]);
 
   return (

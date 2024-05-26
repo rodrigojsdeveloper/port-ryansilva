@@ -23,8 +23,8 @@ const SubCard = ({ children, title, className }) => {
   });
 
   const animationClass = useMemo(() => {
-    if (inView) return 'animate-slideInRight'; // Entrada
-    else return 'animate-slideOutRight'; // Saída
+    if (inView) return 'animate-slideInFastRight'; // Entrada
+    else return 'animate-slideOutFastRight'; // Saída
   }, [inView]);
 
   return (
@@ -32,7 +32,7 @@ const SubCard = ({ children, title, className }) => {
     >
       <div
         ref={ref}
-        className={`opacity-0 ${animationClass} transform z-0 absolute right-[10em] bottom-[-6em] w-[20em] h-[20em] rounded-full bg-green-primary blur-[13em]`}
+        className={`opacity-0 ${animationClass} transform z-0 absolute right-[10em] bottom-[-6em] w-[20em] h-[20em] rounded-full bg-blue-primary blur-[13em]`}
       />
       <div
         ref={ref}

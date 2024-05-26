@@ -45,7 +45,7 @@ module.exports = {
           '100%': { transform: 'rotate(360deg)' },
         },
         slideInFromLeft: {
-          '0%': { transform: 'translateX(-5%)', opacity: '0' },
+          '0%': { transform: 'translateX(-30%)', opacity: '0' },
           '100%': { transform: 'translateX(0)', opacity: '1'  },
         },
         slideInFromRight: {
@@ -62,7 +62,7 @@ module.exports = {
         },
         slideOutToLeft: {
           '0%': { transform: 'translateX(0)', opacity: '1' },
-          '100%': { transform: 'translateX(-5%)', opacity: '0' },
+          '100%': { transform: 'translateX(-30%)', opacity: '0' },
         },
         slideOutToRight: {
           '0%': { transform: 'translateX(0)', opacity: '1' },
@@ -78,10 +78,14 @@ module.exports = {
         },
       },
       animation: {
-        slideInLeft: 'slideInFromLeft 0.3s ease-out forwards',
-        slideOutLeft: 'slideOutToLeft 0.3s ease-out forwards',
-        slideInRight: 'slideInFromRight 0.3s ease-out forwards',
-        slideOutRight: 'slideOutToRight 0.3s ease-out forwards',
+        slideInFastLeft: 'slideInFromLeft 0.3s ease-out forwards',
+        slideInSlowLeft: 'slideInFromLeft 1.5s ease-out forwards',
+        slideOutFastLeft: 'slideOutToLeft 0.3s ease-out forwards',
+        slideOutSlowLeft: 'slideOutToLeft 1.5s ease-out forwards',
+        slideInFastRight: 'slideInFromRight 0.3s ease-out forwards',
+        slideInSlowRight: 'slideInFromRight 1.5s ease-out forwards',
+        slideOutFastRight: 'slideOutToRight 0.3s ease-out forwards',
+        slideOutSlowRight: 'slideOutToRight 1.5s ease-out forwards',
         slideInTop: 'slideInFromTop 0.3s ease-out forwards',
         slideInBottom: 'slideInFromBottom 0.3s ease-out forwards',
         grow: 'grow 0.3s ease-out forwards',
