@@ -60,7 +60,7 @@ export default function Home() {
           </div>
         </div>
       </LineContainer>
-      <div className="flex">
+      <div className="flex items-center max-lg:flex-wrap max-lg:gap-5">
         <Card
           title={'Profissional'}
           subtitle={'Minhas experiências profissionais na área'}

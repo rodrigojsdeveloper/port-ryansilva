@@ -23,8 +23,8 @@ const SubCard = ({ children, title, className }) => {
   });
 
   const animationClass = useMemo(() => {
-    if (inView) return 'animate-slideInFastRight'; // Entrada
-    else return 'animate-slideOutFastRight'; // Saída
+    if (inView) return 'animate-slideInSlowRight'; // Entrada
+    else return 'animate-slideOutSlowRight'; // Saída
   }, [inView]);
 
   return (

@@ -57,7 +57,7 @@ const InteractiveCard = ({children, title, subtitle, animationSide='Left'}) => {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={style}
-      className={`${animationClass} w-full relative bottom-[7em] hidden-scroll overflow-hidden mx-4 max-lg:overflow-x-scroll p-10 bg-gray-secondary rounded-xl border border-gray-700 transition-transform`}
+      className={`w-full relative bottom-[7em] hidden-scroll overflow-hidden mx-4 max-lg:overflow-x-scroll p-10 bg-gray-secondary rounded-xl border border-gray-700 transition-transform ${animationClass}`}
     >
       <div
         style={blurStyle}
