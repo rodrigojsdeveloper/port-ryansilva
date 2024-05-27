@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect, useMemo } from 'react';
 import { useInView } from 'react-intersection-observer';
 
-const InteractiveCard = ({children, title, subtitle, animationSide='Left'}) => {
+const InteractiveCard = ({children, title, subtitle, color, animationSide='Left'}) => {
   const [style, setStyle] = useState({});
   const [blurStyle, setBlurStyle] = useState({opacity: 0});
   const [triggerOnce, setTriggerOnce] = useState(false);
@@ -14,12 +14,12 @@ const InteractiveCard = ({children, title, subtitle, animationSide='Left'}) => {
     const mouseY = (clientY - top);
 
     const sensitivity = 50;
-    const rotateX = ((mouseY / height) * 100 - 50) / sensitivity;
-    const rotateY = -(((mouseX / width) * 100 - 50) / sensitivity);
+    // const rotateX = ((mouseY / height) * 100 - 50) / sensitivity;
+    // const rotateY = -(((mouseX / width) * 100 - 50) / sensitivity);
 
-    setStyle({
-      transform: `perspective(700px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
-    });
+    // setStyle({
+    //   transform: `perspective(700px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
+    // });
 
     setBlurStyle({
       top: `${mouseY}px`,
@@ -61,7 +61,7 @@ const InteractiveCard = ({children, title, subtitle, animationSide='Left'}) => {
     >
       <div
         style={blurStyle}
-        className="absolute w-52 h-52 rounded-full bg-blue-primary blur-[10em] transition-opacity duration-500 ease-out"
+        className={`absolute w-52 h-52 rounded-full bg-${color} blur-[10em] transition-opacity duration-500 ease-out`}
       />
       <div className="relative p-10 h-[25em] max-lg:min-w-[1024px]">
         <div className='top-1 absolute pointer-events-none'>
