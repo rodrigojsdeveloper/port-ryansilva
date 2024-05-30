@@ -20,13 +20,13 @@ export default function Home() {
   return (
     <>
       <div>
-        <LineContainer LineInitial className="h-[15em]" color="white-primary" icon={CodeIcon} fromBottomLine="from-40%">
+        <LineContainer LineInitial className="h-[15em]" color="white" icon={CodeIcon} fromBottomLine="from-40%">
           <div className="mt-[13px]">
             <h1 className="text-5xl md:text-7xl font-bold leading-[56px] text-white-primary">Ryan Barbosa Silva</h1>
             <p className="text-gray-primary text-2xl mt-5 flex-wrap flex items-center gap-2.5">Desenvolvedor Full-Stack <span className="text-sm">na</span> <a target="_blank" href="https://www.visie.com.br" className="ml-2 cursor-pointer"><VisieTextoIcon /></a></p>
           </div>
         </LineContainer>
-        <LineContainer className="relative h-[30em] bottom-12" heightTopLine="h-20" color="blue-primary" icon={BusinessIcon}>
+        <LineContainer className="relative h-[30em] bottom-12" heightTopLine="h-20" color="blue" icon={BusinessIcon}>
           <div className='mt-[78px]'>
             <h1 className="text-2xl font-medium text-white-primary">Especialização</h1>
             <div className='mt-10'>
@@ -37,7 +37,7 @@ export default function Home() {
         </LineContainer>
         <Shape1Icon className='absolute top-[35em] left-[60em] animate-rotate-180s-linear-infinite' />
         <ImageContainer src={'/ide.png'} />
-        <LineContainer animationLine className="relative h-[50em] bottom-[90px]" color="blue-primary">
+        <LineContainer animationLine className="relative h-[50em] bottom-[90px]" color="blue">
           <div className='mt-[100px] ml-20'>
             <DescriptionRight scrollY={700}>
               <div className='w-[35em] mb-2'>
@@ -64,23 +64,23 @@ export default function Home() {
           <Card
             title={'Profissional'}
             subtitle={'Minhas experiências profissionais na área'}
-            animationSide="Left"
-            color="blue-primary"
+            animationSide="left"
+            color="bg-blue-primary"
           >
             {/* <Fork/> */}
           </Card>
           <Card
             title={'Educacional'}
             subtitle={'Minhas principais fonte de conhecimento'}
-            animationSide="Right"
-            color="blue-primary"
+            animationSide="right"
+            color="bg-blue-primary"
           >
             {/* <Fork/> */}
           </Card>
         </div>
       </div>
       <div>
-        <LineContainer className="relative h-[20em] bottom-12" heightTopLine="h-20" color="puple-primary" icon={BusinessIcon}>
+        <LineContainer className="relative h-[20em] bottom-12" heightTopLine="h-20" color="puple" icon={BusinessIcon}>
           <div className='mt-[70px]'>
             <h1 className="text-2xl font-medium text-white-primary">Projetos desenvolvidos</h1>
             <div className='mt-10'>
@@ -93,8 +93,9 @@ export default function Home() {
           <Card
             title={'Projetos'}
             subtitle={'Alguns dos projetos que se tornaram reais.'}
-            animationSide="Left"
-            color="puple-primary"
+            animationSide="left"
+            animationSpeed
+            color="bg-puple-primary"
           >
             {/* <Fork/> */}
           </Card>

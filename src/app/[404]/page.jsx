@@ -6,7 +6,7 @@ function Page404Light() {
       <div className="wrap">
         <div className="404">
           <pre>
-            <code className="text-black">
+            {/* <code className="text-black">
               {'('}<span className="text-blue-500">function</span>() {'{'}
               <br />
               &nbsp;&nbsp;<span className="text-blue-500">function</span> launch() {'{'}
@@ -18,7 +18,7 @@ function Page404Light() {
               &nbsp;&nbsp;window.addEventListener(<span className="text-yellow-500">'load'</span>, launch);
               <br />
               {'}'})();
-            </code>
+            </code> */}
           </pre>
         </div>
       </div>

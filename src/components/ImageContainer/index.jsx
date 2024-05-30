@@ -1,7 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useMemo, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import SubCard from '../SubCard';
 import CheckIcon from '../Svgs/CheckIcon';
+import Image from 'next/image';
 
 const ImageContainer = ({ src }) => {
   const [triggerOnce, setTriggerOnce] = useState(false);

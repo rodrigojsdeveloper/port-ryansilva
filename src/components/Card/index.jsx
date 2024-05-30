@@ -1,10 +1,29 @@
 import React, { useState, useRef, useEffect, useMemo } from 'react';
 import { useInView } from 'react-intersection-observer';
 
-const InteractiveCard = ({children, title, subtitle, color, animationSide='Left'}) => {
+const InteractiveCard = ({
+  children,
+  title,
+  subtitle,
+  color,
+  animationSpeed = false,
+  animationSide = 'left'
+}) => {
   const [style, setStyle] = useState({});
-  const [blurStyle, setBlurStyle] = useState({opacity: 0});
+  const [blurStyle, setBlurStyle] = useState({ opacity: 0 });
   const [triggerOnce, setTriggerOnce] = useState(false);
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const classAnimate = {
+    left: {
+      in: `animate-slideIn${animationSpeed ? 'Fast' : 'Slow'}Left`,
+      out: `animate-slideOut${animationSpeed ? 'Fast' : 'Slow'}Left`,
+    },
+    right: {
+      in: `animate-slideIn${animationSpeed ? 'Fast' : 'Slow'}Right`,
+      out: `animate-slideOut${animationSpeed ? 'Fast' : 'Slow'}Right`,
+    }
+  }
 
   const handleMouseMove = (e) => {
     const { clientX, clientY, target } = e;
@@ -47,9 +66,9 @@ const InteractiveCard = ({children, title, subtitle, color, animationSide='Left'
   });
 
   const animationClass = useMemo(() => {
-    if (inView) return `animate-slideInSlow${animationSide}`; // Entrada
-    else return `animate-slideOutSlow${animationSide}`; // Saída
-  }, [animationSide, inView]);
+    if (inView) return classAnimate?.[animationSide]?.in; // Entrada
+    else return classAnimate?.[animationSide]?.out;; // Saída
+  }, [animationSide, classAnimate, inView]);
 
   return (
     <div
@@ -57,13 +76,13 @@ const InteractiveCard = ({children, title, subtitle, color, animationSide='Left'
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={style}
-      className={`w-full relative bottom-[7em] hidden-scroll overflow-hidden mx-4 max-lg:overflow-x-scroll p-10 bg-gray-secondary rounded-xl border border-gray-700 transition-transform ${animationClass}`}
+      className={`w-full relative bottom-[7em] hidden-scroll overflow-hidden mx-4 max-lg:overflow-x-scroll p-10 bg-gray-secondary rounded-xl border border-gray-3 transition-transform ${animationClass}`}
     >
       <div
         style={blurStyle}
-        className={`absolute w-52 h-52 rounded-full bg-${color} blur-[10em] transition-opacity duration-500 ease-out`}
+        className={`absolute w-52 h-52 rounded-full ${color} blur-[10em] transition-opacity duration-500 ease-out`}
       />
-      <div className="relative p-10 h-[25em] max-lg:min-w-[1024px]">
+      <div className="relative p-10 h-[25em]">
         <div className='top-1 absolute pointer-events-none'>
           <h1 className='font-semibold text-gray-primary'>{title}</h1>
           <p className='text-xs text-gray-primary'>{subtitle}</p>

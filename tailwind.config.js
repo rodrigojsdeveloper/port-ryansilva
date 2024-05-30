@@ -4,8 +4,8 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
+    // "./node_modules/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}",
+    // "./node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -26,15 +26,15 @@ module.exports = {
       },
       colors: {
         "gray-primary": "#848d97",
-        "gray-secondary": "#161b22",
-        "gray-3": "#2f363e",
-        "gray-4": "#24292f",
+        "gray-secondary": "#121212",
+        "gray-3": "#272727",
+        "gray-4": "#1c1c1c",
         "green-primary": "#3fb950",
         "white-primary": "#f6f8fa",
         "puple-primary": "#dd7df7",
         "blue-primary": "#33b3ae",
         "pink-primary": "#f778ba",
-        "background": "#0d1117"
+        "background": "#0c0c0c"
       },
       borderRadius: {
         radius: '0.5rem',
@@ -94,5 +94,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  // plugins: [require('tailwindcss-animate')],
 };

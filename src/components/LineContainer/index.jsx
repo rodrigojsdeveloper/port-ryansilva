@@ -14,6 +14,29 @@ const LineContainer = ({
   heightTopLine = "h-full",
   heightBottomLine = "h-full"
 }) => {
+  const classeColor = {
+    white: {
+      from: 'from-white-primary',
+      bg: 'bg-white-primary',
+      text: 'text-white-primary',
+    },
+    puple: {
+      from: 'from-puple-primary',
+      bg: 'bg-puple-primary',
+      text: 'text-puple-primary',
+    },
+    green: {
+      from: 'from-green-primary',
+      bg: 'bg-green-primary',
+      text: 'text-green-primary',
+    },
+    blue: {
+      from: 'from-blue-primary',
+      bg: 'bg-blue-primary',
+      text: 'text-blue-primary',
+    }
+  }
+
   const { ref, inView } = useInView({
     threshold: 0.25,
     triggerOnce: false,
@@ -29,16 +52,16 @@ const LineContainer = ({
       <div className={`flex m-5 ${className}`}>
         <div className={`flex flex-col items-center max-w-[5em] pr-4 ${animationLine ? lineAnimationClass : ''}`}>
           {LineInitial && <span className='h-[32px] w-[12px] border-2 border-gray-700 rounded-full mb-2'></span>}
-          <div className={`w-[3px] ${heightTopLine} bg-gradient-to-t from-${color} ${fromTopLine} to-transparent rounded-md `}/>
+          <div className={`w-[3px] ${heightTopLine} bg-gradient-to-t ${classeColor?.[color]?.from} ${fromTopLine} to-transparent rounded-md `}/>
           {Icon && 
             <div className='my-5'>
-              <div className={`p-4 blur-xl bg-${color}`}></div>
-              <span className={`text-${color} relative top-[-25px] left-[5px]`}>
+              <div className={`p-4 blur-xl ${classeColor?.[color]?.bg}`}></div>
+              <span className={`${classeColor?.[color]?.text} relative top-[-25px] left-[5px]`}>
                 <Icon/>
               </span>
             </div>
           }
-          <div className={`w-[3px] ${heightBottomLine} bg-gradient-to-b from-${color} ${fromBottomLine} to-transparent rounded-md`}/> 
+          <div className={`w-[3px] ${heightBottomLine} bg-gradient-to-b ${classeColor?.[color]?.from} ${fromBottomLine} to-transparent rounded-md`}/> 
         </div>
         {children}
       </div>

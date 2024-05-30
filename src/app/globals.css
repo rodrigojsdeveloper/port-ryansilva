@@ -10,7 +10,7 @@
 
 body, html {
   font-feature-settings: unset;
-  background: #0d1117;
+  background: #0c0c0c;
   /* background-image: url('/bg.webp'); */
   background-size: 700px;
   background-repeat: no-repeat;
@@ -28,7 +28,7 @@ body, html {
 
 @media (max-width: 524px) {
   body, html {
-    background: #0d1117;
+    background: #0c0c0c;
     background-image: url('/bg-mobile.webp');
     background-size: 600px;
     background-repeat: no-repeat;
