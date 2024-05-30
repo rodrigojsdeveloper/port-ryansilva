@@ -1,4 +1,4 @@
-const BranchIcon = () => {
+const BranchBlueIcon = () => {
   return <svg xmlns="http://www.w3.org/2000/svg" width="87" height="485" viewBox="0 0 87 485" fill="none">
     <path d="M2.00026 0L2.00014 33.5188C2.00005 61.0048 12.3542 87.4821 31.0001 107.676V107.676C49.6458 127.871 60 154.348 60 181.834V301.665C60 329.451 49.6629 356.243 31.0001 376.829V376.829C12.3373 397.414 2.00022 424.207 2.00016 451.993L2.00009 485" stroke="url(#paint0_linear_120_10499)" strokeWidth="3" />
     <g filter="url(#filter0_dddd_120_10499)">
@@ -47,4 +47,4 @@ const BranchIcon = () => {
   </svg>
 }
 
-export default BranchIcon
+export default BranchBlueIcon

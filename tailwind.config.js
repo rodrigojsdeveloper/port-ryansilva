@@ -33,6 +33,7 @@ module.exports = {
         "white-primary": "#f6f8fa",
         "puple-primary": "#dd7df7",
         "blue-primary": "#33b3ae",
+        "red-primary": "#ff5a5a",
         "pink-primary": "#f778ba",
         "background": "#0c0c0c"
       },

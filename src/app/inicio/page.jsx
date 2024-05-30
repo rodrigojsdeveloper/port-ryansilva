@@ -7,7 +7,7 @@ import CodeIcon from "@/components/Svgs/CodeIcon";
 import BusinessIcon from "@/components/Svgs/BusinessIcon";
 import Shape1Icon from "@/components/Svgs/Shape1Icon";
 import Button from "@/components/Button";
-import BranchIcon from "@/components/Svgs/BranchIcon";
+import BranchBlueIcon from "@/components/Svgs/BranchBlueIcon";
 import DescriptionLeft from "@/components/DescriptionContainer/animationLeft";
 import DescriptionRight from "@/components/DescriptionContainer/animationRight";
 import Card from "@/components/Card";
@@ -15,6 +15,7 @@ import VisieTextoIcon from "@/components/Svgs/VisieTextoIcon";
 import Fork from "@/components/Fork";
 import SubCard from "@/components/SubCard";
 import CheckIcon from "@/components/Svgs/CheckIcon";
+import BranchRedIcon from "@/components/Svgs/BranchRedIcon";
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
         </LineContainer>
         <LineContainer className="relative h-[30em] bottom-12" heightTopLine="h-20" color="blue" icon={BusinessIcon}>
           <div className='mt-[78px]'>
-            <h1 className="text-2xl font-medium text-white-primary">Especialização</h1>
+            <h1 className="text-2xl font-medium text-white-primary">Quem sou?</h1>
             <div className='mt-10'>
               <h1 className="text-3xl md:text-4xl font-medium text-blue-primary">Inovação e Eficiência</h1>
               <h1 className="text-3xl md:text-3xl font-medium text-white-primary">Focado em soluções estratégicas full-stack e otimização de CI/CD para maximizar eficiência.</h1>
@@ -46,7 +47,7 @@ export default function Home() {
               <Button label='Ver no github ' />
             </DescriptionRight>
             <div className='flex items-center relative left-[-99px]'>
-              <BranchIcon />
+              <BranchBlueIcon />
               <DescriptionLeft scrollY={1200}>
                 <div>
                   <span className='text-xs font-semibold text-blue-primary border border-blue-primary rounded-full py-[1px] px-2'>Quer se conectar comigo?</span>
@@ -80,7 +81,7 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <LineContainer className="relative h-[20em] bottom-12" heightTopLine="h-20" color="puple" icon={BusinessIcon}>
+        <LineContainer className="relative h-[20em] bottom-20" heightTopLine="h-20" color="puple" icon={BusinessIcon}>
           <div className='mt-[70px]'>
             <h1 className="text-2xl font-medium text-white-primary">Projetos desenvolvidos</h1>
             <div className='mt-10'>
@@ -99,11 +100,39 @@ export default function Home() {
           >
             {/* <Fork/> */}
           </Card>
-          {/* <SubCard className={'bottom-[15em] left-[50em] w-[25em] z-20'}>
-            <p className="p-[1em] text-xs text-center font-medium text-white-primary">Falando de projetos e tecnologias, esses são as principais tecnologias que uso profissionalmente.</p>
-            <div className="h-[15em]">
+        </div>
+      </div>
+      <div>
+        <LineContainer className="relative h-[45em] bottom-20" heightTopLine="h-20" color="red" icon={BusinessIcon}>
+          <div>
+            <div className='mt-[85px]'>
+              <h1 className="text-2xl font-medium text-white-primary">Especialização e habilidades</h1>
+              <div className='mt-10'>
+                <h1 className="text-3xl md:text-4xl font-medium text-red-primary">Tecnologias e ferramentas</h1>
+                <h1 className="text-2xl md:text-xl font-medium text-white-primary">Se especializando em tecnologias todos os dias.</h1>
+              </div>
             </div>
-          </SubCard> */}
+            <div className='ml-20 flex items-center'>
+              <div className='flex items-center relative left-[-115px]'>
+                <BranchRedIcon />
+                <DescriptionLeft scrollY={1200}>
+                  <div>
+                    <span className='text-xs font-semibold text-red-primary border border-red-primary rounded-full py-[1px] px-2'>Principais tecnologias</span>
+                    <div className='my-5 w-full max-w-[40em]'>
+                      <h1 className="text-3xl md:text-5xl font-medium text-red-primary">Tecnlogias</h1>
+                      <h1 className="text-base md:text-lg font-medium text-white-primary max-sm:text-balance">As principais tecnologias que utilizo profissionalmente</h1>
+                    </div>
+                  </div>
+                  <Button label='Certificações ' />
+                </DescriptionLeft>
+              </div>
+              <div>
+                
+              </div>
+            </div>
+          </div>
+        </LineContainer>
+        <div>
         </div>
       </div>
     </>

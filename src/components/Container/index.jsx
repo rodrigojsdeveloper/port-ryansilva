@@ -3,7 +3,7 @@ import CodeIcon from "@/components/Svgs/CodeIcon";
 import BusinessIcon from "@/components/Svgs/BusinessIcon";
 import { useInView } from 'react-intersection-observer';
 import Button from '../Button';
-import BranchIcon from '../Svgs/BranchIcon';
+import BranchIcon from '../Svgs/BranchBlueIcon';
 import Shape1Icon from '../Svgs/Shape1Icon';
 
 
