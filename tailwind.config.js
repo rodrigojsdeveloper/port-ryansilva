@@ -61,6 +61,14 @@ module.exports = {
           '0%': { transform: 'translateY(30%)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
+        slideOutToTop: {
+          '0%': { transform: 'translateY(0)', opacity: '1' },
+          '100%': { transform: 'translateY(-30%)', opacity: '0' },
+        },
+        slideOutToBottom: {
+          '0%': { transform: 'translateY(0)', opacity: '1' },
+          '100%': { transform: 'translateY(30%)', opacity: '0' },
+        },
         slideOutToLeft: {
           '0%': { transform: 'translateX(0)', opacity: '1' },
           '100%': { transform: 'translateX(-30%)', opacity: '0' },
@@ -68,6 +76,38 @@ module.exports = {
         slideOutToRight: {
           '0%': { transform: 'translateX(0)', opacity: '1' },
           '100%': { transform: 'translateX(30%)', opacity: '0' },
+        },
+        slideFarInFromLeft: {
+          '0%': { transform: 'translateX(-100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1'  },
+        },
+        slideFarInFromRight: {
+          '0%': { transform: 'translateX(100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        slideFarInFromTop: {
+          '0%': { transform: 'translateY(-90%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        slideFarInFromBottom: {
+          '0%': { transform: 'translateY(90%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        slideFarOutToTop: {
+          '0%': { transform: 'translateY(0)', opacity: '1' },
+          '100%': { transform: 'translateY(-90%)', opacity: '0' },
+        },
+        slideFarOutToBottom: {
+          '0%': { transform: 'translateY(0)', opacity: '1' },
+          '100%': { transform: 'translateY(90%)', opacity: '0' },
+        },
+        slideFarOutToLeft: {
+          '0%': { transform: 'translateX(0)', opacity: '1' },
+          '100%': { transform: 'translateX(-100%)', opacity: '0' },
+        },
+        slideFarOutToRight: {
+          '0%': { transform: 'translateX(0)', opacity: '1' },
+          '100%': { transform: 'translateX(100%)', opacity: '0' },
         },
         grow: {
           '0%': { height: '0%' },
@@ -79,6 +119,15 @@ module.exports = {
         },
       },
       animation: {
+        slideFarInLeft: 'slideFarInFromLeft 1s ease-out forwards',
+        slideFarOutLeft: 'slideFarOutToLeft 1s ease-out forwards',
+        slideFarInRight: 'slideFarInFromRight 1s ease-out forwards',
+        slideFarOutRight: 'slideFarOutToRight 1s ease-out forwards',
+        slideFarInTop: 'slideFarInFromTop 1s ease-out forwards',
+        slideFarOutTop: 'slideFarOutToTop 1s ease-out forwards',
+        slideFarInBottom: 'slideFarInFromBottom 1s ease-out forwards',
+        slideFarOutBottom: 'slideFarOutToBottom 1s ease-out forwards',
+        
         slideInFastLeft: 'slideInFromLeft 0.3s ease-out forwards',
         slideInSlowLeft: 'slideInFromLeft 1.5s ease-out forwards',
         slideOutFastLeft: 'slideOutToLeft 0.3s ease-out forwards',
@@ -87,10 +136,14 @@ module.exports = {
         slideInSlowRight: 'slideInFromRight 1.5s ease-out forwards',
         slideOutFastRight: 'slideOutToRight 0.3s ease-out forwards',
         slideOutSlowRight: 'slideOutToRight 1.5s ease-out forwards',
+        slideOutSlowTop: 'slideOutToTop 0.8s ease-out forwards',
+        slideOutSlowBottom: 'slideOutToBottom 0.8s ease-out forwards',
+        slideInSlowTop: 'slideInFromTop 0.8s ease-out forwards',
+        slideInSlowBottom: 'slideInFromBottom 0.8s ease-out forwards',
         slideInTop: 'slideInFromTop 0.3s ease-out forwards',
         slideInBottom: 'slideInFromBottom 0.3s ease-out forwards',
-        grow: 'grow 0.3s ease-out forwards',
-        shrink: 'shrink 0.3s ease-out forwards',
+        grow: 'grow 0.7s ease-out forwards',
+        shrink: 'shrink 0.7s ease-out forwards',
         'rotate-180s-linear-infinite': 'rotate-keyframes 20s linear infinite',
       },
     },

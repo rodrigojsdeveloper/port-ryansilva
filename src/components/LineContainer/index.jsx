@@ -8,6 +8,7 @@ const LineContainer = ({
   // animationBottomLine,
   className,
   color,
+  title,
   icon: Icon,
   fromTopLine = "from-60%",
   fromBottomLine = "from-60%",
@@ -39,6 +40,11 @@ const LineContainer = ({
       from: 'from-red-primary',
       bg: 'bg-red-primary',
       text: 'text-red-primary',
+    },
+    pink: {
+      from: 'from-pink-primary',
+      bg: 'bg-pink-primary',
+      text: 'text-pink-primary',
     }
   }
 
@@ -59,11 +65,15 @@ const LineContainer = ({
           {LineInitial && <span className='h-[32px] w-[12px] border-2 border-gray-700 rounded-full mb-2'></span>}
           <div className={`w-[3px] ${heightTopLine} bg-gradient-to-t ${classeColor?.[color]?.from} ${fromTopLine} to-transparent rounded-md `}/>
           {Icon && 
-            <div className='my-5'>
-              <div className={`p-4 blur-xl ${classeColor?.[color]?.bg}`}></div>
-              <span className={`${classeColor?.[color]?.text} relative top-[-25px] left-[5px]`}>
-                <Icon/>
-              </span>
+            <div className='flex items-center my-5'>
+              <div className='h-[38px]'>
+                <div className={`p-4 blur-xl ${classeColor?.[color]?.bg}`}></div>
+                <span className={`${classeColor?.[color]?.text} relative top-[-25px] left-[5px]`}>
+                  <Icon/>
+                </span>
+                
+              </div>
+              <h1 className="mb-1 ml-12 absolute text-2xl font-medium text-white-primary">{title}</h1>
             </div>
           }
           <div className={`w-[3px] ${heightBottomLine} bg-gradient-to-b ${classeColor?.[color]?.from} ${fromBottomLine} to-transparent rounded-md`}/> 
