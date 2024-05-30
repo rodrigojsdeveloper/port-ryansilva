@@ -15,6 +15,7 @@ import IntroIcon from "@/components/Svgs/IntroIcon";
 import AboutMeIcon from "@/components/Svgs/AboutMeIcon";
 import SkillsIcon from "@/components/Svgs/SkillsIcon";
 import ProjectIcon from "@/components/Svgs/ProjectIcon";
+import Technologies from "@/components/Technologies";
 
 export default function Home() {
   return (
@@ -125,6 +126,7 @@ export default function Home() {
                   <Button label='Certificações ' />
                 </DescriptionLeft>
               </div>
+              <Technologies/>
             </div>
           </div>
         </LineContainer>

@@ -61,6 +61,14 @@ module.exports = {
           '0%': { transform: 'translateY(30%)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
+        slideOutToTop: {
+          '0%': { transform: 'translateY(0)', opacity: '1' },
+          '100%': { transform: 'translateY(-30%)', opacity: '0' },
+        },
+        slideOutToBottom: {
+          '0%': { transform: 'translateY(0)', opacity: '1' },
+          '100%': { transform: 'translateY(30%)', opacity: '0' },
+        },
         slideOutToLeft: {
           '0%': { transform: 'translateX(0)', opacity: '1' },
           '100%': { transform: 'translateX(-30%)', opacity: '0' },
@@ -87,6 +95,10 @@ module.exports = {
         slideInSlowRight: 'slideInFromRight 1.5s ease-out forwards',
         slideOutFastRight: 'slideOutToRight 0.3s ease-out forwards',
         slideOutSlowRight: 'slideOutToRight 1.5s ease-out forwards',
+        slideOutSlowTop: 'slideOutToTop 1.5s ease-out forwards',
+        slideOutSlowBottom: 'slideOutToBottom 1.5s ease-out forwards',
+        slideInSlowTop: 'slideInFromTop 1.5s ease-out forwards',
+        slideInSlowBottom: 'slideInFromBottom 1.5s ease-out forwards',
         slideInTop: 'slideInFromTop 0.3s ease-out forwards',
         slideInBottom: 'slideInFromBottom 0.3s ease-out forwards',
         grow: 'grow 0.3s ease-out forwards',
