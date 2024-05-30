@@ -22,6 +22,7 @@ import Contact from "@/components/Contact";
 export default function Home() {
   return (
     <>
+      {/* INICIO + SOBRE MIM */}
       <div>
         <LineContainer LineInitial className="h-[15em]" color="white" icon={IntroIcon} fromBottomLine="from-40%">
           <div className="mt-[13px]">
@@ -68,6 +69,7 @@ export default function Home() {
             subtitle={'Minhas experiências profissionais na área'}
             animationSide="left"
             color="bg-blue-primary"
+            className="h-[25em]"
           >
             {/* <Fork/> */}
           </Card>
@@ -76,11 +78,14 @@ export default function Home() {
             subtitle={'Minhas principais fonte de conhecimento'}
             animationSide="right"
             color="bg-blue-primary"
+            className="h-[25em]"
           >
             {/* <Fork/> */}
           </Card>
         </div>
       </div>
+
+      {/* PROJETOS */}
       <div>
         <LineContainer title="Projetos desenvolvidos" animationLine className="relative h-[20em] bottom-20" heightTopLine="h-20" color="puple" icon={ProjectIcon}>
           <div className='mt-[70px]'>
@@ -97,11 +102,14 @@ export default function Home() {
             animationSide="left"
             animationSpeed
             color="bg-puple-primary"
+            className="h-[25em]"
           >
             {/* <Fork/> */}
           </Card>
         </div>
       </div>
+
+      {/* SKILLS */}
       <div>
         <LineContainer title="Especialização e habilidades" animationLine className="relative h-[45em] bottom-20" heightTopLine="h-20" color="red" icon={SkillsIcon}>
           <div>
@@ -131,17 +139,21 @@ export default function Home() {
             </div>
           </div>
         </LineContainer>
-        <Card
-          title={'Emblemas'}
-          subtitle={'Alguns brasões que tenho orgulho'}
-          animationSide="right"
-          animationSpeed
-          color="bg-red-primary"
-          heigth="h-[10em]"
-        >
-          {/* <Fork/> */}
-        </Card>
+        <div>
+          <Card
+            title={'Emblemas'}
+            subtitle={'Alguns brasões que tenho orgulho'}
+            animationSide="right"
+            animationSpeed
+            color="bg-red-primary"
+            className="h-[8em]"
+          >
+            {/* <Fork/> */}
+          </Card>
+        </div>
       </div>
+
+      {/* CONTATO */}
       <div>
         <LineContainer title="Entre em contato" animationLine className="relative h-[13em] bottom-20" heightTopLine="h-20" color="pink" icon={ContactIcon}>
           <div className='mt-[100px]'>

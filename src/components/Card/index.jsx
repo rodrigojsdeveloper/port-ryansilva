@@ -3,12 +3,12 @@ import { useInView } from 'react-intersection-observer';
 
 const InteractiveCard = ({
   children,
+  className,
   title,
   subtitle,
   color,
   animationSpeed = false,
   animationSide = 'left',
-  height = 'h-[25em]'
 }) => {
   const [style, setStyle] = useState({});
   const [blurStyle, setBlurStyle] = useState({ opacity: 0 });
@@ -42,17 +42,17 @@ const InteractiveCard = ({
     // });
 
     setBlurStyle({
-      top: `${mouseY}px`,
-      left: `${mouseX}px`,
+      top: `${mouseY - 85}px`,
+      left: `${mouseX - 55}px`,
       opacity: 1,
     });
   };
 
   const handleMouseLeave = () => {
-    setStyle({
-      transform: 'perspective(700px) rotateX(0deg) rotateY(0deg)',
-      transition: 'transform 0.5s ease-out',
-    });
+    // setStyle({
+    //   transform: 'perspective(700px) rotateX(0deg) rotateY(0deg)',
+    //   transition: 'transform 0.5s ease-out',
+    // });
 
     setBlurStyle(prev => ({
       ...prev,
@@ -83,7 +83,7 @@ const InteractiveCard = ({
         style={blurStyle}
         className={`absolute w-52 h-52 rounded-full ${color} blur-[10em] transition-opacity duration-500 ease-out`}
       />
-      <div className={`relative p-10 ${height}`}>
+      <div className={`relative p-10 ${className}`}>
         <div className='top-1 absolute pointer-events-none'>
           <h1 className='font-semibold text-stone-400'>{title}</h1>
           <p className='text-xs text-stone-500'>{subtitle}</p>
