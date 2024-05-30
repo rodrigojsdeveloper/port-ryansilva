@@ -5,20 +5,20 @@ const ItemTech = ({ children, className, animationSide }) => {
 
   const classAnimate = {
     left: {
-      in: `animate-slideInSlowLeft`,
-      out: `animate-slideOutSlowLeft`,
+      in: `animate-slideFarInLeft`,
+      out: `animate-slideFarOutLeft`,
     },
     right: {
-      in: `animate-slideInSlowRight`,
-      out: `animate-slideOutSlowRight`,
+      in: `animate-slideFarInRight`,
+      out: `animate-slideFarOutRight`,
     },
     top: {
-      in: `animate-slideInSlowTop`,
-      out: `animate-slideOutSlowTop`,
+      in: `animate-slideFarInTop`,
+      out: `animate-slideFarOutTop`,
     },
     bottom: {
-      in: `animate-slideInSlowBottom`,
-      out: `animate-slideOutSlowBottom`,
+      in: `animate-slideFarInBottom`,
+      out: `animate-slideFarOutBottom`,
     }
   }
   const { ref, inView } = useInView({

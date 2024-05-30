@@ -77,6 +77,38 @@ module.exports = {
           '0%': { transform: 'translateX(0)', opacity: '1' },
           '100%': { transform: 'translateX(30%)', opacity: '0' },
         },
+        slideFarInFromLeft: {
+          '0%': { transform: 'translateX(-100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1'  },
+        },
+        slideFarInFromRight: {
+          '0%': { transform: 'translateX(100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        slideFarInFromTop: {
+          '0%': { transform: 'translateY(-90%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        slideFarInFromBottom: {
+          '0%': { transform: 'translateY(90%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        slideFarOutToTop: {
+          '0%': { transform: 'translateY(0)', opacity: '1' },
+          '100%': { transform: 'translateY(-90%)', opacity: '0' },
+        },
+        slideFarOutToBottom: {
+          '0%': { transform: 'translateY(0)', opacity: '1' },
+          '100%': { transform: 'translateY(90%)', opacity: '0' },
+        },
+        slideFarOutToLeft: {
+          '0%': { transform: 'translateX(0)', opacity: '1' },
+          '100%': { transform: 'translateX(-100%)', opacity: '0' },
+        },
+        slideFarOutToRight: {
+          '0%': { transform: 'translateX(0)', opacity: '1' },
+          '100%': { transform: 'translateX(100%)', opacity: '0' },
+        },
         grow: {
           '0%': { height: '0%' },
           '100%': { height: '100%' },
@@ -87,6 +119,15 @@ module.exports = {
         },
       },
       animation: {
+        slideFarInLeft: 'slideFarInFromLeft 1s ease-out forwards',
+        slideFarOutLeft: 'slideFarOutToLeft 1s ease-out forwards',
+        slideFarInRight: 'slideFarInFromRight 1s ease-out forwards',
+        slideFarOutRight: 'slideFarOutToRight 1s ease-out forwards',
+        slideFarInTop: 'slideFarInFromTop 1s ease-out forwards',
+        slideFarOutTop: 'slideFarOutToTop 1s ease-out forwards',
+        slideFarInBottom: 'slideFarInFromBottom 1s ease-out forwards',
+        slideFarOutBottom: 'slideFarOutToBottom 1s ease-out forwards',
+        
         slideInFastLeft: 'slideInFromLeft 0.3s ease-out forwards',
         slideInSlowLeft: 'slideInFromLeft 1.5s ease-out forwards',
         slideOutFastLeft: 'slideOutToLeft 0.3s ease-out forwards',

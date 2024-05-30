@@ -1,41 +1,42 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import ItemTech from './ItemTech';
+import SalesforceIcon from '../Svgs/SalesforceIcon';
+import AzureIcon from '../Svgs/AzureIcon';
+import DockerIcon from '../Svgs/DockerIcon';
+import TypeScriptIcon from '../Svgs/TypeScriptIcon';
+import PythonIcon from '../Svgs/PythonIcon';
+import ReactIcon from '../Svgs/ReactIcon';
+import PhpIcon from '../Svgs/PhpIcon';
 
 const Technologies = ({ src }) => {
   return (
     <div className='flex items-center justify-center gap-10'>
-      <div className='flex flex-col justify-center'>
+      <div className='flex flex-col items-center justify-center gap-2'>
         <ItemTech animationSide='left'>
-          ITEM 1
+          <SalesforceIcon/>
         </ItemTech>
         <ItemTech animationSide='left'>
-          ITEM 2
-        </ItemTech>
-        <ItemTech animationSide='left'>
-          ITEM 3
+          <AzureIcon/>
         </ItemTech>
       </div>
       <div className='flex flex-col justify-center'>
         <ItemTech animationSide='top'>
-          ITEM 1
+          <PhpIcon/>
         </ItemTech>
         <ItemTech animationSide='left'>
-          ITEM 2
+          <PythonIcon/>
         </ItemTech>
         <ItemTech animationSide='bottom'>
-          ITEM 3
+          <ReactIcon/>
         </ItemTech>
       </div>
-      <div className='flex flex-col justify-center'>
+      <div className='flex flex-col items-center justify-center gap-2'>
         <ItemTech animationSide='right'>
-          ITEM 1
+          <DockerIcon/>
         </ItemTech>
         <ItemTech animationSide='right'>
-          ITEM 2
-        </ItemTech>
-        <ItemTech animationSide='right'>
-          ITEM 3
+          <TypeScriptIcon/>
         </ItemTech>
       </div>
     </div>
