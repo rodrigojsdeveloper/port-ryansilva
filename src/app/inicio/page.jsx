@@ -17,6 +17,7 @@ import SkillsIcon from "@/components/Svgs/SkillsIcon";
 import ProjectIcon from "@/components/Svgs/ProjectIcon";
 import Technologies from "@/components/Technologies";
 import ContactIcon from "@/components/Svgs/ContactIcon";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -130,10 +131,29 @@ export default function Home() {
             </div>
           </div>
         </LineContainer>
+        <Card
+          title={'Emblemas'}
+          subtitle={'Alguns brasões que tenho orgulho'}
+          animationSide="right"
+          animationSpeed
+          color="bg-red-primary"
+          heigth="h-[10em]"
+        >
+          {/* <Fork/> */}
+        </Card>
       </div>
       <div>
-        <LineContainer title="Entre em contato" animationLine className="relative h-[45em] bottom-20" heightTopLine="h-20" color="pink" icon={ContactIcon}>
+        <LineContainer title="Entre em contato" animationLine className="relative h-[13em] bottom-20" heightTopLine="h-20" color="pink" icon={ContactIcon}>
+          <div className='mt-[100px]'>
+            <DescriptionRight>
+              <div className='mt-1'>
+                <h1 className="text-xl md:text-2xl font-medium text-pink-primary">Algum assunto em mente?</h1>
+                <h1 className="text-xs md:text-base text-white-primary">Bora marcar um bate-papo!</h1>
+              </div>
+            </DescriptionRight>
+          </div>
         </LineContainer>
+        <Contact />
       </div>
     </>
   );
