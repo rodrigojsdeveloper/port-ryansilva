@@ -84,8 +84,8 @@ const InteractiveCard = ({
       />
       <div className="relative p-10 h-[25em]">
         <div className='top-1 absolute pointer-events-none'>
-          <h1 className='font-semibold text-gray-primary'>{title}</h1>
-          <p className='text-xs text-gray-primary'>{subtitle}</p>
+          <h1 className='font-semibold text-stone-400'>{title}</h1>
+          <p className='text-xs text-stone-500'>{subtitle}</p>
         </div>
         {children}
       </div>

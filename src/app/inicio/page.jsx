@@ -28,7 +28,7 @@ export default function Home() {
         </LineContainer>
         <LineContainer className="relative h-[30em] bottom-12" heightTopLine="h-20" color="blue" icon={AboutMeIcon}>
           <div className='mt-[78px]'>
-            <h1 className="text-2xl font-medium text-white-primary">Quem sou?</h1>
+            <h1 className="text-2xl font-medium text-white-primary">Informações sobre mim</h1>
             <div className='mt-10'>
               <h1 className="text-3xl md:text-4xl font-medium text-blue-primary">Inovação e Eficiência</h1>
               <h1 className="text-3xl md:text-3xl font-medium text-white-primary">Focado em soluções estratégicas full-stack e otimização de CI/CD para maximizar eficiência.</h1>
@@ -41,7 +41,7 @@ export default function Home() {
           <div className='mt-[100px] ml-20'>
             <DescriptionRight scrollY={700}>
               <div className='w-[35em] mb-2'>
-                <p className='text-xl md:text-2xl font-medium text-gray-primary max-sm:text-balance min-w-[20em]'><span className='text-white-primary'>Veja o desenvolvimento</span> do meus projetos que estão em open-source e hospedado, todos no github</p>
+                <p className='text-xl md:text-2xl font-medium text-stone-400 max-sm:text-balance min-w-[20em]'><span className='text-white-primary'>Veja o desenvolvimento</span> do meus projetos que estão em open-source e hospedado, todos no github</p>
               </div>
               <Button label='Ver no github ' />
             </DescriptionRight>
@@ -124,9 +124,6 @@ export default function Home() {
                   </div>
                   <Button label='Certificações ' />
                 </DescriptionLeft>
-              </div>
-              <div>
-
               </div>
             </div>
           </div>
