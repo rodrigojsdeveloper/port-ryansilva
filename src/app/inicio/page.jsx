@@ -27,9 +27,8 @@ export default function Home() {
             <p className="text-gray-primary text-2xl mt-5 flex-wrap flex items-center gap-2.5">Desenvolvedor Full-Stack <span className="text-sm">na</span> <a target="_blank" href="https://www.visie.com.br" className="ml-2 cursor-pointer"><VisieTextoIcon /></a></p>
           </div>
         </LineContainer>
-        <LineContainer className="relative h-[30em] bottom-12" heightTopLine="h-20" color="blue" icon={AboutMeIcon}>
+        <LineContainer title="Informações sobre mim" className="relative h-[30em] bottom-12" heightTopLine="h-20" color="blue" icon={AboutMeIcon}>
           <div className='mt-[78px]'>
-            <h1 className="text-2xl font-medium text-white-primary">Informações sobre mim</h1>
             <div className='mt-10'>
               <h1 className="text-3xl md:text-4xl font-medium text-blue-primary">Inovação e Eficiência</h1>
               <h1 className="text-3xl md:text-3xl font-medium text-white-primary">Focado em soluções estratégicas full-stack e otimização de CI/CD para maximizar eficiência.</h1>
@@ -38,7 +37,7 @@ export default function Home() {
         </LineContainer>
         <Shape1Icon className='absolute top-[35em] left-[60em] animate-rotate-180s-linear-infinite' />
         <ImageContainer src={'/ide.png'} />
-        <LineContainer animationLine className="relative h-[50em] bottom-[90px]" color="blue">
+        <LineContainer animationLine className="relative h-[55em] bottom-[90px]" color="blue">
           <div className='mt-[100px] ml-20'>
             <DescriptionRight scrollY={700}>
               <div className='w-[35em] mb-2'>
@@ -81,9 +80,8 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <LineContainer className="relative h-[20em] bottom-20" heightTopLine="h-20" color="puple" icon={ProjectIcon}>
+        <LineContainer title="Projetos desenvolvidos" animationLine className="relative h-[20em] bottom-20" heightTopLine="h-20" color="puple" icon={ProjectIcon}>
           <div className='mt-[70px]'>
-            <h1 className="text-2xl font-medium text-white-primary">Projetos desenvolvidos</h1>
             <div className='mt-10'>
               <h1 className="text-3xl md:text-4xl font-medium text-puple-primary">Já foram muitos projetos...</h1>
               <h1 className="text-2xl md:text-xl font-medium text-white-primary">Aos longos anos desde 2019, já tive experiencia com bastantes tecnologias para expor ideias.</h1>
@@ -103,10 +101,9 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <LineContainer className="relative h-[45em] bottom-20" heightTopLine="h-20" color="red" icon={SkillsIcon}>
+        <LineContainer title="Especialização e habilidades" animationLine className="relative h-[45em] bottom-20" heightTopLine="h-20" color="red" icon={SkillsIcon}>
           <div>
-            <div className='mt-[85px]'>
-              <h1 className="text-2xl font-medium text-white-primary">Especialização e habilidades</h1>
+            <div className='mt-[130px]'>
               <DescriptionRight>
                 <div className='mt-10'>
                   <h1 className="text-3xl md:text-4xl font-medium text-red-primary">Tecnologias e ferramentas</h1>
