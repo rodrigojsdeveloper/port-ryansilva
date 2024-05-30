@@ -39,7 +39,7 @@ export default function Home() {
         <ImageContainer src={'/ide.png'} />
         <LineContainer animationLine className="relative h-[55em] bottom-[90px]" color="blue">
           <div className='mt-[100px] ml-20'>
-            <DescriptionRight scrollY={700}>
+            <DescriptionRight>
               <div className='w-[35em] mb-2'>
                 <p className='text-xl md:text-2xl font-medium text-stone-400 max-sm:text-balance min-w-[20em]'><span className='text-white-primary'>Veja o desenvolvimento</span> do meus projetos que estão em open-source e hospedado, todos no github</p>
               </div>
@@ -47,7 +47,7 @@ export default function Home() {
             </DescriptionRight>
             <div className='flex items-center relative left-[-99px]'>
               <BranchBlueIcon />
-              <DescriptionLeft scrollY={1200}>
+              <DescriptionLeft>
                 <div>
                   <span className='text-xs font-semibold text-blue-primary border border-blue-primary rounded-full py-[1px] px-2'>Quer se conectar comigo?</span>
                   <div className='my-5 w-full max-w-[35em]'>
