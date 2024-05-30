@@ -31,7 +31,7 @@ export default function Home() {
         <LineContainer LineInitial className="h-[15em]" color="white" icon={IntroIcon} fromBottomLine="from-40%">
           <div className="mt-[13px]">
             <h1 className="text-5xl md:text-7xl font-bold leading-[56px] text-white-primary">Ryan Barbosa Silva</h1>
-            <p className="text-gray-primary text-2xl mt-5 flex-wrap flex items-center gap-2.5">Desenvolvedor Full-Stack <span className="text-sm">na</span> <a target="_blank" href="https://www.visie.com.br" className="ml-2 cursor-pointer"><VisieTextoIcon /></a></p>
+            <p className="text-stone-500 text-2xl mt-5 flex-wrap flex items-center gap-2.5">Desenvolvedor Full-Stack <span className="text-sm">na</span> <a target="_blank" href="https://www.visie.com.br" className="ml-2 cursor-pointer"><VisieTextoIcon /></a></p>
           </div>
         </LineContainer>
         <LineContainer title="Informações sobre mim" className="relative h-[20em] bottom-12" heightTopLine="h-20" color="blue" icon={AboutMeIcon}>
