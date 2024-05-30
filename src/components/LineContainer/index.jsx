@@ -40,6 +40,11 @@ const LineContainer = ({
       from: 'from-red-primary',
       bg: 'bg-red-primary',
       text: 'text-red-primary',
+    },
+    pink: {
+      from: 'from-pink-primary',
+      bg: 'bg-pink-primary',
+      text: 'text-pink-primary',
     }
   }
 

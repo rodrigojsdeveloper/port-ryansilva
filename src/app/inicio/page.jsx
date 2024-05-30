@@ -16,6 +16,7 @@ import AboutMeIcon from "@/components/Svgs/AboutMeIcon";
 import SkillsIcon from "@/components/Svgs/SkillsIcon";
 import ProjectIcon from "@/components/Svgs/ProjectIcon";
 import Technologies from "@/components/Technologies";
+import ContactIcon from "@/components/Svgs/ContactIcon";
 
 export default function Home() {
   return (
@@ -129,8 +130,10 @@ export default function Home() {
             </div>
           </div>
         </LineContainer>
-        <div>
-        </div>
+      </div>
+      <div>
+        <LineContainer title="Entre em contato" animationLine className="relative h-[45em] bottom-20" heightTopLine="h-20" color="pink" icon={ContactIcon}>
+        </LineContainer>
       </div>
     </>
   );
