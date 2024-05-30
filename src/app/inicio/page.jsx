@@ -107,26 +107,28 @@ export default function Home() {
           <div>
             <div className='mt-[85px]'>
               <h1 className="text-2xl font-medium text-white-primary">Especialização e habilidades</h1>
-              <div className='mt-10'>
-                <h1 className="text-3xl md:text-4xl font-medium text-red-primary">Tecnologias e ferramentas</h1>
-                <h1 className="text-2xl md:text-xl font-medium text-white-primary">Se especializando em tecnologias todos os dias.</h1>
-              </div>
+              <DescriptionRight>
+                <div className='mt-10'>
+                  <h1 className="text-3xl md:text-4xl font-medium text-red-primary">Tecnologias e ferramentas</h1>
+                  <h1 className="text-xs md:text-base text-white-primary">Especializado em tecnologias como Python, PHP e React, tenho uma predileção pelo desenvolvimento back-end, onde me destaco significativamente. Ainda que prefira back-end, minhas inovações e soluções de alta qualidade também se estendem ao front-end. Além disso, tenho conhecimento em DevOps, o que me capacita a integrar e gerenciar operações de desenvolvimento e infraestrutura eficientemente, assegurando a qualidade e entrega contínua dos sistemas.</h1>
+                </div>
+              </DescriptionRight>
             </div>
-            <div className='ml-20 flex items-center'>
+            <div className='ml-20 relative bottom-[45px] flex items-center'>
               <div className='flex items-center relative left-[-115px]'>
                 <BranchRedIcon />
-                <DescriptionLeft scrollY={1200}>
+                <DescriptionLeft>
                   <div>
                     <span className='text-xs font-semibold text-red-primary border border-red-primary rounded-full py-[1px] px-2'>Principais tecnologias</span>
                     <div className='my-5 w-full max-w-[40em]'>
                       <h1 className="text-3xl md:text-5xl font-medium text-red-primary">Tecnlogias</h1>
-                      <h1 className="text-base md:text-lg font-medium text-white-primary max-sm:text-balance">As principais tecnologias que utilizo profissionalmente</h1>
+                      <h1 className="text-base md:text-lg font-medium text-white-primary max-sm:text-balance">As principais tecnologias que mais utilizo profissionalmente:</h1>
                     </div>
                   </div>
                   <Button label='Certificações ' />
                 </DescriptionLeft>
               </div>
-              <Technologies/>
+              <Technologies />
             </div>
           </div>
         </LineContainer>
