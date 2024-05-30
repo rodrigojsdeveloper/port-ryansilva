@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useRef, useEffect, useMemo } from 'react';
 import { useInView } from 'react-intersection-observer';
 
@@ -14,7 +15,6 @@ const InteractiveCard = ({
   const [blurStyle, setBlurStyle] = useState({ opacity: 0 });
   const [triggerOnce, setTriggerOnce] = useState(false);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const classAnimate = {
     left: {
       in: `animate-slideIn${animationSpeed ? 'Fast' : 'Slow'}Left`,
@@ -68,7 +68,7 @@ const InteractiveCard = ({
 
   const animationClass = useMemo(() => {
     if (inView) return classAnimate?.[animationSide]?.in; // Entrada
-    else return classAnimate?.[animationSide]?.out;; // Saída
+    else return classAnimate?.[animationSide]?.out; // Saída
   }, [animationSide, classAnimate, inView]);
 
   return (

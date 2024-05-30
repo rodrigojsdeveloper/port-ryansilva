@@ -31,7 +31,7 @@ const Contact = () => {
       subtitle={'Escolha o melhor momento para você.'} 
       animationSpeed
       // color="bg-pink-primary"
-      height='h-[100%] md:h-[46em]'
+      className='h-[100%] md:h-[46em]'
     >
       <div className='relative top-[-50px]'>
         <div className="calendly-inline-widget" data-url="https://calendly.com/ryanbsdeveloper/call?hide_gdpr_banner=1&background_color=0c0c0c&text_color=f6f8fa&primary_color=f778ba" style={{ minWidth: '320px', height: '750px', margin: 0, padding: 0 }}></div>

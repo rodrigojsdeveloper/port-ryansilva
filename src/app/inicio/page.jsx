@@ -8,6 +8,7 @@ import Button from "@/components/Button";
 import BranchBlueIcon from "@/components/Svgs/BranchBlueIcon";
 import DescriptionLeft from "@/components/DescriptionContainer/animationLeft";
 import DescriptionRight from "@/components/DescriptionContainer/animationRight";
+import DescriptionBottom from "@/components/DescriptionContainer/animationBottom";
 import Card from "@/components/Card";
 import VisieTextoIcon from "@/components/Svgs/VisieTextoIcon";
 import BranchRedIcon from "@/components/Svgs/BranchRedIcon";
@@ -18,6 +19,9 @@ import ProjectIcon from "@/components/Svgs/ProjectIcon";
 import Technologies from "@/components/Technologies";
 import ContactIcon from "@/components/Svgs/ContactIcon";
 import Contact from "@/components/Contact";
+import Shape2Icon from "@/components/Svgs/Shape2Icon";
+import Shape3Icon from "@/components/Svgs/Shape3Icon";
+import Shape4Icon from "@/components/Svgs/Shape4Icon";
 
 export default function Home() {
   return (
@@ -30,13 +34,15 @@ export default function Home() {
             <p className="text-gray-primary text-2xl mt-5 flex-wrap flex items-center gap-2.5">Desenvolvedor Full-Stack <span className="text-sm">na</span> <a target="_blank" href="https://www.visie.com.br" className="ml-2 cursor-pointer"><VisieTextoIcon /></a></p>
           </div>
         </LineContainer>
-        <LineContainer title="Informações sobre mim" className="relative h-[30em] bottom-12" heightTopLine="h-20" color="blue" icon={AboutMeIcon}>
-          <div className='mt-[78px]'>
-            <div className='mt-10'>
-              <h1 className="text-3xl md:text-4xl font-medium text-blue-primary">Inovação e Eficiência</h1>
-              <h1 className="text-3xl md:text-3xl font-medium text-white-primary">Focado em soluções estratégicas full-stack e otimização de CI/CD para maximizar eficiência.</h1>
+        <LineContainer title="Informações sobre mim" className="relative h-[20em] bottom-12" heightTopLine="h-20" color="blue" icon={AboutMeIcon}>
+          <DescriptionBottom>
+            <div className='mt-[115px]'>
+              <div className='mt-10'>
+                <h1 className="text-3xl md:text-4xl font-medium text-blue-primary">Inovação e Eficiência</h1>
+                <h1 className="text-lg md:text-xl font-medium text-white-primary">Especializado em soluções estratégicas full-stack e otimizações para maximizar eficiência.</h1>
+              </div>
             </div>
-          </div>
+          </DescriptionBottom>
         </LineContainer>
         <Shape1Icon className='absolute top-[35em] left-[60em] animate-rotate-180s-linear-infinite' />
         <ImageContainer src={'/ide.png'} />
@@ -87,11 +93,12 @@ export default function Home() {
 
       {/* PROJETOS */}
       <div>
+        <Shape3Icon className='absolute left-[-250px] animate-rotate-180s-linear-infinite' />
         <LineContainer title="Projetos desenvolvidos" animationLine className="relative h-[20em] bottom-20" heightTopLine="h-20" color="puple" icon={ProjectIcon}>
           <div className='mt-[70px]'>
             <div className='mt-10'>
               <h1 className="text-3xl md:text-4xl font-medium text-puple-primary">Já foram muitos projetos...</h1>
-              <h1 className="text-2xl md:text-xl font-medium text-white-primary">Aos longos anos desde 2019, já tive experiencia com bastantes tecnologias para expor ideias.</h1>
+              <h1 className="text-2xl md:text-xl font-medium text-white-primary">Desde 2019, ganhei experiência com diversas tecnologias para compartilhar minhas ideias.</h1>
             </div>
           </div>
         </LineContainer>
@@ -155,6 +162,7 @@ export default function Home() {
 
       {/* CONTATO */}
       <div>
+        <Shape4Icon className='absolute right-[-250px] animate-rotate-180s-linear-infinite' />
         <LineContainer title="Entre em contato" animationLine className="relative h-[13em] bottom-20" heightTopLine="h-20" color="pink" icon={ContactIcon}>
           <div className='mt-[100px]'>
             <DescriptionRight>
