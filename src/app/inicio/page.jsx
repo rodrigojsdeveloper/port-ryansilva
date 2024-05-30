@@ -3,8 +3,6 @@
 // import Container from "@/components/Container";
 import LineContainer from "@/components/LineContainer";
 import ImageContainer from "@/components/ImageContainer";
-import CodeIcon from "@/components/Svgs/CodeIcon";
-import BusinessIcon from "@/components/Svgs/BusinessIcon";
 import Shape1Icon from "@/components/Svgs/Shape1Icon";
 import Button from "@/components/Button";
 import BranchBlueIcon from "@/components/Svgs/BranchBlueIcon";
@@ -12,22 +10,23 @@ import DescriptionLeft from "@/components/DescriptionContainer/animationLeft";
 import DescriptionRight from "@/components/DescriptionContainer/animationRight";
 import Card from "@/components/Card";
 import VisieTextoIcon from "@/components/Svgs/VisieTextoIcon";
-import Fork from "@/components/Fork";
-import SubCard from "@/components/SubCard";
-import CheckIcon from "@/components/Svgs/CheckIcon";
 import BranchRedIcon from "@/components/Svgs/BranchRedIcon";
+import IntroIcon from "@/components/Svgs/IntroIcon";
+import AboutMeIcon from "@/components/Svgs/AboutMeIcon";
+import SkillsIcon from "@/components/Svgs/SkillsIcon";
+import ProjectIcon from "@/components/Svgs/ProjectIcon";
 
 export default function Home() {
   return (
     <>
       <div>
-        <LineContainer LineInitial className="h-[15em]" color="white" icon={CodeIcon} fromBottomLine="from-40%">
+        <LineContainer LineInitial className="h-[15em]" color="white" icon={IntroIcon} fromBottomLine="from-40%">
           <div className="mt-[13px]">
             <h1 className="text-5xl md:text-7xl font-bold leading-[56px] text-white-primary">Ryan Barbosa Silva</h1>
             <p className="text-gray-primary text-2xl mt-5 flex-wrap flex items-center gap-2.5">Desenvolvedor Full-Stack <span className="text-sm">na</span> <a target="_blank" href="https://www.visie.com.br" className="ml-2 cursor-pointer"><VisieTextoIcon /></a></p>
           </div>
         </LineContainer>
-        <LineContainer className="relative h-[30em] bottom-12" heightTopLine="h-20" color="blue" icon={BusinessIcon}>
+        <LineContainer className="relative h-[30em] bottom-12" heightTopLine="h-20" color="blue" icon={AboutMeIcon}>
           <div className='mt-[78px]'>
             <h1 className="text-2xl font-medium text-white-primary">Quem sou?</h1>
             <div className='mt-10'>
@@ -81,7 +80,7 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <LineContainer className="relative h-[20em] bottom-20" heightTopLine="h-20" color="puple" icon={BusinessIcon}>
+        <LineContainer className="relative h-[20em] bottom-20" heightTopLine="h-20" color="puple" icon={ProjectIcon}>
           <div className='mt-[70px]'>
             <h1 className="text-2xl font-medium text-white-primary">Projetos desenvolvidos</h1>
             <div className='mt-10'>
@@ -103,7 +102,7 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <LineContainer className="relative h-[45em] bottom-20" heightTopLine="h-20" color="red" icon={BusinessIcon}>
+        <LineContainer className="relative h-[45em] bottom-20" heightTopLine="h-20" color="red" icon={SkillsIcon}>
           <div>
             <div className='mt-[85px]'>
               <h1 className="text-2xl font-medium text-white-primary">Especialização e habilidades</h1>
@@ -127,7 +126,7 @@ export default function Home() {
                 </DescriptionLeft>
               </div>
               <div>
-                
+
               </div>
             </div>
           </div>

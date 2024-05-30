@@ -1,5 +1,5 @@
 import React from 'react';
-import CodeIcon from "@/components/Svgs/CodeIcon";
+import CodeIcon from "@/components/Svgs/IntroIcon";
 import BusinessIcon from "@/components/Svgs/BusinessIcon";
 import { useInView } from 'react-intersection-observer';
 import Button from '../Button';
