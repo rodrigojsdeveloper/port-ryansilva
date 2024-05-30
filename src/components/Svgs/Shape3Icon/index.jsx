@@ -1,5 +1,5 @@
-const Shape3Icon = () => {
-  return <svg xmlns="http://www.w3.org/2000/svg" width="844" height="844" viewBox="0 0 844 844" fill="none">
+const Shape3Icon = ({className}) => {
+  return <svg xmlns="http://www.w3.org/2000/svg" width="844" height="844" viewBox="0 0 844 844" fill="none" className={className}>
     <g opacity="0.2">
       <rect x="1.66113" y="421.801" width="198.369" height="198.369" transform="rotate(-45 1.66113 421.801)" stroke="white" />
       <rect x="282.198" y="421.8" width="198.369" height="198.369" transform="rotate(-45 282.198 421.8)" stroke="white" />
