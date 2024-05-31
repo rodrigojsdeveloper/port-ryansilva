@@ -78,7 +78,7 @@ const InteractiveCard = ({
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={style}
-      className={`w-full relative bottom-[7em] hidden-scroll overflow-hidden mx-4 max-lg:overflow-x-scroll p-10 bg-gray-secondary rounded-xl border border-gray-3 transition-transform ${animationClass}`}
+      className={`w-full z-10 relative bottom-[7em] hidden-scroll overflow-hidden mx-4 max-lg:overflow-x-scroll p-10 bg-gray-secondary rounded-xl border border-gray-3 transition-transform ${animationClass}`}
     >
       <div
         style={blurStyle}

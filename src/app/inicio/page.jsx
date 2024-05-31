@@ -44,7 +44,7 @@ export default function Home() {
             </div>
           </DescriptionBottom>
         </LineContainer>
-        <Shape1Icon className='absolute top-[35em] left-[60em] animate-rotate-180s-linear-infinite' />
+        <Shape1Icon className='absolute top-[75em] left-[40em] animate-rotate-180s-linear-infinite' />
         <ImageContainer src={'/ide.png'} />
         <LineContainer animationLine className="relative h-[55em] bottom-[90px]" color="blue">
           <div className='mt-[100px] ml-20'>
@@ -165,7 +165,7 @@ export default function Home() {
 
       {/* CONTATO */}
       <div>
-        <Shape4Icon className='absolute right-[-250px] animate-rotate-180s-linear-infinite' />
+        <Shape4Icon className='absolute bottom-[500px] right-[-250px]' />
         <LineContainer title="Entre em contato" animationLine className="relative h-[13em] bottom-20" heightTopLine="h-20" color="pink" icon={ContactIcon}>
           <div className='mt-[100px]'>
             <DescriptionRight>

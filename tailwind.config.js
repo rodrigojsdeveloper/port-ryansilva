@@ -144,7 +144,7 @@ module.exports = {
         slideInBottom: 'slideInFromBottom 0.3s ease-out forwards',
         grow: 'grow 0.7s ease-out forwards',
         shrink: 'shrink 0.7s ease-out forwards',
-        'rotate-180s-linear-infinite': 'rotate-keyframes 20s linear infinite',
+        'rotate-180s-linear-infinite': 'rotate-keyframes 25s linear infinite',
       },
     },
   },
