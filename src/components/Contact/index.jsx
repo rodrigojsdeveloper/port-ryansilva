@@ -29,8 +29,9 @@ const Contact = () => {
     <Card
       title={'Siga as etapas'}
       subtitle={'Escolha o melhor momento para você.'} 
-      animationSpeed
       // color="bg-pink-primary"
+      animationInSide="animate-slideInFastLeft"
+      animationOutSide="lefanimate-slideOutFastLeft"
       className='h-[100%] md:h-[46em]'
     >
       <div className='relative top-[-50px]'>

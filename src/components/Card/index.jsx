@@ -9,22 +9,23 @@ const InteractiveCard = ({
   subtitle,
   color,
   animationSpeed = false,
-  animationSide = 'left',
+  animationInSide,
+  animationOutSide,
 }) => {
   const [style, setStyle] = useState({});
   const [blurStyle, setBlurStyle] = useState({ opacity: 0 });
   const [triggerOnce, setTriggerOnce] = useState(false);
 
-  const classAnimate = {
-    left: {
-      in: `animate-slideIn${animationSpeed ? 'Fast' : 'Slow'}Left`,
-      out: `animate-slideOut${animationSpeed ? 'Fast' : 'Slow'}Left`,
-    },
-    right: {
-      in: `animate-slideIn${animationSpeed ? 'Fast' : 'Slow'}Right`,
-      out: `animate-slideOut${animationSpeed ? 'Fast' : 'Slow'}Right`,
-    }
-  }
+  // const classAnimate = {
+  //   left: {
+  //     in: `animate-slideIn${animationSpeed ? 'Fast' : 'Slow'}Left`,
+  //     out: `animate-slideOut${animationSpeed ? 'Fast' : 'Slow'}Left`,
+  //   },
+  //   right: {
+  //     in: `animate-slideIn${animationSpeed ? 'Fast' : 'Slow'}Right`,
+  //     out: `animate-slideOut${animationSpeed ? 'Fast' : 'Slow'}Right`,
+  //   }
+  // }
 
   const handleMouseMove = (e) => {
     const { clientX, clientY, target } = e;
@@ -67,9 +68,9 @@ const InteractiveCard = ({
   });
 
   const animationClass = useMemo(() => {
-    if (inView) return classAnimate?.[animationSide]?.in; // Entrada
-    else return classAnimate?.[animationSide]?.out; // Saída
-  }, [animationSide, classAnimate, inView]);
+    if (inView) return animationInSide; // Entrada
+    else return animationOutSide; // Saída
+  }, [inView]);
 
   return (
     <div

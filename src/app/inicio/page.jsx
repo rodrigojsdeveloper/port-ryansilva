@@ -73,7 +73,8 @@ export default function Home() {
           <Card
             title={'Profissional'}
             subtitle={'Minhas experiências profissionais na área'}
-            animationSide="left"
+            animationInSide="animate-slideInSlowLeft"
+            animationOutSide="lefanimate-slideOutSlowLeft"
             color="bg-blue-primary"
             className="h-[25em]"
           >
@@ -83,6 +84,8 @@ export default function Home() {
             title={'Educacional'}
             subtitle={'Minhas principais fonte de conhecimento'}
             animationSide="right"
+            animationInSide="animate-slideInSlowRight"
+            animationOutSide="lefanimate-slideOutSlowRight"
             color="bg-blue-primary"
             className="h-[25em]"
           >
@@ -106,8 +109,8 @@ export default function Home() {
           <Card
             title={'Projetos'}
             subtitle={'Alguns dos projetos que se tornaram reais.'}
-            animationSide="left"
-            animationSpeed
+            animationInSide="animate-slideInFastLeft"
+            animationOutSide="lefanimate-slideOutFastLeft"
             color="bg-puple-primary"
             className="h-[25em]"
           >
@@ -150,8 +153,8 @@ export default function Home() {
           <Card
             title={'Emblemas'}
             subtitle={'Alguns brasões que tenho orgulho'}
-            animationSide="right"
-            animationSpeed
+            animationInSide="animate-slideInFastRight"
+            animationOutSide="lefanimate-slideOutFastRight"
             color="bg-red-primary"
             className="h-[8em]"
           >
