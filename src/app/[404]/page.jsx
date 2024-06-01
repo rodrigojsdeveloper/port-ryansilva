@@ -1,27 +1,17 @@
+'use client'
+
+import Button from '@/components/Button';
+import { useRouter } from 'next/navigation';
 import React from 'react';
 
 function Page404Light() {
+  const router = useRouter()
   return (
-    <div className="flex items-center justify-center min-h-scree">
-      <div className="wrap">
-        <div className="404">
-          <pre>
-            {/* <code className="text-black">
-              {'('}<span className="text-blue-500">function</span>() {'{'}
-              <br />
-              &nbsp;&nbsp;<span className="text-blue-500">function</span> launch() {'{'}
-              <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;console.log("Erro 404: Como você chegou aqui? 😂");
-              <br />
-              &nbsp;&nbsp;{'}'}
-              <br />
-              &nbsp;&nbsp;window.addEventListener(<span className="text-yellow-500">'load'</span>, launch);
-              <br />
-              {'}'})();
-            </code> */}
-          </pre>
-        </div>
-      </div>
+    <div className="flex items-center justify-center">
+      <Button
+        label='Voltar ao portfólio '
+        onClick={() => router.push('/inicio')}
+      />
     </div>
   );
 }
