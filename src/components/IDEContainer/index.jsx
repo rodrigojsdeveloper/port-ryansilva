@@ -33,7 +33,8 @@ const IDEContainer = ({ src }) => {
   }, [inView]);
 
   return (
-    <div ref={ref} className={`opacity-0 ${animationClass} transform mx-4`}>
+    // <div ref={ref} className={`opacity-0 ${animationClass} transform mx-4`}>
+    <div className='transform mx-4'>
       <IDE className='z-10 relative bottom-[70px] rounded-xl border border-gray-3'/>
       <SubCard title={'Meu serviços'} className={'absolute top-[40em] left-[47em] w-[33em] z-20'}>
         <div className="flex items-start gap-3 text-blue-primary border-b border-gray-600 py-4">

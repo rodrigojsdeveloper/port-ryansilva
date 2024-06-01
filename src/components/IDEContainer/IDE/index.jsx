@@ -3,13 +3,13 @@ import React from "react";
 const IDE = ({ className }) => {
   return (
     <div className="-mx-4 sm:mx-0">
-      <div className={`relative overflow-hidden flex bg-zinc-900 !h-auto max-h-[none] ${className}`}>
+      <div className={`relative overflow-hidden flex bg-gray-secondary !h-auto max-h-[none] ${className}`}>
         <div className="relative w-full flex flex-col">
           <div className="flex-none border-b border-stone-500/30">
             <div className="flex items-center h-8 space-x-1.5 px-3">
-              <div className="w-2.5 h-2.5 bg-stone-600 rounded-full"></div>
-              <div className="w-2.5 h-2.5 bg-stone-600 rounded-full"></div>
-              <div className="w-2.5 h-2.5 bg-stone-600 rounded-full"></div>
+              <div className="w-2.5 h-2.5 bg-red-500 rounded-full"></div>
+              <div className="w-2.5 h-2.5 bg-yellow-600 rounded-full"></div>
+              <div className="w-2.5 h-2.5 bg-green-500 rounded-full"></div>
             </div>
           </div>
           <div className="relative min-h-0 flex-auto flex flex-col">
