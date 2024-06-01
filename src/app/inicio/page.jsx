@@ -19,13 +19,13 @@ import ProjectIcon from "@/components/Svgs/ProjectIcon";
 import Technologies from "@/components/Technologies";
 import ContactIcon from "@/components/Svgs/ContactIcon";
 import Contact from "@/components/Contact";
-import Shape2Icon from "@/components/Svgs/Shape2Icon";
 import Shape3Icon from "@/components/Svgs/Shape3Icon";
 import Shape4Icon from "@/components/Svgs/Shape4Icon";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
-    <>
+    <Suspense fallback={'carregando...'}>
       {/* INICIO + SOBRE MIM */}
       <div>
         <LineContainer LineInitial className="h-[15em]" color="white" icon={IntroIcon} fromBottomLine="from-40%">
@@ -178,6 +178,6 @@ export default function Home() {
         </LineContainer>
         <Contact />
       </div>
-    </>
+    </Suspense>
   );
 }
