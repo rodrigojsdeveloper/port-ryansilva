@@ -10,7 +10,7 @@ function Page404Light() {
     <div className="flex items-center justify-center">
       <Button
         label='Voltar ao portfólio '
-        onClick={() => router.push('/inicio')}
+        onClick={() => router.push('/')}
       />
     </div>
   );
