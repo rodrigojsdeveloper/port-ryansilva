@@ -3,7 +3,7 @@ import React from "react";
 const IDE = ({ className }) => {
   return (
     <div className="-mx-4 sm:mx-0">
-      <div className={`relative overflow-hidden flex bg-gray-secondary !h-auto max-h-[none] ${className}`}>
+      <div className={`relative overflow-hidden flex bg-gray-secondary/70 !h-auto max-h-[none] ${className}`}>
         <div className="relative w-full flex flex-col">
           <div className="flex-none border-b border-stone-500/30">
             <div className="flex items-center h-8 space-x-1.5 px-3">
@@ -101,7 +101,7 @@ const IDE = ({ className }) => {
                       self.
                       <span className="rule">anos_de_experiencia</span>
                       <span className="tag">{' = '}</span><span />
-                      <span>21</span>
+                      <span>5</span>
                     </span>
 
                     <span> </span>
