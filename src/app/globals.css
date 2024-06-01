@@ -132,19 +132,44 @@ body, html {
   color: rgb(125 211 252)
 }
 
-.token.attr-value .attr-equals,.token.attr-value .attr-equals+.punctuation,.token.attr-value>.punctuation:last-child {
-  --tw-text-opacity: 1;
-  color: rgb(100 116 139)
-}
-
-.token.property {
-  --tw-text-opacity: 1;
-  color: rgb(125 211 252)
-}
-
 .func, .decorator {
   --tw-text-opacity: 1;
   color: rgb(70, 240, 112)
+}
+
+.tag:hover {
+  text-shadow: 0 0 3px rgba(244, 114, 182, 0.6);
+  font-weight: bold;
+}
+
+.rule:hover {
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+}
+
+.self:hover {
+  text-shadow: 0 0 3px rgba(140, 94, 192, 0.6);
+  font-weight: bold;
+}
+
+.string:hover {
+  text-shadow: 0 0 3px rgba(199, 191, 82, 0.6);
+  font-weight: bold;
+}
+
+.comment:hover {
+  text-shadow: 0 0 3px rgba(100, 116, 139, 0.6);
+  font-weight: bold;
+}
+
+.class:hover, .type *:hover {
+  text-shadow: 0 0 3px rgba(125, 211, 252, 0.6);
+  font-weight: bold;
+}
+
+.func:hover, .decorator:hover {
+  text-shadow: 0 0 3px rgba(70, 240, 112, 0.6);
+  font-weight: bold;
 }
 
 span.code-highlight.bg-code-highlight:has(>span[title*=\AD]) {
