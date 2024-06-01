@@ -28,7 +28,7 @@ const Contact = () => {
   return (
     <Card
       title={'Siga as etapas'}
-      subtitle={'Escolha o melhor momento para você.'} 
+      subtitle={'Escolha o melhor dia e horário para você.'} 
       // color="bg-pink-primary"
       animationInSide="animate-slideInFastLeft"
       animationOutSide="animate-slideOutFastLeft"
