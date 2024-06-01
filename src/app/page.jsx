@@ -154,7 +154,7 @@ export default function Home() {
           animationInSide="animate-slideInFastRight"
           animationOutSide="animate-slideOutFastRight"
           color="bg-red-primary"
-          className="h-[8em]"
+          className="h-[8em] max-md:h-[14em]"
         >
           <Badges/>
         </Card>

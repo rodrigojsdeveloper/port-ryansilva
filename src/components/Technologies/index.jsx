@@ -9,9 +9,9 @@ import PythonIcon from '../Svgs/PythonIcon';
 import ReactIcon from '../Svgs/ReactIcon';
 import PhpIcon from '../Svgs/PhpIcon';
 
-const Technologies = ({ src }) => {
+const Technologies = () => {
   return (
-    <div className='flex items-center justify-center gap-10'>
+    <div className='max-sm:hidden flex items-center justify-center gap-10'>
       <div className='flex flex-col items-center justify-center gap-2'>
         <ItemTech animationSide='left'>
           <SalesforceIcon/>

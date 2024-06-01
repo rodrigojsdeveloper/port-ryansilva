@@ -84,7 +84,7 @@ const InteractiveCard = ({
         style={blurStyle}
         className={`absolute w-52 h-52 rounded-full ${color} blur-[10em] transition-opacity duration-500 ease-out`}
       />
-      <div className={`w-full relative p-10 ${className}`}>
+      <div className={`w-full relative p-10 max-sm:px-0 ${className}`}>
         <div className='top-1 absolute pointer-events-none'>
           <h1 className='font-semibold text-stone-400'>{title}</h1>
           <p className='text-xs text-stone-500'>{subtitle}</p>
