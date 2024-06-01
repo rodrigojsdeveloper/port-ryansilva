@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ArrowRight from '../Svgs/ArrowRight';
+import ArrowRightIcon from '../Svgs/ArrowRightIcon';
 
 const Button = ({ label, onClick = () => { }, className = "" }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -13,7 +13,7 @@ const Button = ({ label, onClick = () => { }, className = "" }) => {
         onMouseLeave={() => setIsHovered(false)}
       >
         <span className='button'>{label}</span>
-        <ArrowRight hover={isHovered} />
+        <ArrowRightIcon hover={isHovered} />
       </button >
     </>
   );

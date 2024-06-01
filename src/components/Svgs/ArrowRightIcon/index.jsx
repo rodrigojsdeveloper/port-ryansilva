@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const ArrowRight = ({hover}) => {
+const ArrowRightIcon = ({hover}) => {
   const [pathLength, setPathLength] = useState(0);
 
   useEffect(() => {
@@ -27,4 +27,4 @@ const ArrowRight = ({hover}) => {
   );
 };
 
-export default ArrowRight;
+export default ArrowRightIcon;

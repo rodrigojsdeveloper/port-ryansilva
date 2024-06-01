@@ -151,8 +151,8 @@ export default function Home() {
         </LineContainer>
         <div>
           <Card
-            title={'Emblemas'}
-            subtitle={'Alguns brasões que tenho orgulho'}
+            title={'Certificações Profissionais'}
+            subtitle={'Destaque em qualificações relevantes'}
             animationInSide="animate-slideInFastRight"
             animationOutSide="lefanimate-slideOutFastRight"
             color="bg-red-primary"
