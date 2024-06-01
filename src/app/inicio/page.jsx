@@ -162,7 +162,7 @@ export default function Home() {
 
       {/* CONTATO */}
       <div>
-        <Shape4Icon className='absolute bottom-[500px] right-[-250px]' />
+        <Shape4Icon className='absolute bottom-[500px] right-[-250px]  animate-rotate-180s-linear-infinite' />
         <LineContainer title="Entre em contato" animationLine className="relative h-[13em] bottom-20" heightTopLine="h-20" color="pink" icon={ContactIcon}>
           <div className='mt-[100px]'>
             <DescriptionRight>
