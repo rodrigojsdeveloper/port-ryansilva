@@ -11,14 +11,12 @@
 body, html {
   font-feature-settings: unset;
   background: #0c0c0c;
-  /* background-image: url('/bg.webp'); */
   background-size: 700px;
   background-repeat: no-repeat;
   background-position-x: 1300px;
 
   overflow-x: hidden;
 }
-
 
 .container-xl {
   max-width: 1280px;
@@ -29,7 +27,6 @@ body, html {
 @media (max-width: 524px) {
   body, html {
     background: #0c0c0c;
-    background-image: url('/bg-mobile.webp');
     background-size: 600px;
     background-repeat: no-repeat;
     background-position-y: -180px; 
