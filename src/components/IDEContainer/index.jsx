@@ -2,10 +2,10 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import SubCard from '../SubCard';
+import IDE from './IDE';
 import CheckIcon from '../Svgs/CheckIcon';
-import Image from 'next/image';
 
-const ImageContainer = ({ src }) => {
+const IDEContainer = ({ src }) => {
   const [triggerOnce, setTriggerOnce] = useState(false);
 
   useEffect(() => {
@@ -13,7 +13,7 @@ const ImageContainer = ({ src }) => {
       if (window.scrollY === 0) {
         setTriggerOnce(false);
       }
-      else {
+      else { <img className='z-10 relative bottom-[70px] rounded-xl border border-gray-700' src={src} alt='image' />
         setTriggerOnce(true);
       }
     };
@@ -34,8 +34,8 @@ const ImageContainer = ({ src }) => {
 
   return (
     <div ref={ref} className={`opacity-0 ${animationClass} transform mx-4`}>
-      <img className='z-10 relative bottom-[70px] rounded-xl border border-gray-700' src={src} alt='image' />
-      <SubCard title={'Meu serviços'} className={'absolute top-[30em] left-[44em] w-[33em] z-20'}>
+      <IDE className='z-10 relative bottom-[70px] rounded-xl border border-gray-3'/>
+      <SubCard title={'Meu serviços'} className={'absolute top-[40em] left-[47em] w-[33em] z-20'}>
         <div className="flex items-start gap-3 text-blue-primary border-b border-gray-600 py-4">
           <CheckIcon width={'45'} height={'20'}/>
           <div>
@@ -70,4 +70,4 @@ const ImageContainer = ({ src }) => {
   );
 };
 
-export default ImageContainer;
+export default IDEContainer;

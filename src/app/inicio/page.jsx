@@ -2,7 +2,6 @@
 
 // import Container from "@/components/Container";
 import LineContainer from "@/components/LineContainer";
-import ImageContainer from "@/components/ImageContainer";
 import Shape1Icon from "@/components/Svgs/Shape1Icon";
 import Button from "@/components/Button";
 import BranchBlueIcon from "@/components/Svgs/BranchBlueIcon";
@@ -23,6 +22,7 @@ import Shape3Icon from "@/components/Svgs/Shape3Icon";
 import Shape4Icon from "@/components/Svgs/Shape4Icon";
 import { Suspense } from "react";
 import Badges from "@/components/Badges";
+import IDEContainer from "@/components/IDEContainer";
 
 export default function Home() {
   return (
@@ -45,8 +45,8 @@ export default function Home() {
             </div>
           </DescriptionBottom>
         </LineContainer>
-        <Shape1Icon className='absolute top-[75em] left-[40em] animate-rotate-180s-linear-infinite' />
-        <ImageContainer src={'/ide.png'} />
+        <Shape1Icon className='absolute top-[75em] left-[35em] animate-rotate-180s-linear-infinite' />
+        <IDEContainer src={'/ide.png'} />
         <LineContainer animationLine className="relative h-[55em] bottom-[90px]" color="blue">
           <div className='mt-[100px] ml-20'>
             <DescriptionRight>

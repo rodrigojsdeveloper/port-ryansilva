@@ -96,3 +96,83 @@ body, html {
 .hidden-scroll::-webkit-scrollbar {
   display: none;
 }
+
+.token {
+  position: relative;
+  width: min-content;
+}
+
+.tag {
+  --tw-text-opacity: 1;
+  color: rgb(244 114 182)
+}
+
+.rule {
+  --tw-text-opacity: 1;
+  color: rgb(255, 255, 255)
+}
+
+.self {
+  --tw-text-opacity: 1;
+  color: rgb(140, 94, 192)
+}
+
+.string {
+  --tw-text-opacity: 1;
+  color: rgb(199, 191, 82)
+}
+
+.comment {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139)
+}
+
+.class, .type * {
+  --tw-text-opacity: 1;
+  color: rgb(125 211 252)
+}
+
+.token.attr-value .attr-equals,.token.attr-value .attr-equals+.punctuation,.token.attr-value>.punctuation:last-child {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139)
+}
+
+.token.property {
+  --tw-text-opacity: 1;
+  color: rgb(125 211 252)
+}
+
+.func, .decorator {
+  --tw-text-opacity: 1;
+  color: rgb(70, 240, 112)
+}
+
+span.code-highlight.bg-code-highlight:has(>span[title*=\AD]) {
+  margin-left: 1px;
+  margin-right: 1px;
+  background-color: #ec48991a;
+  --tw-text-opacity: 1;
+  color: rgb(244 114 182)
+}
+code,kbd,pre,samp {
+  font-family: Fira Code VF,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  font-size: 1em
+}
+
+.space-1 {
+  left: 30px;
+}
+.space-2 {
+  left: 60px;
+}
+.space-3 {
+  left: 90px;
+}
+.space-4 {
+  left: 120px;
+}
+.space-5 {
+  left: 150px;
+}
