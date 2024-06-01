@@ -1,39 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useEffect, useMemo, useState } from 'react';
-import { useInView } from 'react-intersection-observer';
+import React from 'react';
 import SubCard from '../SubCard';
 import IDE from './IDE';
 import CheckIcon from '../Svgs/CheckIcon';
 
-const IDEContainer = ({ src }) => {
-  const [triggerOnce, setTriggerOnce] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY === 0) {
-        setTriggerOnce(false);
-      }
-      else { <img className='z-10 relative bottom-[70px] rounded-xl border border-gray-700' src={src} alt='image' />
-        setTriggerOnce(true);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const { ref, inView } = useInView({
-    threshold: 0.6,
-    triggerOnce: triggerOnce,
-  });
-
-  const animationClass = useMemo(() => {
-    if (inView) return 'animate-slideInFastRight'; // Entrada
-    else return 'animate-slideOutFastRight'; // Saída
-  }, [inView]);
-
+const IDEContainer = () => {
   return (
-    // <div ref={ref} className={`opacity-0 ${animationClass} transform mx-4`}>
     <div className='transform mx-4'>
       <IDE className='z-10 relative bottom-[70px] rounded-xl border border-gray-3'/>
       <SubCard title={'Meu serviços'} className={'absolute top-[40em] left-[47em] w-[33em] z-20'}>

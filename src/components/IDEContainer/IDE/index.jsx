@@ -1,4 +1,5 @@
 import React from "react";
+import CodeLine from "../CodeLine";
 
 const IDE = ({ className }) => {
   return (
@@ -58,166 +59,226 @@ const IDE = ({ className }) => {
                     <p>37</p>
                     <p>38</p>
                   </div>
-                  <code className="flex-auto relative text-slate-50 pt-4 pb-4 px-4 overflow-auto flex flex-col">
+                  <code className="md:overflow-hidden flex-auto relative text-slate-50 pt-4 pb-4 px-4 overflow-auto flex flex-col">
                     <span className="token comment">{'"""@ryanbsdeveloper"""'}</span>
                     <span> </span>
-                    <span className="token tag">
-                      class{" "}
-                      <span className="class">SobreMim</span><span className="rule">:</span>
-                    </span>
 
+                    <CodeLine>
+                      <span className="token tag">
+                        class{" "}
+                        <span className="class">SobreMim</span><span className="rule">:</span>
+                      </span>
+                    </CodeLine>
                     <span> </span>
 
                     {/* __init__ */}
-                    <span className="token tag space-1">
-                      def{" "}
-                      <span className="self">__init__</span>
-                      <span className="rule">{'('}</span>
-                      <span className="self">self</span>
-                      <span className="rule">{')'}</span>
-                      <span>{' -> '}</span>
-                      <span className="self">None</span>
-                      <span className="rule">:</span>
-                    </span>
-                    <span className="token self space-2">
-                      self.
-                      <span className="rule">idade</span>
-                      <span className="tag">{' = '}</span><span />
-                      <span>21</span>
-                    </span>
-                    <span className="token self space-2">
-                      self.
-                      <span className="rule">nome</span>
-                      <span className="tag">{' = '}</span><span />
-                      <span className="string">{'"Ryan"'}</span>
-                    </span>
-                    <span className="token self space-2">
-                      self.
-                      <span className="rule">profissao</span>
-                      <span className="tag">{' = '}</span><span />
-                      <span className="string">{'"Desenvolvedor fullStack"'}</span>
-                    </span>
-                    <span className="token self space-2">
-                      self.
-                      <span className="rule">anos_de_experiencia</span>
-                      <span className="tag">{' = '}</span><span />
-                      <span>5</span>
-                    </span>
+                    <CodeLine>
+                      <span className="token tag space-1">
+                        def{" "}
+                        <span className="self">__init__</span>
+                        <span className="rule">{'('}</span>
+                        <span className="self">self</span>
+                        <span className="rule">{')'}</span>
+                        <span>{' -> '}</span>
+                        <span className="self">None</span>
+                        <span className="rule">:</span>
+                      </span>
+                    </CodeLine>
+                    <CodeLine>
+                      <span className="token self space-2">
+                        self.
+                        <span className="rule">idade</span>
+                        <span className="tag">{' = '}</span><span />
+                        <span>21</span>
+                      </span>
+                    </CodeLine>
+                    <CodeLine>
+                      <span className="token self space-2">
+                        self.
+                        <span className="rule">nome</span>
+                        <span className="tag">{' = '}</span><span />
+                        <span className="string">{'"Ryan"'}</span>
+                      </span>
+                    </CodeLine>
+                    <CodeLine>
+                      <span className="token self space-2">
+                        self.
+                        <span className="rule">profissao</span>
+                        <span className="tag">{' = '}</span><span />
+                        <span className="string">{'"Desenvolvedor fullStack"'}</span>
+                      </span>
+                    </CodeLine>
+                    <CodeLine>
+                      <span className="token self space-2">
+                        self.
+                        <span className="rule">anos_de_experiencia</span>
+                        <span className="tag">{' = '}</span><span />
+                        <span>5</span>
+                      </span>
+                    </CodeLine>
 
                     <span> </span>
 
                     {/* Função Hobby */}
-                    <span className="token tag space-1">
-                      def{" "}
-                      <span className="func">hobby</span>
-                      <span className="rule">{'('}</span>
-                      <span className="self">self</span>
-                      <span className="rule">{')'}</span>
-                      <span>{' -> '}</span>
-                      <span className="type">str</span>
-                      <span className="rule">:</span>
-                    </span>
-                    <span className="token tag space-2">
-                      return{" "}
-                      <span className="string">{'"""'}</span>
-                    </span>
+                    <CodeLine>
+                      <span className="token tag space-1">
+                        def{" "}
+                        <span className="func">hobby</span>
+                        <span className="rule">{'('}</span>
+                        <span className="self">self</span>
+                        <span className="rule">{')'}</span>
+                        <span>{' -> '}</span>
+                        <span className="type">str</span>
+                        <span className="rule">:</span>
+                      </span>
+                    </CodeLine>
+                    <CodeLine>
+                      <span className="token tag space-2">
+                        return{" "}
+                        <span className="string">{'"""'}</span>
+                      </span>                      
+                    </CodeLine>
 
                     {/* Texto Hobby */}
                     <div className="flex flex-col">
-                      <span className="token tag space-3">
-                        <span className="string">{'Eu gosto de jogar videogames, ser o camisa 10 no campo,'}</span>
-                      </span>
-                      <span className="token tag space-3">
-                        <span className="string">{'assistir séries e filmes'}</span>
-                      </span>
-                      <span className="token tag space-3">
-                        <span className="string">{'e sempre iniciar outro projeto pessoal que provavelmente não vou terminar kkk.'}</span>
-                      </span>
-                      <span className="token tag space-2">
-                        <span className="string">{'"""'}</span>
-                      </span>
+                      <CodeLine>
+                        <span className="token tag space-3">
+                          <span className="string">{'Eu gosto de jogar videogames, ser o camisa 10 no campo,'}</span>
+                        </span>
+                      </CodeLine>
+                      <CodeLine>
+                        <span className="token tag space-3">
+                          <span className="string">{'assistir séries e filmes'}</span>
+                        </span>
+                      </CodeLine>
+                      <CodeLine>
+                        <span className="token tag space-3">
+                          <span className="string">{'e sempre iniciar outro projeto pessoal que provavelmente não vou terminar kkk.'}</span>
+                        </span>
+                      </CodeLine>
+                      <CodeLine>
+                        <span className="token tag space-2">
+                          <span className="string">{'"""'}</span>
+                        </span>
+                      </CodeLine>
                     </div>
 
                     <span> </span>
 
                     {/* Função Detalhes */}
-                    <span className="token tag space-1">
-                      def{" "}
-                      <span className="func">detalhes</span>
-                      <span className="rule">{'('}</span>
-                      <span className="self">self</span>
-                      <span className="rule">{')'}</span>
-                      <span>{' -> '}</span>
-                      <span className="type">str</span>
-                      <span className="rule">:</span>
-                    </span>
-                    <span className="token tag space-2">
-                      return{" "}
-                      <span className="string">{'"""'}</span>
-                    </span>
+                    <CodeLine>
+                      <span className="token tag space-1">
+                        def{" "}
+                        <span className="func">detalhes</span>
+                        <span className="rule">{'('}</span>
+                        <span className="self">self</span>
+                        <span className="rule">{')'}</span>
+                        <span>{' -> '}</span>
+                        <span className="type">str</span>
+                        <span className="rule">:</span>
+                      </span>
+                    </CodeLine>
+                    <CodeLine>
+                      <span className="token tag space-2">
+                        return{" "}
+                        <span className="string">{'"""'}</span>
+                      </span>
+                    </CodeLine>
 
                     {/* Texto Detalhes */}
                     <div className="flex flex-col">
-                      <span className="token tag space-3">
-                        <span className="string">{'Bom, você já sabe! Meu nome é Ryan.'}</span>
-                      </span>
-                      <span className="token tag space-3">
-                        <span className="string">{'Estou na área há 5 anos, sempre entregando serviços de qualidade'}</span>
-                      </span>
-                      <span className="token tag space-3">
-                        <span className="string">{'e me desenvolvendo profissionalmente.'}</span>
-                      </span>
-                      <span className="token tag space-3">
-                        <span className="string">{'Vejo esta área com muita gratidão pelas possibilidades'}</span>
-                      </span>
-                      <span className="token tag space-3">
-                        <span className="string">{'que ela nos oferece e por todo o crescimento que tive, tanto como profissional'}</span>
-                      </span>
-                      <span className="token tag space-3">
-                        <span className="string">{'quanto como pessoa, por estar aqui! Além disso, estou sempre em busca de'}</span>
-                      </span>
-                      <span className="token tag space-3">
-                        <span className="string">{'novos desafios e oportunidades para expandir meus conhecimentos e contribuir'}</span>
-                      </span>
-                      <span className="token tag space-3">
-                        <span className="string">{'ainda mais para o sucesso dos projetos em que me envolvo.'}</span>
-                      </span>
-                      <span className="token tag space-2">
-                        <span className="string">{'"""'}</span>
-                      </span>
+                      <CodeLine>
+                        <span className="token tag space-3">
+                          <span className="string">{'Bom, você já sabe! Meu nome é Ryan.'}</span>
+                        </span>
+                      </CodeLine>
+                      <CodeLine>
+                        <span className="token tag space-3">
+                          <span className="string">{'Estou na área há 5 anos, sempre entregando serviços de qualidade'}</span>
+                        </span>
+                      </CodeLine>
+                      <CodeLine>
+                        <span className="token tag space-3">
+                          <span className="string">{'e me desenvolvendo profissionalmente.'}</span>
+                        </span>
+                      </CodeLine>
+                      <CodeLine>
+                        <span className="token tag space-3">
+                          <span className="string">{'Vejo esta área com muita gratidão pelas possibilidades'}</span>
+                        </span>
+                      </CodeLine>
+                      <CodeLine>
+                        <span className="token tag space-3">
+                          <span className="string">{'que ela nos oferece e por todo o crescimento que tive, tanto como profissional'}</span>
+                        </span>
+                      </CodeLine>
+                      <CodeLine>
+                        <span className="token tag space-3">
+                          <span className="string">{'quanto como pessoa, por estar aqui! Além disso, estou sempre em busca de'}</span>
+                        </span>
+                      </CodeLine>
+                      <CodeLine>
+                        <span className="token tag space-3">
+                          <span className="string">{'novos desafios e oportunidades para expandir meus conhecimentos e contribuir'}</span>
+                        </span>
+                      </CodeLine>
+                      <CodeLine>
+                        <span className="token tag space-3">
+                          <span className="string">{'ainda mais para o sucesso dos projetos em que me envolvo.'}</span>
+                        </span>
+                      </CodeLine>
+                      <CodeLine>
+                        <span className="token tag space-2">
+                          <span className="string">{'"""'}</span>
+                        </span>
+                      </CodeLine>
                     </div>
 
                     <span> </span>
 
                     {/* Função __ */}
-                    <span className="token decorator space-1">
-                      @
-                      <span className="string class">staticmethod</span>
-                    </span>
-                    <span className="token tag space-1">
-                      def{" "}
-                      <span className="func">__</span>
-                      <span className="rule">{'():'}</span>
-                    </span>
+                    <CodeLine>
+                      <span className="token decorator space-1">
+                        @
+                        <span className="string class">staticmethod</span>
+                      </span>
+                    </CodeLine>
+                    <CodeLine>
+                      <span className="token tag space-1">
+                        def{" "}
+                        <span className="func">__</span>
+                        <span className="rule">{'():'}</span>
+                      </span>
+                    </CodeLine>
 
                     {/* Texto __ */}
                     <div className="flex flex-col">
-                      <span className="token comment space-2">
-                        {'"""'}
-                      </span>
-                      <span className="token comment space-3">
-                        {'en: The only way to do something great is to love what you do.'}
-                      </span>
-                      <span className="token comment space-3">
-                        {'pt: A única maneira de fazer algo grandioso é amar o que você faz.'}
-                      </span>
-                      <span className="token comment space-2">
-                        {'"""'}
-                      </span>
+                      <CodeLine>
+                        <span className="token comment space-2">
+                          {'"""'}
+                        </span>
+                      </CodeLine>
+                      <CodeLine>
+                        <span className="token comment space-3">
+                          {'en: The only way to do something great is to love what you do.'}
+                        </span>
+                      </CodeLine>
+                      <CodeLine>
+                        <span className="token comment space-3">
+                          {'pt: A única maneira de fazer algo grandioso é amar o que você faz.'}
+                        </span>
+                      </CodeLine>
+                      <CodeLine>
+                        <span className="token comment space-2">
+                          {'"""'}
+                        </span>
+                      </CodeLine>
                     </div>
-                    <span className="token tag space-2">
-                      pass
-                    </span>
+                    <CodeLine>
+                      <span className="token tag space-2">
+                        pass
+                      </span>
+                    </CodeLine>
                   </code>
                 </pre>
               </div>
