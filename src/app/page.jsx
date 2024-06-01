@@ -125,7 +125,7 @@ export default function Home() {
             <div className='mt-[130px]'>
               <DescriptionRight>
                 <div className='mt-10'>
-                  <h1 className="text-3xl md:text-4xl font-medium text-red-primary">Tecnologias e ferramentas</h1>
+                  <h1 className="text-3xl md:text-4xl font-medium text-yellow-primary">Tecnologias e ferramentas</h1>
                   <h1 className="text-xs md:text-base text-white-primary">Especializado em tecnologias como Python, PHP e React, tenho uma predileção pelo desenvolvimento back-end, onde me destaco significativamente. Ainda que prefira back-end, minhas inovações e soluções de alta qualidade também se estendem ao front-end. Além disso, tenho conhecimento em DevOps, o que me capacita a integrar e gerenciar operações de desenvolvimento e infraestrutura eficientemente, assegurando a qualidade e entrega contínua dos sistemas.</h1>
                 </div>
               </DescriptionRight>
@@ -135,9 +135,9 @@ export default function Home() {
                 <BranchRedIcon />
                 <DescriptionLeft>
                   <div>
-                    <span className='text-xs font-semibold text-red-primary border border-red-primary rounded-full py-[1px] px-2'>Principais tecnologias</span>
+                    <span className='text-xs font-semibold text-yellow-primary border border-yellow-primary rounded-full py-[1px] px-2'>Principais tecnologias</span>
                     <div className='my-5 w-full max-w-[40em]'>
-                      <h1 className="text-3xl md:text-5xl font-medium text-red-primary">Tecnlogias</h1>
+                      <h1 className="text-3xl md:text-5xl font-medium text-yellow-primary">Tecnlogias</h1>
                       <h1 className="text-base md:text-lg font-medium text-white-primary max-sm:text-balance">As principais tecnologias que mais utilizo profissionalmente:</h1>
                     </div>
                   </div>
@@ -153,7 +153,7 @@ export default function Home() {
           subtitle={'Destaque em qualificações relevantes'}
           animationInSide="animate-slideInFastRight"
           animationOutSide="animate-slideOutFastRight"
-          color="bg-red-primary"
+          color="bg-yellow-primary"
           className="h-[8em] max-md:h-[14em]"
         >
           <Badges/>

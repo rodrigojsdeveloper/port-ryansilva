@@ -8,25 +8,25 @@ const BranchRedIcon = () => {
     <defs>
     <filter id="filter0_dddd_120_10488" x="34" y="216.124" width="52.876" height="52.8762" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
         <feFlood floodOpacity="0" result="BackgroundImageFix" />
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 249 74" result="hardAlpha" />
         <feOffset />
         <feGaussianBlur stdDeviation="7.5" />
         <feComposite in2="hardAlpha" operator="out" />
         <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.2 0 0 0 0 0.2 0 0 0 1 0" />
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_120_10488" />
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 249 74" result="hardAlpha" />
         <feOffset />
         <feGaussianBlur stdDeviation="10" />
         <feComposite in2="hardAlpha" operator="out" />
         <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.2 0 0 0 0 0.2 0 0 0 1 0" />
         <feBlend mode="normal" in2="effect1_dropShadow_120_10499" result="effect2_dropShadow_120_10488" />
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 249 74" result="hardAlpha" />
         <feOffset />
         <feGaussianBlur stdDeviation="2.5" />
         <feComposite in2="hardAlpha" operator="out" />
         <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.2 0 0 0 0 0.2 0 0 0 1 0" />
         <feBlend mode="normal" in2="effect2_dropShadow_120_10499" result="effect3_dropShadow_120_10488" />
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 249 74" result="hardAlpha" />
         <feOffset />
         <feGaussianBlur stdDeviation="7.5" />
         <feComposite in2="hardAlpha" operator="out" />
@@ -35,13 +35,13 @@ const BranchRedIcon = () => {
         <feBlend mode="normal" in="SourceGraphic" in2="effect4_dropShadow_120_10488" result="shape" />
       </filter>
       <linearGradient id="paint0_linear_120_10488" x1="24" y1="3.75962e-10" x2="22.5" y2="485" gradientUnits="userSpaceOnUse">
-      <stop offset="0.0515742" stopColor="#cc3e3e" stopOpacity="0" />
-        <stop offset="0.225992" stopColor="#ad2e2e" />
-        <stop offset="0.47249" stopColor="#d34848" />
-        <stop offset="0.522324" stopColor="#ff5a5a" />
-        <stop offset="0.561417" stopColor="#cc4747" />
-        <stop offset="0.791714" stopColor="#ff5a5a" />
-        <stop offset="0.956186" stopColor="#c03e3e" stopOpacity="0" />
+      <stop offset="0.0515742" stopColor="#f0ea36" stopOpacity="0" />
+        <stop offset="0.225992" stopColor="#c0bb30" />
+        <stop offset="0.47249" stopColor="#f0ea36" />
+        <stop offset="0.522324" stopColor="#fff94a" />
+        <stop offset="0.561417" stopColor="#b4b037" />
+        <stop offset="0.791714" stopColor="#fff94a" />
+        <stop offset="0.956186" stopColor="#e0db42" stopOpacity="0" />
       </linearGradient>
     </defs>
   </svg>
