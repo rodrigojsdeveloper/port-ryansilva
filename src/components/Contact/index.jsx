@@ -31,7 +31,7 @@ const Contact = () => {
       subtitle={'Escolha o melhor momento para você.'} 
       // color="bg-pink-primary"
       animationInSide="animate-slideInFastLeft"
-      animationOutSide="lefanimate-slideOutFastLeft"
+      animationOutSide="animate-slideOutFastLeft"
       className='h-[100%] md:h-[46em]'
     >
       <div className='relative top-[-50px] max-md:mt-[4em]'>

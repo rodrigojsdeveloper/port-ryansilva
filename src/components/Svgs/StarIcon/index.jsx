@@ -12,7 +12,7 @@ const StarIcon = () => {
       <g fill="#1d1d1d6a" fill-rule="evenodd" clip-rule="evenodd">
         <path
           stroke="currentColor"
-          stroke-linecap="round"
+          strokeLinecap="round"
           stroke-linejoin="round"
           d="M11.5 15.9L6.865 18l.533-5.13L4 9.04l4.965-1.07L11.5 3.5l2.535 4.469L19 9.039l-3.398 3.831l.533 5.13z"
           opacity="0.2"

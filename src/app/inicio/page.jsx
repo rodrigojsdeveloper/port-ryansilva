@@ -75,7 +75,7 @@ export default function Home() {
             title={'Profissional'}
             subtitle={'Minhas experiências profissionais na área'}
             animationInSide="animate-slideInSlowLeft"
-            animationOutSide="lefanimate-slideOutSlowLeft"
+            animationOutSide="animate-slideOutSlowLeft"
             color="bg-blue-primary"
             className="h-[25em]"
           >
@@ -86,7 +86,7 @@ export default function Home() {
             subtitle={'Minhas principais fonte de conhecimento'}
             animationSide="right"
             animationInSide="animate-slideInSlowRight"
-            animationOutSide="lefanimate-slideOutSlowRight"
+            animationOutSide="animate-slideOutSlowRight"
             color="bg-blue-primary"
             className="h-[25em]"
           >
@@ -110,7 +110,7 @@ export default function Home() {
           title={'Projetos'}
           subtitle={'Alguns dos projetos que se tornaram reais.'}
           animationInSide="animate-slideInFastLeft"
-          animationOutSide="lefanimate-slideOutFastLeft"
+          animationOutSide="animate-slideOutFastLeft"
           color="bg-puple-primary"
           className="h-[25em]"
         >
@@ -152,7 +152,7 @@ export default function Home() {
           title={'Certificações Profissionais'}
           subtitle={'Destaque em qualificações relevantes'}
           animationInSide="animate-slideInFastRight"
-          animationOutSide="lefanimate-slideOutFastRight"
+          animationOutSide="animate-slideOutFastRight"
           color="bg-red-primary"
           className="h-[8em]"
         >
