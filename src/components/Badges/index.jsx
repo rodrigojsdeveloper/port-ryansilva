@@ -4,9 +4,8 @@ import Image from 'next/image';
 import ClockIcon from '../Svgs/ClockIcon';
 
 const Badges = () => {
-
   return (
-    <div className='grid grid-cols-6 gap-4 max-md:grid-cols-3 pointer-events-none'>
+    <div className='grid grid-cols-6 gap-4 max-md:grid-cols-3 mt-3 pointer-events-none'>
       <div className='flex items-center justify-center'>
         <div className='flex flex-col items-center justify-center'>
           <Image src={'/img/pcep.png'} alt='PCEP' className="grayscale" width={50} height={50} />
