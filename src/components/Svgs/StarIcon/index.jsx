@@ -9,7 +9,7 @@ const StarIcon = () => {
       viewBox="0 0 20 20"
     >
       <rect width="20" height="20" fill="none" />
-      <g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd">
+      <g fill="#1d1d1d6a" fill-rule="evenodd" clip-rule="evenodd">
         <path
           stroke="currentColor"
           stroke-linecap="round"

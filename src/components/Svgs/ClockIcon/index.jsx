@@ -2,16 +2,18 @@ import React from 'react';
 
 const ClockIcon = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24">
-      <rect width="24" height="24" fill="none" />
-      <path fill="currentColor" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z" />
-      <rect width="2" height="7" x="11" y="6" fill="currentColor" rx="1">
-        <animateTransform attributeName="transform" dur="9s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12" />
-      </rect>
-      <rect width="2" height="9" x="11" y="11" fill="currentColor" rx="1">
-        <animateTransform attributeName="transform" dur="0.75s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12" />
-      </rect>
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+	<rect width="24" height="24" fill="none" />
+	<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.9">
+		<path stroke-dasharray="60" stroke-dashoffset="60" stroke-opacity="0.3" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z">
+			<animate fill="freeze" attributeName="stroke-dashoffset" dur="3.9s" values="60;0" />
+		</path>
+		<path stroke-dasharray="15" stroke-dashoffset="15" d="M12 3C16.9706 3 21 7.02944 21 12">
+			<animate fill="freeze" attributeName="stroke-dashoffset" dur="0.9s" values="15;0" />
+			<animateTransform attributeName="transform" dur="4.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12" />
+		</path>
+	</g>
+</svg>
   );
 };
 

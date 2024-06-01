@@ -22,6 +22,7 @@ import Contact from "@/components/Contact";
 import Shape3Icon from "@/components/Svgs/Shape3Icon";
 import Shape4Icon from "@/components/Svgs/Shape4Icon";
 import { Suspense } from "react";
+import Badges from "@/components/Badges";
 
 export default function Home() {
   return (
@@ -69,7 +70,7 @@ export default function Home() {
             </div>
           </div>
         </LineContainer>
-        <div className="flex items-center max-lg:flex-wrap max-lg:gap-5">
+        <div className="grid justify-center-center grid-cols-2 max-md:grid-cols-1 max-lg:gap-5">
           <Card
             title={'Profissional'}
             subtitle={'Minhas experiências profissionais na área'}
@@ -105,18 +106,16 @@ export default function Home() {
             </div>
           </div>
         </LineContainer>
-        <div>
-          <Card
-            title={'Projetos'}
-            subtitle={'Alguns dos projetos que se tornaram reais.'}
-            animationInSide="animate-slideInFastLeft"
-            animationOutSide="lefanimate-slideOutFastLeft"
-            color="bg-puple-primary"
-            className="h-[25em]"
-          >
-            {/* <Fork/> */}
-          </Card>
-        </div>
+        <Card
+          title={'Projetos'}
+          subtitle={'Alguns dos projetos que se tornaram reais.'}
+          animationInSide="animate-slideInFastLeft"
+          animationOutSide="lefanimate-slideOutFastLeft"
+          color="bg-puple-primary"
+          className="h-[25em]"
+        >
+          {/* <Fork/> */}
+        </Card>
       </div>
 
       {/* SKILLS */}
@@ -149,18 +148,16 @@ export default function Home() {
             </div>
           </div>
         </LineContainer>
-        <div>
-          <Card
-            title={'Certificações Profissionais'}
-            subtitle={'Destaque em qualificações relevantes'}
-            animationInSide="animate-slideInFastRight"
-            animationOutSide="lefanimate-slideOutFastRight"
-            color="bg-red-primary"
-            className="h-[8em]"
-          >
-            {/* <Fork/> */}
-          </Card>
-        </div>
+        <Card
+          title={'Certificações Profissionais'}
+          subtitle={'Destaque em qualificações relevantes'}
+          animationInSide="animate-slideInFastRight"
+          animationOutSide="lefanimate-slideOutFastRight"
+          color="bg-red-primary"
+          className="h-[8em]"
+        >
+          <Badges/>
+        </Card>
       </div>
 
       {/* CONTATO */}

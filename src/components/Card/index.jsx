@@ -43,8 +43,8 @@ const InteractiveCard = ({
     // });
 
     setBlurStyle({
-      top: `${mouseY - 85}px`,
-      left: `${mouseX - 55}px`,
+      top: `${mouseY}px`,
+      left: `${mouseX}px`,
       opacity: 1,
     });
   };
@@ -78,13 +78,13 @@ const InteractiveCard = ({
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={style}
-      className={`w-full z-10 relative bottom-[7em] hidden-scroll overflow-hidden mx-4 max-lg:overflow-x-scroll p-10 bg-gray-secondary rounded-xl border border-gray-3 transition-transform ${animationClass}`}
+      className={`z-10 relative bottom-[7em] hidden-scroll overflow-hidden mx-4 max-lg:overflow-x-scroll p-10 bg-gray-secondary rounded-xl border border-gray-3 transition-transform ${animationClass}`}
     >
       <div
         style={blurStyle}
         className={`absolute w-52 h-52 rounded-full ${color} blur-[10em] transition-opacity duration-500 ease-out`}
       />
-      <div className={`relative p-10 ${className}`}>
+      <div className={`w-full relative p-10 ${className}`}>
         <div className='top-1 absolute pointer-events-none'>
           <h1 className='font-semibold text-stone-400'>{title}</h1>
           <p className='text-xs text-stone-500'>{subtitle}</p>
