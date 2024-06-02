@@ -10,7 +10,7 @@ import DescriptionRight from "@/components/DescriptionContainer/animationRight";
 import DescriptionBottom from "@/components/DescriptionContainer/animationBottom";
 import Card from "@/components/Card";
 import VisieTextoIcon from "@/components/Svgs/VisieTextoIcon";
-import BranchYellowIcon from "@/components/Svgs/BranchYellowIcon";
+import BranchGreenIcon from "@/components/Svgs/BranchGreenIcon";
 import IntroIcon from "@/components/Svgs/IntroIcon";
 import AboutMeIcon from "@/components/Svgs/AboutMeIcon";
 import SkillsIcon from "@/components/Svgs/SkillsIcon";
@@ -128,19 +128,19 @@ export default function Home() {
             <div className='mt-[130px]'>
               <DescriptionRight>
                 <div className='mt-10'>
-                  <h1 className="text-2xl md:text-3xl font-medium text-yellow-primary">Tecnologias e ferramentas</h1>
+                  <h1 className="text-2xl md:text-3xl font-medium text-green-primary">Tecnologias e ferramentas</h1>
                   <h1 className="text-sm md:text-base text-white-primary">Especializado em tecnologias como Python, PHP e React, tenho uma predileção pelo desenvolvimento back-end, onde me destaco significativamente. Ainda que prefira back-end, minhas inovações e soluções de alta qualidade também se estendem ao front-end. Além disso, tenho conhecimento em DevOps, o que me capacita a integrar e gerenciar operações de desenvolvimento e infraestrutura eficientemente, assegurando a qualidade e entrega contínua dos sistemas.</h1>
                 </div>
               </DescriptionRight>
             </div>
             <div className='ml-20 relative bottom-[45px] flex items-center'>
               <div className='flex items-center relative left-[-115px]'>
-                <BranchYellowIcon />
+                <BranchGreenIcon />
                 <DescriptionLeft>
                   <div>
-                    <span className='text-xs font-semibold text-yellow-primary border border-yellow-primary rounded-full py-[1px] px-2 text-nowrap'>Meu fluxo de desenvolvimento</span>
+                    <span className='text-xs font-semibold text-green-primary border border-green-primary rounded-full py-[1px] px-2 text-nowrap'>Meu fluxo de desenvolvimento</span>
                     <div className='my-5 w-full max-w-[35em]'>
-                      <h1 className="text-3xl md:text-5xl font-medium text-yellow-primary">Metodologias</h1>
+                      <h1 className="text-3xl md:text-5xl font-medium text-green-primary">Metodologias</h1>
                       <h1 className="text-sm md:text-base text-white-primary max-sm:text-balance">No meu trabalho, adoto a metodologia Scrum para garantir flexibilidade e eficiência nos projetos. O Test-Driven Development (TDD) é essencial para manter a qualidade do código desde o início. Para aprimorar a entrega contínua, implemento práticas de CI/CD. Além disso, aplico design patterns estrategicamente para resolver problemas comuns de projeto de software, promovendo soluções elegantes e reutilizáveis.</h1>
                     </div>
                   </div>
@@ -156,7 +156,7 @@ export default function Home() {
           subtitle={'Destaque em qualificações relevantes'}
           animationInSide="animate-slideInFastRight"
           animationOutSide="animate-slideOutFastRight"
-          color="bg-yellow-primary"
+          color="bg-green-primary"
           className="h-[8em] max-md:h-[14em]"
         >
           <Badges/>

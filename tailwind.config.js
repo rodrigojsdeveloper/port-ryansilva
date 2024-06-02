@@ -29,11 +29,10 @@ module.exports = {
         "gray-secondary": "#121212",
         "gray-3": "#272727",
         "gray-4": "#1c1c1c",
-        "green-primary": "#3fb950",
         "white-primary": "#f6f8fa",
         "puple-primary": "#dd7df7",
         "blue-primary": "#33b3ae",
-        "yellow-primary": "#fff94a",
+        "green-primary": "#4ddb7e",
         "pink-primary": "#f778ba",
         "background": "#0c0c0c"
       },

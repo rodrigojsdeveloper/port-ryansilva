@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Ryan Barbosa",
+  title: "Ryan Barbosa Silva",
   description: "Desenvolvedor de software, especialista em implementar soluções robustas com as tecnologias mais modernas.",
   keywords: "Ryan, Ryan Barbosa, desenvolvedor, programador, web, python, fullstack, software, tecnologia",
   author: "Ryan Barbosa",

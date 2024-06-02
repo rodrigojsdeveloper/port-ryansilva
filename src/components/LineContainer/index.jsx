@@ -37,9 +37,9 @@ const LineContainer = ({
       text: 'text-blue-primary',
     },
     red: {
-      from: 'from-yellow-primary',
-      bg: 'bg-yellow-primary',
-      text: 'text-yellow-primary',
+      from: 'from-green-primary',
+      bg: 'bg-green-primary',
+      text: 'text-green-primary',
     },
     pink: {
       from: 'from-pink-primary',

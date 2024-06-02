@@ -1,4 +1,4 @@
-const BranchYellowIcon = () => {
+const BranchGreenIcon = () => {
   return <svg xmlns="http://www.w3.org/2000/svg" width="87" height="485" viewBox="0 0 87 485" fill="none">
     <path d="M2.00026 0L2.00014 33.5188C2.00005 61.0048 12.3542 87.4821 31.0001 107.676V107.676C49.6458 127.871 60 154.348 60 181.834V301.665C60 329.451 49.6629 356.243 31.0001 376.829V376.829C12.3373 397.414 2.00022 424.207 2.00016 451.993L2.00009 485" stroke="url(#paint0_linear_120_10488)" strokeWidth="3" />
     <g filter="url(#filter0_dddd_120_10488)">
@@ -12,39 +12,39 @@ const BranchYellowIcon = () => {
         <feOffset />
         <feGaussianBlur stdDeviation="7.5" />
         <feComposite in2="hardAlpha" operator="out" />
-        <feColorMatrix type="matrix" values="1 0 0 0 0.94 0 1 0 0 0.91 0 0 0 0 0.21 0 0 0 1 0" />
+        <feColorMatrix type="matrix" values="0 0 0 0 0.302 0 0 0 0 0.859 0 0 0 0 0.494 0 0 0 1 0" />
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_120_10488" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset />
         <feGaussianBlur stdDeviation="10" />
         <feComposite in2="hardAlpha" operator="out" />
-        <feColorMatrix type="matrix" values="1 0 0 0 0.94 0 1 0 0 0.91 0 0 0 0 0.21 0 0 0 1 0" />
+        <feColorMatrix type="matrix" values="0 0 0 0 0.302 0 0 0 0 0.859 0 0 0 0 0.494 0 0 0 1 0" />
         <feBlend mode="normal" in2="effeact1_dropShadow_120_10499" result="effect2_dropShadow_120_10488" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset />
         <feGaussianBlur stdDeviation="2.5" />
         <feComposite in2="hardAlpha" operator="out" />
-        <feColorMatrix type="matrix" values="1 0 0 0 0.94 0 1 0 0 0.91 0 0 0 0 0.21 0 0 0 1 0" />
+        <feColorMatrix type="matrix" values="0 0 0 0 0.302 0 0 0 0 0.859 0 0 0 0 0.494 0 0 0 1 0" />
         <feBlend mode="normal" in2="effect2_dropShadow_120_10499" result="effect3_dropShadow_120_10488" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset />
         <feGaussianBlur stdDeviation="7.5" />
         <feComposite in2="hardAlpha" operator="out" />
-        <feColorMatrix type="matrix" values="1 0 0 0 0.94 0 1 0 0 0.91 0 0 0 0 0.21 0 0 0 1 0" />
+        <feColorMatrix type="matrix" values="0 0 0 0 0.302 0 0 0 0 0.859 0 0 0 0 0.494 0 0 0 1 0" />
         <feBlend mode="normal" in2="effect3_dropShadow_120_10499" result="effect4_dropShadow_120_10488" />
         <feBlend mode="normal" in="SourceGraphic" in2="effect4_dropShadow_120_10488" result="shape" />
       </filter>
       <linearGradient id="paint0_linear_120_10488" x1="24" y1="3.75962e-10" x2="22.5" y2="485" gradientUnits="userSpaceOnUse">
-      <stop offset="0.0515742" stopColor="#f0ea36" stopOpacity="0" />
-        <stop offset="0.225992" stopColor="#c0bb30" />
-        <stop offset="0.47249" stopColor="#f0ea36" />
-        <stop offset="0.522324" stopColor="#fff94a" />
-        <stop offset="0.561417" stopColor="#b4b037" />
-        <stop offset="0.791714" stopColor="#fff94a" />
-        <stop offset="0.956186" stopColor="#e0db42" stopOpacity="0" />
+      <stop offset="0.0515742" stopColor="#3bb666" stopOpacity="0" />
+        <stop offset="0.225992" stopColor="#369e5a" />
+        <stop offset="0.47249" stopColor="#4ddb7e" />
+        <stop offset="0.522324" stopColor="#4ddb7e" />
+        <stop offset="0.561417" stopColor="#3aa05e" />
+        <stop offset="0.791714" stopColor="#4ddb7e" />
+        <stop offset="0.956186" stopColor="#3fb96a" stopOpacity="0" />
       </linearGradient>
     </defs>
   </svg>
 }
 
-export default BranchYellowIcon
+export default BranchGreenIcon
