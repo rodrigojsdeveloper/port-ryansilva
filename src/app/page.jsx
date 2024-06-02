@@ -3,7 +3,7 @@
 // import Container from "@/components/Container";
 import LineContainer from "@/components/LineContainer";
 import Shape1Icon from "@/components/Svgs/Shape1Icon";
-import Button from "@/components/Button";
+import ButtonOutline from "@/components/ButtonOutline";
 import BranchBlueIcon from "@/components/Svgs/BranchBlueIcon";
 import DescriptionLeft from "@/components/DescriptionContainer/animationLeft";
 import DescriptionRight from "@/components/DescriptionContainer/animationRight";
@@ -57,7 +57,7 @@ export default function Home() {
               <div className='w-[35em] mb-2'>
                 <p className='text-xl md:text-2xl font-medium text-stone-400 max-sm:text-balance min-w-[20em]'><span className='text-white-primary'>Veja o desenvolvimento</span> do meus projetos que estão em open-source e hospedado, todos no github</p>
               </div>
-              <Button label='Ver no github ' />
+              <ButtonOutline label='Ver no github ' />
             </DescriptionRight>
             <div className='flex items-center relative left-[-99px]'>
               <BranchBlueIcon />
@@ -69,7 +69,7 @@ export default function Home() {
                     <h1 className="text-xl md:text-2xl font-medium text-white-primary max-sm:text-balance">Como desenvolvedor estou muito ativo no linkedin, vai lá!</h1>
                   </div>
                 </div>
-                <Button label='Ver linkedin ' />
+                <ButtonOutline label='Ver linkedin ' />
               </DescriptionLeft>
             </div>
           </div>
@@ -142,7 +142,7 @@ export default function Home() {
                       <h1 className="text-base md:text-lg font-medium text-white-primary max-sm:text-balance">As principais tecnologias que mais utilizo profissionalmente:</h1>
                     </div>
                   </div>
-                  <Button label='Certificações ' />
+                  <ButtonOutline label='Certificações ' />
                 </DescriptionLeft>
               </div>
               <Technologies />

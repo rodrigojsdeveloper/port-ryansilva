@@ -1,20 +1,21 @@
-import React, { useState } from 'react';
-import ArrowRightIcon from '../Svgs/ArrowRightIcon';
+import React from 'react';
 
-const Button = ({ label, onClick = () => { }, className = "" }) => {
-  const [isHovered, setIsHovered] = useState(false);
+const Button = ({ label, icon, link}) => {
 
   return (
     <>
-      <button
-        className="flex items-center gap-3 text-xl font-semibold text-white-primary"
-        onClick={onClick}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
+      <a
+        className="shadow-inner bg-gray-4 rounded-md border border-gray-3"
+        href={link}
+        target='_blank'
       >
-        <span className='button'>{label}</span>
-        <ArrowRightIcon hover={isHovered} />
-      </button >
+        <div className='flex items-center gap-1 px-4 py-1 font-semibold text-white-primary'>
+          <span>
+            {icon}
+          </span>
+          <h1>{label}</h1>
+        </div>
+      </a>
     </>
   );
 };

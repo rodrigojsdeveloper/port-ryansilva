@@ -1,6 +1,6 @@
 'use client'
 
-import Button from '@/components/Button';
+import ButtonOutline from '@/components/ButtonOutline';
 import { useRouter } from 'next/navigation';
 import React from 'react';
 
@@ -8,7 +8,7 @@ function Page404Light() {
   const router = useRouter()
   return (
     <div className="flex items-center justify-center">
-      <Button
+      <ButtonOutline
         label='Voltar ao portfólio '
         onClick={() => router.push('/')}
       />
