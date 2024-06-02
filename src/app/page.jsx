@@ -23,6 +23,7 @@ import Shape4Icon from "@/components/Svgs/Shape4Icon";
 import { Suspense } from "react";
 import Badges from "@/components/Badges";
 import IDEContainer from "@/components/IDEContainer";
+import Fork from "@/components/ForkWork";
 
 export default function Home() {
   return (
@@ -77,9 +78,9 @@ export default function Home() {
             animationInSide="animate-slideInSlowLeft"
             animationOutSide="animate-slideOutSlowLeft"
             color="bg-blue-primary"
-            className="h-[25em]"
+            // className="min-h-[27em]"
           >
-            {/* <Fork/> */}
+            <Fork color="text-blue-primary"/>
           </Card>
           <Card
             title={'Educacional'}
@@ -88,7 +89,7 @@ export default function Home() {
             animationInSide="animate-slideInSlowRight"
             animationOutSide="animate-slideOutSlowRight"
             color="bg-blue-primary"
-            className="h-[25em]"
+            // className="min-h-[27em]"
           >
             {/* <Fork/> */}
           </Card>
