@@ -24,6 +24,8 @@ import { Suspense } from "react";
 import Badges from "@/components/Badges";
 import IDEContainer from "@/components/IDEContainer";
 import Fork from "@/components/ForkWork";
+import ForkWork from "@/components/ForkWork";
+import ForkStudy from "@/components/ForkStudy";
 
 export default function Home() {
   return (
@@ -48,7 +50,7 @@ export default function Home() {
         </LineContainer>
         <Shape1Icon className='absolute top-[75em] left-[35em] animate-rotate-180s-linear-infinite' />
         <IDEContainer src={'/ide.png'} />
-        <LineContainer animationLine className="relative h-[55em] bottom-[90px]" color="blue">
+        <LineContainer animationLine className="relative h-[45em] bottom-[90px]" color="blue">
           <div className='mt-[100px] ml-20'>
             <DescriptionRight>
               <div className='w-[35em] mb-2'>
@@ -78,20 +80,18 @@ export default function Home() {
             animationInSide="animate-slideInSlowLeft"
             animationOutSide="animate-slideOutSlowLeft"
             color="bg-blue-primary"
-            // className="min-h-[27em]"
           >
-            <Fork color="text-blue-primary"/>
+            <ForkWork />
           </Card>
           <Card
             title={'Educacional'}
-            subtitle={'Minhas principais fonte de conhecimento'}
+            subtitle={'Minhas principais fontes de conhecimento'}
             animationSide="right"
             animationInSide="animate-slideInSlowRight"
             animationOutSide="animate-slideOutSlowRight"
             color="bg-blue-primary"
-            // className="min-h-[27em]"
           >
-            {/* <Fork/> */}
+            <ForkStudy />
           </Card>
         </div>
       </div>

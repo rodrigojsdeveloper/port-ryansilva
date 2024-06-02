@@ -9,7 +9,7 @@ import {
   AccordionBody,
 } from "@material-tailwind/react";
 
-const ForkWork = () => {
+const ForkStudy = () => {
   const [open, setOpen] = React.useState(1);
 
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
@@ -47,20 +47,19 @@ const ForkWork = () => {
         >
           <div>
             <div className='flex items-center gap-2'>
-              Desenvolvedor fullstack
+                Analíse e desenvolvimento de sistemas (ADS)
               <span className={`${open !== 1 && "grayscale"}`}>
-                <VisieTextoIcon width={70} height={20} />
+                <Image src={Uninove} alt="Uninove" width={90} height={70} />
               </span>
             </div>
-            <h3 className='text-xs font-medium text-stone-500'>Março 2023 - Presente (Integral)</h3>
+            <h3 className='text-xs font-medium text-stone-500'>2023 - 2026</h3>
           </div>
         </AccordionHeader>
         <AccordionBody className="pt-0 text-sm font-normal text-white-primary">
-          Atuo com uma variedade de tecnologias em múltiplos projetos,
-          assumindo a responsabilidade pela qualidade e entrega dos softwares.
-          Além disso, atualmente emprego práticas de DevOps, configurando servidores e
-          implementando aplicações, o que eleva a eficiência operacional. Interajindo diretamente
-          com os clientes, gerenciando e resolvendo questões diariamente para garantir a melhor execução e satisfação.
+          Embora já estivesse estabelecido na área, optei por ingressar
+          no curso de ADS na Uninove. A decisão foi motivada pelo
+          meu compromisso em aprimorar continuamente minhas habilidades e qualificações profissionais,
+          reconhecendo que uma formação acadêmica formal é fundamental para alcançar os objetivos de carreira que estabeleci para mim mesmo.
         </AccordionBody>
       </Accordion>
       <Accordion open={open === 2} className="drop-shadow-lg mb-2 bg-gray-secondary/70 rounded-lg border border-gray-3 px-4">
@@ -70,16 +69,14 @@ const ForkWork = () => {
         >
           <div>
             <div className='flex items-center gap-2'>
-              Desenvolvedor fullstack
-              <span className={`${open !== 2 && "grayscale"}`}>
-                <Image src={Vero} alt="Vero" width={60} height={25} />
-              </span>
+              Cursos Profissionais
             </div>
-            <h3 className='text-xs font-medium text-stone-500'>Agosto 2022 - Março 2023 (Outsourcing)</h3>
+            <h3 className='text-xs font-medium text-stone-500'>Presente - Sempre</h3>
           </div>
         </AccordionHeader>
         <AccordionBody className="pt-0 text-sm font-normal text-white-primary">
-          Na equipe da Vero, fui o principal responsável pelo middleware dos SVAs do provedor, trabalhando na integração parceiros internacionais de diversos países e aprimorando a aplicação conforme surgiam novas necessidades. Também participei ativamente das reuniões de planejamento, alinhamento e definição de novos SVAs.        </AccordionBody>
+          Sempre estou aprimorando minhas habilidades através de cursos profissionais, buscando sempre ficar atualizado com as evoluções constante da área e preparar-me para certificações importantes.
+        </AccordionBody>
       </Accordion>
       <Accordion open={open === 3} className="drop-shadow-lg mb-2 bg-gray-secondary/70 rounded-lg border border-gray-3 px-4">
         <AccordionHeader
@@ -88,17 +85,17 @@ const ForkWork = () => {
         >
           <div>
             <div className='flex items-center gap-2'>
-            Desenvolvedor de Software
+              Livros
             </div>
-            <h3 className='text-xs font-medium text-stone-500'>Presente - Sempre</h3>
+            <h3 className='text-xs font-medium text-stone-500'>Presente - Regularmente</h3>
           </div>
         </AccordionHeader>
         <AccordionBody className="pt-0 text-sm font-normal text-white-primary">
-          Continuo atuando como freelancer em meu tempo livre, desenvolvendo sites, landing pages e realizando manutenções diversas.
+            Regularmente, dou um tempo à leitura de livros focado nas tecnologias que mais curto, como Python, além de ler obras sobre estruturas de código e outros temas técnicos, buscando ter mais conhecimento e habilidade.
         </AccordionBody>
       </Accordion>
     </div>
   );
 };
 
-export default ForkWork;
+export default ForkStudy;
