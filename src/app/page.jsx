@@ -44,7 +44,7 @@ export default function Home() {
             <div className='mt-[115px]'>
               <div className='mt-10'>
                 <h1 className="text-3xl md:text-4xl font-medium text-blue-primary">Inovação e Eficiência</h1>
-                <h1 className="text-sm md:text-base font-medium text-white-primary">Especializado em soluções estratégicas full-stack e otimizações para maximizar eficiência.</h1>
+                <h1 className="text-sm md:text-base font-medium text-white-primary">Especialista em desenvolvimento full-stack, focado em soluções estratégicas que elevam a eficiência operacional.</h1>
               </div>
             </div>
           </DescriptionBottom>
@@ -53,23 +53,25 @@ export default function Home() {
         <IDEContainer src={'/ide.png'} />
         <LineContainer animationLine className="relative h-[45em] bottom-[90px]" color="blue">
           <div className='mt-[100px] ml-[60px]'>
-            <DescriptionRight>
-              <div className='w-[35em] mb-2'>
-                <p className='text-xl md:text-2xl font-medium text-stone-400 min-w-[20em]'><span className='text-white-primary'>Veja o desenvolvimento</span> do meus projetos que estão em open-source e hospedado, todos no github</p>
+            <DescriptionRight threshold={0.1}>
+              <div className="w-[35em] max-sm:relative max-sm:left-[-40px] max-sm:w-[17em]">
+                <div className='mb-2'>
+                  <p className='text-xl md:text-2xl font-medium text-stone-400'><span className='text-white-primary'>Veja o desenvolvimento</span> de alguns projetos que estão em open-source e hospedado, todos no github.</p>
+                </div>
+                <ButtonOutline label='Ver o github ' />
               </div>
-              <ButtonOutline label='Ver github ' />
             </DescriptionRight>
             <div className='flex items-center relative left-[-80px]'>
               <BranchBlueIcon />
-              <DescriptionLeft>
+              <DescriptionLeft threshold={0.5}>
                 <div>
-                  <span className='text-xs font-semibold text-blue-primary border border-blue-primary rounded-full py-[1px] px-2'>Quer se conectar comigo?</span>
+                  <span className='text-xs font-semibold text-blue-primary border border-blue-primary rounded-full py-[1px] px-2'>Eai, já se conectou comigo?</span>
                   <div className='my-5 w-full max-w-[35em] max-md:w-[15em]'>
                     <h1 className="text-3xl md:text-6xl font-medium text-blue-primary">Meu dia-dia</h1>
                     <h1 className="text-base md:text-xl font-medium text-white-primary max-sm:text-balance">Como desenvolvedor estou sempre muito ativo no linkedin, vai lá!</h1>
                   </div>
                 </div>
-                <ButtonOutline label='Ir ao linkedin ' />
+                <ButtonOutline label='Ver o linkedin ' />
               </DescriptionLeft>
             </div>
           </div>
@@ -100,7 +102,7 @@ export default function Home() {
       {/* PROJETOS */}
       <div>
         <Shape3Icon className='absolute left-[-250px] animate-rotate-180s-linear-infinite' />
-        <LineContainer title="Projetos desenvolvidos" animationLine className="relative h-[14em] bottom-[5.5em]" heightTopLine="h-20" color="puple" icon={ProjectIcon}>
+        <LineContainer title="Projetos desenvolvidos" animationLine className="relative h-[15em] bottom-[5.5em]" heightTopLine="h-20" color="puple" icon={ProjectIcon}>
           <div className='mt-[70px]'>
             <div className='mt-10'>
               <h1 className="text-2xl md:text-3xl font-medium text-puple-primary">Já foram muitos projetos...</h1>
@@ -136,13 +138,13 @@ export default function Home() {
                 <BranchRedIcon />
                 <DescriptionLeft>
                   <div>
-                    <span className='text-xs font-semibold text-yellow-primary border border-yellow-primary rounded-full py-[1px] px-2'>Principais tecnologias</span>
+                    <span className='text-xs font-semibold text-yellow-primary border border-yellow-primary rounded-full py-[1px] px-2'>Atualmente essas são minhas principais tecnologias</span>
                     <div className='my-5 w-full max-w-[35em]'>
                       <h1 className="text-3xl md:text-5xl font-medium text-yellow-primary">Tecnlogias</h1>
                       <h1 className="text-base md:text-xl font-medium text-white-primary max-sm:text-balance">As principais tecnologias que mais utilizo profissionalmente</h1>
                     </div>
                   </div>
-                  <ButtonOutline label='Certificações ' />
+                  {/* <ButtonOutline label='Certificações ' /> */}
                 </DescriptionLeft>
               </div>
               <Technologies />
@@ -164,7 +166,7 @@ export default function Home() {
       {/* CONTATO */}
       <div>
         <Shape4Icon className='absolute bottom-[500px] right-[-250px]  animate-rotate-180s-linear-infinite' />
-        <LineContainer title="Entre em contato" animationLine className="relative h-[14em] bottom-[5.5em]" heightTopLine="h-20" color="pink" icon={ContactIcon}>
+        <LineContainer title="Entre em contato" animationLine className="relative h-[15em] bottom-[5.5em]" heightTopLine="h-20" color="pink" icon={ContactIcon}>
           <div className='mt-[100px]'>
             <DescriptionRight>
               <div className='mt-1'>

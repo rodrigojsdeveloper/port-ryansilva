@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
-const DescriptionContainerAnimationLeft = ({ children, scrollY }) => {
+const DescriptionContainerAnimationLeft = ({ children, scrollY, threshold }) => {
   const [triggerOnce, setTriggerOnce] = useState(false);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const DescriptionContainerAnimationLeft = ({ children, scrollY }) => {
   }, []);
 
   const { ref, inView } = useInView({
-    threshold: 0.6,
+    threshold: threshold || 0.6,
     triggerOnce: triggerOnce,
   });
   
