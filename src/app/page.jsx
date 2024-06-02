@@ -138,7 +138,7 @@ export default function Home() {
                 <BranchRedIcon />
                 <DescriptionLeft>
                   <div>
-                    <span className='text-xs font-semibold text-yellow-primary border border-yellow-primary rounded-full py-[1px] px-2'>Atualmente essas são minhas principais tecnologias</span>
+                    <span className='text-xs font-semibold text-yellow-primary border border-yellow-primary rounded-full py-[1px] px-2 text-nowrap'>Principais tecnologias atualmente</span>
                     <div className='my-5 w-full max-w-[35em]'>
                       <h1 className="text-3xl md:text-5xl font-medium text-yellow-primary">Tecnlogias</h1>
                       <h1 className="text-base md:text-xl font-medium text-white-primary max-sm:text-balance">As principais tecnologias que mais utilizo profissionalmente</h1>
