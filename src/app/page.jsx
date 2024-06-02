@@ -58,7 +58,7 @@ export default function Home() {
                 <div className='mb-2'>
                   <p className='text-xl md:text-2xl font-medium text-stone-400'><span className='text-white-primary'>Veja o desenvolvimento</span> de alguns projetos que estão em open-source e hospedado, todos no github.</p>
                 </div>
-                <ButtonOutline label='Ver o github ' />
+                <ButtonOutline link={'https://github.com/ryanbsdeveloper'} label='Ver o github ' />
               </div>
             </DescriptionRight>
             <div className='flex items-center relative left-[-80px]'>
@@ -71,7 +71,7 @@ export default function Home() {
                     <h1 className="text-base md:text-xl font-medium text-white-primary max-sm:text-balance">Como desenvolvedor estou sempre muito ativo no linkedin, vai lá!</h1>
                   </div>
                 </div>
-                <ButtonOutline label='Ver o linkedin ' />
+                <ButtonOutline link={'https://www.linkedin.com/in/ryanbarbosasilva'} label='Ver o linkedin ' />
               </DescriptionLeft>
             </div>
           </div>
@@ -123,7 +123,7 @@ export default function Home() {
 
       {/* SKILLS */}
       <div>
-        <LineContainer title="Especialização e habilidades" animationLine className="relative h-[45em] bottom-[5.5em]" heightTopLine="h-20" color="red" icon={SkillsIcon}>
+        <LineContainer title="Especializações" animationLine className="relative h-[45em] bottom-[5.5em]" heightTopLine="h-20" color="red" icon={SkillsIcon}>
           <div>
             <div className='mt-[130px]'>
               <DescriptionRight>
