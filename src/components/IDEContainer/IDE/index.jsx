@@ -59,7 +59,7 @@ const IDE = ({ className }) => {
                     <p>37</p>
                     <p>38</p>
                   </div>
-                  <code className="lg:overflow-hidden flex-auto relative text-slate-50 pt-4 pb-4 px-4 overflow-auto flex flex-col">
+                  <code className="lg:overflow-hidden flex-auto relative text-slate-50 pt-4 pb-4 overflow-auto flex flex-col">
                     <span className="token comment">{'"""@ryanbsdeveloper"""'}</span>
                     <span> </span>
 
