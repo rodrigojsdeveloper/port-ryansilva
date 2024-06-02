@@ -23,7 +23,6 @@ import Shape4Icon from "@/components/Svgs/Shape4Icon";
 import { Suspense } from "react";
 import Badges from "@/components/Badges";
 import IDEContainer from "@/components/IDEContainer";
-import Fork from "@/components/ForkWork";
 import ForkWork from "@/components/ForkWork";
 import ForkStudy from "@/components/ForkStudy";
 import Projects from "@/components/Projects";
@@ -33,7 +32,7 @@ export default function Home() {
     <Suspense fallback={'carregando...'}>
       {/* INICIO + SOBRE MIM */}
       <div>
-        <LineContainer LineInitial className="h-[15em]" color="white" icon={IntroIcon} fromBottomLine="from-40%">
+        <LineContainer LineInitial className="h-[15em] max-sm:h-[19em]" color="white" icon={IntroIcon} fromBottomLine="from-40%">
           <div className="mt-[13px]">
             <h1 className="text-5xl md:text-7xl font-bold leading-[56px] text-white-primary">Ryan Barbosa Silva</h1>
             <p className="text-stone-500 text-2xl mt-5 flex-wrap flex items-center gap-2.5">Desenvolvedor Full-Stack <span className="text-sm">na</span> <a target="_blank" href="https://www.visie.com.br" className="ml-2 cursor-pointer"><VisieTextoIcon /></a></p>
@@ -123,17 +122,17 @@ export default function Home() {
 
       {/* SKILLS */}
       <div>
-        <LineContainer title="Especializações" animationLine className="relative h-[45em] bottom-[5.5em]" heightTopLine="h-20" color="red" icon={SkillsIcon}>
-          <div>
+        <LineContainer title="Especializações" animationLine className="relative h-[45em] max-sm:h-[52em] bottom-[5.5em] responsive-line-skills" heightTopLine="h-20" color="red" icon={SkillsIcon}>
+          <div className="w-full">
             <div className='mt-[130px]'>
               <DescriptionRight>
-                <div className='mt-10'>
+                <div className='mt-10 pr-14'>
                   <h1 className="text-2xl md:text-3xl font-medium text-green-primary">Tecnologias e ferramentas</h1>
-                  <h1 className="text-sm md:text-base text-white-primary">Especializado em tecnologias como Python, PHP e React, tenho uma predileção pelo desenvolvimento back-end, onde me destaco significativamente. Ainda que prefira back-end, minhas inovações e soluções de alta qualidade também se estendem ao front-end. Além disso, tenho conhecimento em DevOps, o que me capacita a integrar e gerenciar operações de desenvolvimento e infraestrutura eficientemente, assegurando a qualidade e entrega contínua dos sistemas.</h1>
+                  <h1 className="text-sm md:text-base text-white-primary max-sm:text-balance">Especializado em tecnologias como Python, PHP e React, tenho uma predileção pelo desenvolvimento back-end, onde me destaco significativamente. Ainda que prefira back-end, minhas inovações e soluções de alta qualidade também se estendem ao front-end. Além disso, tenho conhecimento em DevOps, o que me capacita a integrar e gerenciar operações de desenvolvimento e infraestrutura eficientemente, assegurando a qualidade e entrega contínua dos sistemas.</h1>
                 </div>
               </DescriptionRight>
             </div>
-            <div className='ml-20 relative bottom-[45px] flex items-center'>
+            <div className='ml-20 relative bottom-[45px] max-md:bottom-[10px] flex items-center'>
               <div className='flex items-center relative left-[-115px]'>
                 <BranchGreenIcon />
                 <DescriptionLeft>

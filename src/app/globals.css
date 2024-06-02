@@ -44,6 +44,14 @@ body, html {
     text-wrap: balance;
   }
 }
+.responsive-line-skills{
+  opacity: 1;;
+}
+
+@media (max-width: 400px){
+  .responsive-line-skills {
+      height: 60em !important;
+  }}
 
 @media (min-width: 1012px){
 .pt-lg-12 {
