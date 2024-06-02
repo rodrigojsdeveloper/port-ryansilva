@@ -44,7 +44,7 @@ export default function Home() {
             <div className='mt-[115px]'>
               <div className='mt-10'>
                 <h1 className="text-3xl md:text-4xl font-medium text-blue-primary">Inovação e Eficiência</h1>
-                <h1 className="text-lg md:text-xl font-medium text-white-primary">Especializado em soluções estratégicas full-stack e otimizações para maximizar eficiência.</h1>
+                <h1 className="text-sm md:text-base font-medium text-white-primary">Especializado em soluções estratégicas full-stack e otimizações para maximizar eficiência.</h1>
               </div>
             </div>
           </DescriptionBottom>
@@ -55,7 +55,7 @@ export default function Home() {
           <div className='mt-[100px] ml-20'>
             <DescriptionRight>
               <div className='w-[35em] mb-2'>
-                <p className='text-xl md:text-2xl font-medium text-stone-400 max-sm:text-balance min-w-[20em]'><span className='text-white-primary'>Veja o desenvolvimento</span> do meus projetos que estão em open-source e hospedado, todos no github</p>
+                <p className='text-xl md:text-2xl font-medium text-stone-400 min-w-[20em]'><span className='text-white-primary'>Veja o desenvolvimento</span> do meus projetos que estão em open-source e hospedado, todos no github</p>
               </div>
               <ButtonOutline label='Ver no github ' />
             </DescriptionRight>
@@ -66,7 +66,7 @@ export default function Home() {
                   <span className='text-xs font-semibold text-blue-primary border border-blue-primary rounded-full py-[1px] px-2'>Quer se conectar comigo?</span>
                   <div className='my-5 w-full max-w-[35em]'>
                     <h1 className="text-3xl md:text-6xl font-medium text-blue-primary">Meu dia-dia</h1>
-                    <h1 className="text-xl md:text-2xl font-medium text-white-primary max-sm:text-balance">Como desenvolvedor estou muito ativo no linkedin, vai lá!</h1>
+                    <h1 className="text-xl md:text-2xl font-medium text-white-primary">Como desenvolvedor estou muito ativo no linkedin, vai lá!</h1>
                   </div>
                 </div>
                 <ButtonOutline label='Ver linkedin ' />
@@ -100,11 +100,11 @@ export default function Home() {
       {/* PROJETOS */}
       <div>
         <Shape3Icon className='absolute left-[-250px] animate-rotate-180s-linear-infinite' />
-        <LineContainer title="Projetos desenvolvidos" animationLine className="relative h-[18em] bottom-20" heightTopLine="h-20" color="puple" icon={ProjectIcon}>
+        <LineContainer title="Projetos desenvolvidos" animationLine className="relative h-[15em] bottom-20" heightTopLine="h-20" color="puple" icon={ProjectIcon}>
           <div className='mt-[70px]'>
             <div className='mt-10'>
-              <h1 className="text-3xl md:text-4xl font-medium text-puple-primary">Já foram muitos projetos...</h1>
-              <h1 className="text-2xl md:text-xl font-medium text-white-primary">Desde 2019, ganhei experiência com diversas tecnologias para compartilhar minhas ideias.</h1>
+              <h1 className="text-2xl md:text-3xl font-medium text-puple-primary">Já foram muitos projetos...</h1>
+              <h1 className="text-sm md:text-base font-medium text-white-primary">Desde 2019, ganhei experiência com diversas tecnologias para compartilhar minhas ideias.</h1>
             </div>
           </div>
         </LineContainer>
@@ -126,8 +126,8 @@ export default function Home() {
             <div className='mt-[130px]'>
               <DescriptionRight>
                 <div className='mt-10'>
-                  <h1 className="text-3xl md:text-4xl font-medium text-yellow-primary">Tecnologias e ferramentas</h1>
-                  <h1 className="text-xs md:text-base text-white-primary">Especializado em tecnologias como Python, PHP e React, tenho uma predileção pelo desenvolvimento back-end, onde me destaco significativamente. Ainda que prefira back-end, minhas inovações e soluções de alta qualidade também se estendem ao front-end. Além disso, tenho conhecimento em DevOps, o que me capacita a integrar e gerenciar operações de desenvolvimento e infraestrutura eficientemente, assegurando a qualidade e entrega contínua dos sistemas.</h1>
+                  <h1 className="text-2xl md:text-3xl font-medium text-yellow-primary">Tecnologias e ferramentas</h1>
+                  <h1 className="text-sm md:text-base text-white-primary">Especializado em tecnologias como Python, PHP e React, tenho uma predileção pelo desenvolvimento back-end, onde me destaco significativamente. Ainda que prefira back-end, minhas inovações e soluções de alta qualidade também se estendem ao front-end. Além disso, tenho conhecimento em DevOps, o que me capacita a integrar e gerenciar operações de desenvolvimento e infraestrutura eficientemente, assegurando a qualidade e entrega contínua dos sistemas.</h1>
                 </div>
               </DescriptionRight>
             </div>
@@ -139,7 +139,7 @@ export default function Home() {
                     <span className='text-xs font-semibold text-yellow-primary border border-yellow-primary rounded-full py-[1px] px-2'>Principais tecnologias</span>
                     <div className='my-5 w-full max-w-[40em]'>
                       <h1 className="text-3xl md:text-5xl font-medium text-yellow-primary">Tecnlogias</h1>
-                      <h1 className="text-base md:text-lg font-medium text-white-primary max-sm:text-balance">As principais tecnologias que mais utilizo profissionalmente:</h1>
+                      <h1 className="text-base md:text-lg font-medium text-white-primary max-sm:text-balance">As principais tecnologias que mais utilizo profissionalmente</h1>
                     </div>
                   </div>
                   <ButtonOutline label='Certificações ' />
@@ -168,8 +168,8 @@ export default function Home() {
           <div className='mt-[100px]'>
             <DescriptionRight>
               <div className='mt-1'>
-                <h1 className="text-xl md:text-2xl font-medium text-pink-primary">Algum assunto em mente?</h1>
-                <h1 className="text-xs md:text-base text-white-primary">Bora marcar um bate-papo!</h1>
+                <h1 className="text-2xl md:text-3xl font-medium text-pink-primary">Algum assunto em mente?</h1>
+                <h1 className="text-sm md:text-base text-white-primary">Bora marcar um bate-papo!</h1>
               </div>
             </DescriptionRight>
           </div>
