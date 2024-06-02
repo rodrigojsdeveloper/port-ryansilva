@@ -26,6 +26,7 @@ import IDEContainer from "@/components/IDEContainer";
 import Fork from "@/components/ForkWork";
 import ForkWork from "@/components/ForkWork";
 import ForkStudy from "@/components/ForkStudy";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -99,7 +100,7 @@ export default function Home() {
       {/* PROJETOS */}
       <div>
         <Shape3Icon className='absolute left-[-250px] animate-rotate-180s-linear-infinite' />
-        <LineContainer title="Projetos desenvolvidos" animationLine className="relative h-[20em] bottom-20" heightTopLine="h-20" color="puple" icon={ProjectIcon}>
+        <LineContainer title="Projetos desenvolvidos" animationLine className="relative h-[18em] bottom-20" heightTopLine="h-20" color="puple" icon={ProjectIcon}>
           <div className='mt-[70px]'>
             <div className='mt-10'>
               <h1 className="text-3xl md:text-4xl font-medium text-puple-primary">Já foram muitos projetos...</h1>
@@ -113,9 +114,8 @@ export default function Home() {
           animationInSide="animate-slideInFastLeft"
           animationOutSide="animate-slideOutFastLeft"
           color="bg-puple-primary"
-          className="h-[25em]"
         >
-          {/* <Fork/> */}
+          <Projects/>
         </Card>
       </div>
 

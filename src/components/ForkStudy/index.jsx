@@ -14,33 +14,9 @@ const ForkStudy = () => {
 
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
-  const studentHistory = [
-    {
-      id: 1,
-      role: "Analíse e desenvolvimento de sistemas (ADS)",
-      company: "UNINOVE",
-      period: "2023 - 2026",
-      icon: <Image src={Uninove} alt="Uninove" width={25} height={25} />
-    },
-    {
-      id: 2,
-      role: "Cursos Profissionais online",
-      company: "Cursos de tecnologia",
-      period: "2019 - Presente",
-      icon: ''
-    },
-    {
-      id: 3,
-      role: "Ensino médio",
-      company: "Escola do Governo de São Paulo",
-      period: "2014 - 2021",
-      icon: ''
-    }
-  ];
-
   return (
     <div className='mt-3'>
-      <Accordion open={open === 1} className="drop-shadow-lg mb-2 bg-gray-secondary/70 rounded-lg border border-gray-3 px-4">
+      <Accordion open={open === 1} className="shadow-lg mb-2 bg-gray-secondary/70 rounded-lg border border-gray-3 px-4">
         <AccordionHeader
           onClick={() => handleOpen(1)}
           className={`border-b-0 transition-colors ${open === 1 ? `text-white-primary` : "text-stone-500"}`}
@@ -62,7 +38,7 @@ const ForkStudy = () => {
           reconhecendo que uma formação acadêmica formal é fundamental para alcançar os objetivos de carreira que estabeleci para mim mesmo.
         </AccordionBody>
       </Accordion>
-      <Accordion open={open === 2} className="drop-shadow-lg mb-2 bg-gray-secondary/70 rounded-lg border border-gray-3 px-4">
+      <Accordion open={open === 2} className="shadow-lg mb-2 bg-gray-secondary/70 rounded-lg border border-gray-3 px-4">
         <AccordionHeader
           onClick={() => handleOpen(2)}
           className={`border-b-0 transition-colors ${open === 2 ? "text-white-primary" : "text-stone-500"}`}
@@ -78,7 +54,7 @@ const ForkStudy = () => {
           Sempre estou aprimorando minhas habilidades através de cursos profissionais, buscando sempre ficar atualizado com as evoluções constante da área e preparar-me para certificações importantes.
         </AccordionBody>
       </Accordion>
-      <Accordion open={open === 3} className="drop-shadow-lg mb-2 bg-gray-secondary/70 rounded-lg border border-gray-3 px-4">
+      <Accordion open={open === 3} className="shadow-lg mb-2 bg-gray-secondary/70 rounded-lg border border-gray-3 px-4">
         <AccordionHeader
           onClick={() => handleOpen(3)}
           className={`border-b-0  transition-colors ${open === 3 ? "text-white-primary" : "text-stone-500"}`}

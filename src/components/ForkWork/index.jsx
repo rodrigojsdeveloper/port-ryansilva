@@ -40,7 +40,7 @@ const ForkWork = () => {
 
   return (
     <div className='mt-3'>
-      <Accordion open={open === 1} className="drop-shadow-lg mb-2 bg-gray-secondary/70 rounded-lg border border-gray-3 px-4">
+      <Accordion open={open === 1} className="shadow-lg mb-2 bg-gray-secondary/70 rounded-lg border border-gray-3 px-4">
         <AccordionHeader
           onClick={() => handleOpen(1)}
           className={`border-b-0 transition-colors ${open === 1 ? `text-white-primary` : "text-stone-500"}`}
@@ -63,7 +63,7 @@ const ForkWork = () => {
           com os clientes, gerenciando e resolvendo questões diariamente para garantir a melhor execução e satisfação.
         </AccordionBody>
       </Accordion>
-      <Accordion open={open === 2} className="drop-shadow-lg mb-2 bg-gray-secondary/70 rounded-lg border border-gray-3 px-4">
+      <Accordion open={open === 2} className="shadow-lg mb-2 bg-gray-secondary/70 rounded-lg border border-gray-3 px-4">
         <AccordionHeader
           onClick={() => handleOpen(2)}
           className={`border-b-0 transition-colors ${open === 2 ? "text-white-primary" : "text-stone-500"}`}
@@ -81,7 +81,7 @@ const ForkWork = () => {
         <AccordionBody className="pt-0 text-sm font-normal text-white-primary">
           Na equipe da Vero, fui o principal responsável pelo middleware dos SVAs do provedor, trabalhando na integração parceiros internacionais de diversos países e aprimorando a aplicação conforme surgiam novas necessidades. Também participei ativamente das reuniões de planejamento, alinhamento e definição de novos SVAs.        </AccordionBody>
       </Accordion>
-      <Accordion open={open === 3} className="drop-shadow-lg mb-2 bg-gray-secondary/70 rounded-lg border border-gray-3 px-4">
+      <Accordion open={open === 3} className="shadow-lg mb-2 bg-gray-secondary/70 rounded-lg border border-gray-3 px-4">
         <AccordionHeader
           onClick={() => handleOpen(3)}
           className={`border-b-0  transition-colors ${open === 3 ? "text-white-primary" : "text-stone-500"}`}
