@@ -15,7 +15,7 @@ const CodeLine = ({ children }) => {
   return (
     <div
       ref={ref}
-      className={`opacity-0 ${animationClass}`}
+      className={`max-sm:w-[100vw] opacity-0 ${animationClass}`}
     >
       {children}
     </div>
