@@ -8,9 +8,9 @@ const Shape3Icon = ({className}) => {
       <rect x="562.729" y="421.803" width="198.369" height="198.369" transform="rotate(-45 562.729 421.803)" stroke="white" />
       <path d="M213.097 490.903L353.365 631.171" stroke="white" />
       <path d="M494.457 209.541L521.932 237.016C546.292 261.376 546.292 300.871 521.932 325.231L494.044 353.12" stroke="white" />
-      <circle cx="282.231" cy="421.801" r="11.7262" transform="rotate(-45 282.231 421.801)" fill="white" />
-      <circle cx="634.763" cy="349.8" r="11.7262" transform="rotate(-45 634.763 349.8)" fill="white" />
     </g>
+    <circle cx="282.231" cy="421.801" r="11.7262" transform="rotate(-45 282.231 421.801)" fill="#a353b9" />
+    <circle cx="634.763" cy="349.8" r="11.7262" transform="rotate(-45 634.763 349.8)" fill="#a353b9" />
   </svg>
 }
 

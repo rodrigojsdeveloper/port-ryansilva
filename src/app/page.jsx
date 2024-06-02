@@ -138,10 +138,10 @@ export default function Home() {
                 <BranchYellowIcon />
                 <DescriptionLeft>
                   <div>
-                    <span className='text-xs font-semibold text-yellow-primary border border-yellow-primary rounded-full py-[1px] px-2 text-nowrap'>Principais tecnologias atualmente</span>
+                    <span className='text-xs font-semibold text-yellow-primary border border-yellow-primary rounded-full py-[1px] px-2 text-nowrap'>Meu fluxo de desenvolvimento</span>
                     <div className='my-5 w-full max-w-[35em]'>
-                      <h1 className="text-3xl md:text-5xl font-medium text-yellow-primary">Tecnlogias</h1>
-                      <h1 className="text-base md:text-xl font-medium text-white-primary max-sm:text-balance">As principais tecnologias que mais utilizo profissionalmente</h1>
+                      <h1 className="text-3xl md:text-5xl font-medium text-yellow-primary">Metodologias</h1>
+                      <h1 className="text-sm md:text-base text-white-primary max-sm:text-balance">No meu trabalho, adoto a metodologia Scrum para garantir flexibilidade e eficiência nos projetos. O Test-Driven Development (TDD) é essencial para manter a qualidade do código desde o início. Para aprimorar a entrega contínua, implemento práticas de CI/CD. Além disso, aplico design patterns estrategicamente para resolver problemas comuns de projeto de software, promovendo soluções elegantes e reutilizáveis.</h1>
                     </div>
                   </div>
                   {/* <ButtonOutline label='Certificações ' /> */}

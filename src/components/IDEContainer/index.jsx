@@ -7,7 +7,7 @@ import CheckIcon from '../Svgs/CheckIcon';
 const IDEContainer = () => {
   return (
     <div className='transform mx-4'>
-      <IDE className='z-10 relative bottom-[70px] rounded-xl border border-gray-3'/>
+      <IDE className='z-10 relative bottom-[70px] rounded-xl border border-gray-3 backdrop-blur-[2px]'/>
       <SubCard title={'Meu serviços'} className={'absolute top-[40em] left-[47em] w-[33em] z-20'}>
         <div className="flex items-start gap-3 text-blue-primary border-b border-gray-600 py-4">
           <CheckIcon width={'45'} height={'20'}/>
