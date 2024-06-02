@@ -35,15 +35,6 @@ const Projects = () => {
       link: 'https://github.com/ryanbsdeveloper/app-chat'
     },
     {
-      name: 'Catholic Community',
-      imgSrc: '/img/catholic.png',
-      imgAlt: "Catholic Community",
-      width: 40,
-      height: 40,
-      className: '',
-      link: 'https://catholiccommunity.social/'
-    },
-    {
       name: 'DevFinder',
       imgSrc: '',
       imgAlt: "",
@@ -51,6 +42,15 @@ const Projects = () => {
       height: 0,
       className: 'rounded-full',
       link: 'https://devfinder-plus.vercel.app/'
+    },
+    {
+      name: 'Catholic Community',
+      imgSrc: '/img/catholic.png',
+      imgAlt: "Catholic Community",
+      width: 40,
+      height: 40,
+      className: '',
+      link: 'https://catholiccommunity.social/'
     },
   ]
 

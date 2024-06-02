@@ -101,7 +101,7 @@ export default function Home() {
 
       {/* PROJETOS */}
       <div>
-        <Shape3Icon className='absolute left-[-250px] animate-rotate-180s-linear-infinite' />
+        <Shape3Icon className='absolute left-[-260px] animate-rotate-180s-linear-infinite' />
         <LineContainer title="Projetos desenvolvidos" animationLine className="relative h-[15em] bottom-[5.5em]" heightTopLine="h-20" color="puple" icon={ProjectIcon}>
           <div className='mt-[70px]'>
             <div className='mt-10'>
