@@ -26,11 +26,11 @@ const Projects = () => {
       link: 'https://treinamentodigital.vercel.app/'
     },
     {
-      name: 'Chat desenvolvedores',
-      imgSrc: '/img/chat.png',
-      imgAlt: "Chat",
-      width: 60,
-      height: 70,
+      name: 'Chat developers',
+      imgSrc: '',
+      imgAlt: "",
+      width: 0,
+      height: 0,
       className: '',
       link: 'https://github.com/ryanbsdeveloper/app-chat'
     },
@@ -44,13 +44,13 @@ const Projects = () => {
       link: 'https://catholiccommunity.social/'
     },
     {
-      name: 'Air tickets',
+      name: 'DevFinder',
       imgSrc: '',
       imgAlt: "",
       width: 0,
       height: 0,
       className: 'rounded-full',
-      link: 'https://github.com/ryanbsdeveloper/web-scraping-airlines'
+      link: 'https://devfinder-plus.vercel.app/'
     },
   ]
 

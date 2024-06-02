@@ -10,7 +10,7 @@ import DescriptionRight from "@/components/DescriptionContainer/animationRight";
 import DescriptionBottom from "@/components/DescriptionContainer/animationBottom";
 import Card from "@/components/Card";
 import VisieTextoIcon from "@/components/Svgs/VisieTextoIcon";
-import BranchRedIcon from "@/components/Svgs/BranchRedIcon";
+import BranchYellowIcon from "@/components/Svgs/BranchYellowIcon";
 import IntroIcon from "@/components/Svgs/IntroIcon";
 import AboutMeIcon from "@/components/Svgs/AboutMeIcon";
 import SkillsIcon from "@/components/Svgs/SkillsIcon";
@@ -135,7 +135,7 @@ export default function Home() {
             </div>
             <div className='ml-20 relative bottom-[45px] flex items-center'>
               <div className='flex items-center relative left-[-115px]'>
-                <BranchRedIcon />
+                <BranchYellowIcon />
                 <DescriptionLeft>
                   <div>
                     <span className='text-xs font-semibold text-yellow-primary border border-yellow-primary rounded-full py-[1px] px-2 text-nowrap'>Principais tecnologias atualmente</span>

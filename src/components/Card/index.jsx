@@ -70,10 +70,10 @@ const InteractiveCard = ({
       onMouseLeave={handleMouseLeave}
       className={`z-10 relative bottom-[7em] hidden-scroll overflow-hidden mx-4 max-lg:overflow-x-scroll p-10 max-sm:px-6 bg-gray-secondary/70 rounded-xl border border-gray-3 transition-transform ${animationClass}`}
     >
-      <div
+      {/* <div
         style={blurStyle}
         className={`absolute w-32 h-32 rounded-full ${color} blur-[10em] transition-opacity duration-500 ease-out`}
-      />
+      /> */}
       <div className={`w-full relative p-10 max-sm:px-0 ${className}`}>
         <div className='top-1 absolute pointer-events-none'>
           <h1 className='font-semibold text-stone-400'>{title}</h1>
