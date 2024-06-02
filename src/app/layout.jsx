@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
         <header>
           <MenuTop />
         </header>
-        <main className={`relative pt-36 container-xl`} role="main">
+        <main className={`relative pt-36 max-md:pt-24 container-xl`} role="main">
           {children}
         </main>
         <footer>

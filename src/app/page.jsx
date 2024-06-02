@@ -100,7 +100,7 @@ export default function Home() {
       {/* PROJETOS */}
       <div>
         <Shape3Icon className='absolute left-[-250px] animate-rotate-180s-linear-infinite' />
-        <LineContainer title="Projetos desenvolvidos" animationLine className="relative h-[15em] bottom-20" heightTopLine="h-20" color="puple" icon={ProjectIcon}>
+        <LineContainer title="Projetos desenvolvidos" animationLine className="relative h-[14em] bottom-[5.5em]" heightTopLine="h-20" color="puple" icon={ProjectIcon}>
           <div className='mt-[70px]'>
             <div className='mt-10'>
               <h1 className="text-2xl md:text-3xl font-medium text-puple-primary">Já foram muitos projetos...</h1>
@@ -121,7 +121,7 @@ export default function Home() {
 
       {/* SKILLS */}
       <div>
-        <LineContainer title="Especialização e habilidades" animationLine className="relative h-[45em] bottom-20" heightTopLine="h-20" color="red" icon={SkillsIcon}>
+        <LineContainer title="Especialização e habilidades" animationLine className="relative h-[45em] bottom-[5.5em]" heightTopLine="h-20" color="red" icon={SkillsIcon}>
           <div>
             <div className='mt-[130px]'>
               <DescriptionRight>
@@ -164,7 +164,7 @@ export default function Home() {
       {/* CONTATO */}
       <div>
         <Shape4Icon className='absolute bottom-[500px] right-[-250px]  animate-rotate-180s-linear-infinite' />
-        <LineContainer title="Entre em contato" animationLine className="relative h-[13em] bottom-20" heightTopLine="h-20" color="pink" icon={ContactIcon}>
+        <LineContainer title="Entre em contato" animationLine className="relative h-[14em] bottom-[5.5em]" heightTopLine="h-20" color="pink" icon={ContactIcon}>
           <div className='mt-[100px]'>
             <DescriptionRight>
               <div className='mt-1'>
