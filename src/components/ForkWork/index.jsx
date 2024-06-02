@@ -14,30 +14,6 @@ const ForkWork = () => {
 
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
-  const studentHistory = [
-    {
-      id: 1,
-      role: "Analíse e desenvolvimento de sistemas (ADS)",
-      company: "UNINOVE",
-      period: "2023 - 2026",
-      icon: <Image src={Uninove} alt="Uninove" width={25} height={25} />
-    },
-    {
-      id: 2,
-      role: "Cursos Profissionais online",
-      company: "Cursos de tecnologia",
-      period: "2019 - Presente",
-      icon: ''
-    },
-    {
-      id: 3,
-      role: "Ensino médio",
-      company: "Escola do Governo de São Paulo",
-      period: "2014 - 2021",
-      icon: ''
-    }
-  ];
-
   return (
     <div className='mt-3'>
       <Accordion open={open === 1} className="shadow-lg mb-2 bg-gray-secondary/70 rounded-lg border border-gray-3 px-4">
@@ -49,7 +25,7 @@ const ForkWork = () => {
             <div className='flex items-center gap-2'>
               Desenvolvedor fullstack
               <span className={`${open !== 1 && "grayscale"}`}>
-                <VisieTextoIcon width={70} height={20} />
+                <VisieTextoIcon width={80} height={25} />
               </span>
             </div>
             <h3 className='text-xs font-medium text-stone-500'>Março 2023 - Presente (Integral)</h3>
@@ -72,14 +48,14 @@ const ForkWork = () => {
             <div className='flex items-center gap-2'>
               Desenvolvedor fullstack
               <span className={`${open !== 2 && "grayscale"}`}>
-                <Image src={Vero} alt="Vero" width={60} height={25} />
+                <Image src={Vero} alt="Vero" width={70} height={30} />
               </span>
             </div>
             <h3 className='text-xs font-medium text-stone-500'>Agosto 2022 - Março 2023 (Outsourcing)</h3>
           </div>
         </AccordionHeader>
         <AccordionBody className="pt-0 text-sm font-normal text-white-primary">
-          Na equipe da Vero, fui o principal responsável pelo middleware dos SVAs do provedor, trabalhando na integração parceiros internacionais de diversos países e aprimorando a aplicação conforme surgiam novas necessidades. Também participei ativamente das reuniões de planejamento, alinhamento e definição de novos SVAs.        </AccordionBody>
+        Na equipe da Vero, fui o principal responsável pelo middleware dos Serviços de Valor Agregado (SVAs) do provedor, trabalhando na integração com parceiros internacionais de diversos países e aprimorando a aplicação conforme surgiam novas necessidades. Além disso, participei ativamente das reuniões de planejamento, alinhamento e definição de novos SVAs, bem como de reuniões focadas em melhorias de regras de negócios.</AccordionBody>
       </Accordion>
       <Accordion open={open === 3} className="shadow-lg mb-2 bg-gray-secondary/70 rounded-lg border border-gray-3 px-4">
         <AccordionHeader
