@@ -29,8 +29,8 @@ const Projects = () => {
       name: 'Chat desenvolvedores',
       imgSrc: '/img/chat.png',
       imgAlt: "Chat",
-      width: 80,
-      height: 80,
+      width: 60,
+      height: 70,
       className: '',
       link: 'https://github.com/ryanbsdeveloper/app-chat'
     },
@@ -38,7 +38,7 @@ const Projects = () => {
       name: 'Catholic Community',
       imgSrc: '/img/catholic.png',
       imgAlt: "Catholic Community",
-      width: 60,
+      width: 40,
       height: 40,
       className: '',
       link: 'https://catholiccommunity.social/'
