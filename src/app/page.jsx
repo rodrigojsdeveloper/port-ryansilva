@@ -49,27 +49,27 @@ export default function Home() {
             </div>
           </DescriptionBottom>
         </LineContainer>
-        <Shape1Icon className='absolute top-[75em] left-[35em] animate-rotate-180s-linear-infinite' />
+        <Shape1Icon className='absolute top-[75em] right-[-50px] animate-rotate-180s-linear-infinite' />
         <IDEContainer src={'/ide.png'} />
         <LineContainer animationLine className="relative h-[45em] bottom-[90px]" color="blue">
-          <div className='mt-[100px] ml-20'>
+          <div className='mt-[100px] ml-[60px]'>
             <DescriptionRight>
               <div className='w-[35em] mb-2'>
                 <p className='text-xl md:text-2xl font-medium text-stone-400 min-w-[20em]'><span className='text-white-primary'>Veja o desenvolvimento</span> do meus projetos que estão em open-source e hospedado, todos no github</p>
               </div>
-              <ButtonOutline label='Ver no github ' />
+              <ButtonOutline label='Ver github ' />
             </DescriptionRight>
-            <div className='flex items-center relative left-[-99px]'>
+            <div className='flex items-center relative left-[-80px]'>
               <BranchBlueIcon />
               <DescriptionLeft>
                 <div>
                   <span className='text-xs font-semibold text-blue-primary border border-blue-primary rounded-full py-[1px] px-2'>Quer se conectar comigo?</span>
-                  <div className='my-5 w-full max-w-[35em]'>
+                  <div className='my-5 w-full max-w-[35em] max-md:w-[15em]'>
                     <h1 className="text-3xl md:text-6xl font-medium text-blue-primary">Meu dia-dia</h1>
-                    <h1 className="text-xl md:text-2xl font-medium text-white-primary">Como desenvolvedor estou muito ativo no linkedin, vai lá!</h1>
+                    <h1 className="text-base md:text-xl font-medium text-white-primary max-sm:text-balance">Como desenvolvedor estou sempre muito ativo no linkedin, vai lá!</h1>
                   </div>
                 </div>
-                <ButtonOutline label='Ver linkedin ' />
+                <ButtonOutline label='Ir ao linkedin ' />
               </DescriptionLeft>
             </div>
           </div>
@@ -137,9 +137,9 @@ export default function Home() {
                 <DescriptionLeft>
                   <div>
                     <span className='text-xs font-semibold text-yellow-primary border border-yellow-primary rounded-full py-[1px] px-2'>Principais tecnologias</span>
-                    <div className='my-5 w-full max-w-[40em]'>
+                    <div className='my-5 w-full max-w-[35em]'>
                       <h1 className="text-3xl md:text-5xl font-medium text-yellow-primary">Tecnlogias</h1>
-                      <h1 className="text-base md:text-lg font-medium text-white-primary max-sm:text-balance">As principais tecnologias que mais utilizo profissionalmente</h1>
+                      <h1 className="text-base md:text-xl font-medium text-white-primary max-sm:text-balance">As principais tecnologias que mais utilizo profissionalmente</h1>
                     </div>
                   </div>
                   <ButtonOutline label='Certificações ' />

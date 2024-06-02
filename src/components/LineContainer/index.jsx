@@ -61,7 +61,7 @@ const LineContainer = ({
   return (
     <div ref={ref}>
       <div className={`flex m-5 ${className}`}>
-        <div className={`flex flex-col items-center max-w-[5em] pr-4 ${!Icon && 'pl-5'}  ${animationLine ? lineAnimationClass : ''}`}>
+        <div className={`flex flex-col items-center max-w-[5em] pr-4 ${!Icon && 'pl-4'}  ${animationLine ? lineAnimationClass : ''}`}>
           {LineInitial && <span className='h-[32px] w-[12px] border-2 border-gray-700 rounded-full mb-2'></span>}
           <div className={`w-[3px] ${heightTopLine} bg-gradient-to-t ${classeColor?.[color]?.from} ${fromTopLine} to-transparent rounded-md `}/>
           {Icon && 
