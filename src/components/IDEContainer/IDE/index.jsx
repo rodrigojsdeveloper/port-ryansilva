@@ -113,7 +113,7 @@ const IDE = ({ className }) => {
                         self.
                         <span className="rule">anos_de_experiencia</span>
                         <span className="tag">{' = '}</span><span />
-                        <span>5</span>
+                        <span>4</span>
                       </span>
                     </CodeLine>
 

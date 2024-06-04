@@ -105,7 +105,7 @@ export default function Home() {
           <div className='mt-[70px]'>
             <div className='mt-10'>
               <h1 className="text-2xl md:text-3xl font-medium text-puple-primary">Já foram muitos projetos...</h1>
-              <h1 className="text-sm md:text-base font-medium text-white-primary">Desde 2019, ganhei experiência com diversas tecnologias para compartilhar minhas ideias.</h1>
+              <h1 className="text-sm md:text-base font-medium text-white-primary">Desde 2020, ganhei experiência com diversas tecnologias para compartilhar minhas ideias.</h1>
             </div>
           </div>
         </LineContainer>
