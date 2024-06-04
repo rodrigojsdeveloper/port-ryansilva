@@ -75,7 +75,7 @@ const Projects = () => {
               )
             }
             <h1 className='text-base font-semibold text-stone-500'>{project.name}</h1>
-            <Button icon={<SearchIcon />} link={project.link} label={'Eai, vai conferir?'} />
+            <Button icon={<SearchIcon />} link={project.link} label={'E aí, vai conferir?'} />
           </div>
         </div>
       ))}

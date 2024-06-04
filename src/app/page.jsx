@@ -43,7 +43,7 @@ export default function Home() {
             <div className='mt-[115px]'>
               <div className='mt-10'>
                 <h1 className="text-3xl md:text-4xl font-medium text-blue-primary">Inovação e Eficiência</h1>
-                <h1 className="text-sm md:text-base font-medium text-white-primary">Especialista em desenvolvimento full-stack, focado em soluções estratégicas que elevam a eficiência operacional.</h1>
+                <h1 className="text-sm md:text-base font-medium text-white-primary">Especialista em desenvolvimento Full-Stack, focado em soluções estratégicas que elevam a eficiência operacional.</h1>
               </div>
             </div>
           </DescriptionBottom>
@@ -64,10 +64,10 @@ export default function Home() {
               <BranchBlueIcon />
               <DescriptionLeft threshold={0.5}>
                 <div>
-                  <span className='text-xs font-semibold text-blue-primary border border-blue-primary rounded-full py-[1px] px-2'>Eai, já se conectou comigo?</span>
+                  <span className='text-xs font-semibold text-blue-primary border border-blue-primary rounded-full py-[1px] px-2'>E aí, já se conectou comigo?</span>
                   <div className='my-5 w-full max-w-[35em] max-md:w-[15em]'>
                     <h1 className="text-3xl md:text-6xl font-medium text-blue-primary">Meu dia-dia</h1>
-                    <h1 className="text-base md:text-xl font-medium text-white-primary max-sm:text-balance">Como desenvolvedor estou sempre muito ativo no linkedin, vai lá!</h1>
+                    <h1 className="text-base md:text-xl font-medium text-white-primary max-sm:text-balance">Como desenvolvedor, estou sempre muito ativo no LinkedIn. Vai lá!</h1>
                   </div>
                 </div>
                 <ButtonOutline link={'https://www.linkedin.com/in/ryanbarbosasilva'} label='Ver o linkedin ' />

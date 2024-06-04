@@ -35,7 +35,7 @@ const ForkWork = () => {
           Atuo com uma variedade de tecnologias em múltiplos projetos,
           assumindo a responsabilidade pela qualidade e entrega dos softwares.
           Além disso, atualmente emprego práticas de DevOps, configurando servidores e
-          implementando aplicações, o que eleva a eficiência operacional. Interajindo diretamente
+          implementando aplicações, o que eleva a eficiência operacional. Interagindo diretamente
           com os clientes, gerenciando e resolvendo questões diariamente para garantir a melhor execução e satisfação.
         </AccordionBody>
       </Accordion>

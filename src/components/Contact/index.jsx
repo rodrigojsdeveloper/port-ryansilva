@@ -36,7 +36,7 @@ const Contact = () => {
     >
       <div className='relative top-[-50px] max-md:mt-[4em]'>
         <div className="calendly-inline-widget" data-url="https://calendly.com/ryanbsdeveloper/call?hide_gdpr_banner=1&background_color=0c0c0c&text_color=f6f8fa&primary_color=f778ba" style={{ minWidth: '320px', height: '750px', margin: 0, padding: 0 }}></div>
-        <p className='text-stone-500 text-sm text-center'>*Dependendo do assunto irei entrar em contato via whatsapp(caso tenha informado).</p>
+        <p className='text-stone-500 text-sm text-center'>*Dependendo do assunto, irei entrar em contato via WhatsApp (caso tenha informado)..</p>
       </div>
     </Card>
   );
