@@ -23,7 +23,7 @@ const ForkWork = () => {
         >
           <div>
             <div className='flex items-center gap-2'>
-              Desenvolvedor fullstack
+              Engenheiro / Full Stack
               <span className={`${open !== 1 && "grayscale"}`}>
                 <VisieTextoIcon width={80} height={25} />
               </span>
@@ -46,7 +46,7 @@ const ForkWork = () => {
         >
           <div>
             <div className='flex items-center gap-2'>
-              Desenvolvedor fullstack
+              Engenheiro / Full Stack
               <span className={`${open !== 2 && "grayscale"}`}>
                 <Image src={Vero} alt="Vero" width={70} height={30} />
               </span>
