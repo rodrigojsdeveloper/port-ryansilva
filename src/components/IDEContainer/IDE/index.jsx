@@ -105,7 +105,7 @@ const IDE = ({ className }) => {
                         self.
                         <span className="rule">profissao</span>
                         <span className="tag">{' = '}</span><span />
-                        <span className="string">{'"Desenvolvedor fullStack"'}</span>
+                        <span className="string">{'"Desenvolvedor Full Stack"'}</span>
                       </span>
                     </CodeLine>
                     <CodeLine>

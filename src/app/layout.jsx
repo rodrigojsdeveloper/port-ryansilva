@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Ryan Barbosa Silva",
   description: "Desenvolvedor de software, especialista em implementar soluções robustas com as tecnologias mais modernas.",
-  keywords: "Ryan, Ryan Barbosa, desenvolvedor, programador, web, python, fullstack, software, tecnologia",
+  keywords: "Ryan, Ryan Barbosa, desenvolvedor, programador, web, python, Full Stack, software, tecnologia",
   author: "Ryan Barbosa",
   openGraph: {
     title: "Ryan Barbosa",

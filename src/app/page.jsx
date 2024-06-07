@@ -55,7 +55,7 @@ export default function Home() {
             <DescriptionRight threshold={0.1}>
               <div className="w-[35em] max-sm:relative max-sm:left-[-40px] max-sm:w-[17em]">
                 <div className='mb-2'>
-                  <p className='text-xl md:text-2xl font-medium text-stone-400'><span className='text-white-primary'>Veja o desenvolvimento</span> de alguns projetos que estão em open-source e hospedado, todos no github.</p>
+                  <p className='text-xl md:text-2xl font-medium text-stone-400'><span className='text-white-primary'>Veja o desenvolvimento</span> de alguns projetos que estão em open-source e hospedados, todos no github.</p>
                 </div>
                 <ButtonOutline link={'https://github.com/ryanbsdeveloper'} label='Ver o github ' />
               </div>

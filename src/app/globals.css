@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scrollbar-color: rgb(120 113 108) transparent;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,6 +20,10 @@ body, html {
   background-position-x: 1300px;
 
   overflow-x: hidden;
+}
+
+img {
+  user-select: none;
 }
 
 .container-xl {
